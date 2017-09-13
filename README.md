@@ -3,6 +3,12 @@
 
 A collection about awesome blockchains - open distributed databases w/ crypto hashes incl. git ;-).  Blockchains are the new tulips :tulip::tulip::tulip:.
 
+## Quotes
+
+> Soon explaining git like "a git repo is like a blockchain with commits instead of blocks" -- [Nicolás Berger](https://twitter.com/nicoberger/status/901776907418697729)
+>
+> "a local branch is like a state channel. It can be pushed and merged into the master blockchain at any moment" [Nicolás Berger](https://twitter.com/nicoberger/status/901777571456614400)
+
 
 ## Articles
 
@@ -28,6 +34,17 @@ _Distributed is the new centralized. Everything is local. Content-addressable st
 _A period in the Dutch Golden Age during which contract prices for bulbs of the recently introduced tulip reached extraordinarily high levels and then dramatically collapsed in February 1637_
 
 [**Tulipomania: The Story of the World's Most Coveted Flower & the Extraordinary Passions It Aroused**] by Mike Dash, 2001
+
+
+
+## Open Distributed Databases on Git
+
+[**football.db**](https://github.com/openfootball) open public domain football datasets (incl. clubs, national teams, leagues, match schedules, etc.) 
+
+[**world.db**](https://github.com/openmundi) open public domain world (country) datasets
+
+[**beer.db**](https://github.com/openmundi) open public domain beer & brewery datasets
+
 
 
 ## Meta
