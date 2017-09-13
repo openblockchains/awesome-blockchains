@@ -30,7 +30,13 @@ A collection about awesome blockchains - open distributed databases w/ crypto ha
 
 ## Articles
 
-
+[**Reflections on the Blockchain**](http://rufuspollock.com/2016/07/02/reflections-on-the-blockchain) by Rufus Pollock (Open Knowledge Foundation), July 2016 -- 
+The DAO: Code is not Law – and It’s Dangerous to Think So ++
+The Internet changed the world - surely the Blockchain will too? ++
+Gold-rush or Internet-rush? ++
+Governance Matters in Bitcoin ++
+The Myth of a Costless, Ownerless Network ++
+Lessons from History
 
 
 ## Books
@@ -49,19 +55,19 @@ _Distributed is the new centralized. Everything is local. Content-addressable st
 
 ### Classic Tulip Mania 
 
-_A period in the Dutch Golden Age during which contract prices for bulbs of the recently introduced tulip reached extraordinarily high levels and then dramatically collapsed in February 1637_
+_A period in the Dutch Golden Age during which contract prices for bulbs of the recently introduced tulip reached extraordinarily high levels and then dramatically collapsed in February 1637._
 
-[**Tulipomania: The Story of the World's Most Coveted Flower & the Extraordinary Passions It Aroused**] by Mike Dash, 2001
+**Tulipomania: The Story of the World's Most Coveted Flower & the Extraordinary Passions It Aroused** by Mike Dash, 2001
 
 
 
 ## Open Distributed Databases on Git
 
-[**football.db**](https://github.com/openfootball) open public domain football datasets (incl. clubs, national teams, leagues, match schedules, etc.) 
+[**football.db**](https://github.com/openfootball) - open public domain football datasets (incl. clubs, national teams, leagues, match schedules, etc.) 
 
-[**world.db**](https://github.com/openmundi) open public domain world (country) datasets
+[**world.db**](https://github.com/openmundi) - open public domain world (country) datasets
 
-[**beer.db**](https://github.com/openmundi) open public domain beer & brewery datasets
+[**beer.db**](https://github.com/openmundi) - open public domain beer & brewery datasets
 
 > Add a beer transaction to the #blockchain on #git and win a free Wiener Lager beer! Cheers. Prost.
 > -- [Gerald Bauer @ Vienna.html](https://twitter.com/viennahtml/status/907240018435088384)
