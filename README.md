@@ -31,20 +31,34 @@ A collection about awesome blockchains - open distributed databases w/ crypto ha
 ## Articles
 
 [**Reflections on the Blockchain**](http://rufuspollock.com/2016/07/02/reflections-on-the-blockchain) by Rufus Pollock (Open Knowledge Foundation), July 2016 -- 
-The DAO: Code is not Law – and It’s Dangerous to Think So ++
+_The DAO: Code is not Law – and It’s Dangerous to Think So ++
 The Internet changed the world - surely the Blockchain will too? ++
 Gold-rush or Internet-rush? ++
 Governance Matters in Bitcoin ++
 The Myth of a Costless, Ownerless Network ++
-Lessons from History
+Lessons from History_
+
+[**I Don’t Believe in Blockchain**](https://www.tbray.org/ongoing/When/201x/2017/05/13/Not-Believing-in-Blockchain), Tim Bray, May 2017 
+
 
 
 ## Books
 
 ### Blockchains
 
-[**Attack of the 50 Foot Blockchain: Bitcoin, Blockchain, Ethereum & Smart Contracts**](https://davidgerard.co.uk/blockchain/table-of-contents/) by David Gerard, London, 2017 
-
+[**Attack of the 50 Foot Blockchain: Bitcoin, Blockchain, Ethereum & Smart Contracts**](https://davidgerard.co.uk/blockchain/table-of-contents/) by David Gerard, London, 2017 --
+_What is a bitcoin? ++
+The Bitcoin ideology ++
+The incredible promises of Bitcoin! ++
+Early Bitcoin: the rise to the first bubble ++
+How Bitcoin mining centralised ++ 
+Who is Satoshi Nakamoto? ++
+Spending bitcoins in 2017 ++
+Trading bitcoins in 2017: the second crypto bubble ++
+Altcoins ++ 
+Smart contracts, stupid humans ++ 
+Business bafflegab, but on the Blockchain ++ 
+Case study: Why you can’t put the music industry on a blockchain_
 
 
 ### Git
@@ -52,6 +66,8 @@ Lessons from History
 _Distributed is the new centralized. Everything is local. Content-addressable storage with crypto hashes._
 
 [**Pro Git**](https://git-scm.com/book) by Scott Chacon and Ben Straub, 2nd Edition, 2014 - FREE (Online Version)
+
+
 
 ### Classic Tulip Mania 
 
