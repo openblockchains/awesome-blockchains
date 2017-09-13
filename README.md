@@ -1,6 +1,5 @@
 
-Mine Digital Gold a Block a Time 
-
+Mining Digital Gold one Block at a Time?! • Don't Expect to Get Insanely Rich (Quick) • Tulips :tulip::tulip::tulip: (like Blockchains) are Great and Gorgeous (and will Endure)  
 
 
 # Awesome Blockchains
@@ -38,7 +37,7 @@ Governance Matters in Bitcoin ++
 The Myth of a Costless, Ownerless Network ++
 Lessons from History_
 
-[**I Don’t Believe in Blockchain**](https://www.tbray.org/ongoing/When/201x/2017/05/13/Not-Believing-in-Blockchain), Tim Bray, May 2017 
+[**I Don’t Believe in Blockchain**](https://www.tbray.org/ongoing/When/201x/2017/05/13/Not-Believing-in-Blockchain) by Tim Bray, May 2017 
 
 
 
