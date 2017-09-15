@@ -91,7 +91,7 @@ class Block
 	end
 
   def self.first( data="Genesis" )    # create genesis (big bang! first) block
-    ## uses index zero and arbitray previous_hash
+    ## uses index zero and arbitrary previous_hash
     Block.new( 0, Time.now, data, "0" )
   end
 
@@ -122,7 +122,7 @@ blockchain = [b0, b1, b2, b3]
 pp blockchain
 
 ######
-#  will pretty print something like:
+#  will pretty print (pp) something like:
 #
 # [#<Block:0x1eed2a0
 #   @data="Genesis",
