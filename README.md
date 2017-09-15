@@ -3,10 +3,6 @@ Mining Digital Gold one Block at a Time?! • Don't Expect to Get Insanely Rich 
 
 
 
-![](i/fake-dilbert-blockchain.png)
-
-
-
 # Awesome Blockchains
 
 A collection about awesome blockchains - open distributed databases w/ crypto hashes incl. git ;-).  Blockchains are the new tulips :tulip::tulip::tulip:.
@@ -69,8 +65,9 @@ Lessons from History_
 [**I Don’t Believe in Blockchain**](https://www.tbray.org/ongoing/When/201x/2017/05/13/Not-Believing-in-Blockchain) by Tim Bray, May 2017 
 
 
-
 ## Do-It-Yourself (DIY) - Build Your Own Blockchain
+
+![](i/fake-dilbert-blockchain.png)
 
 [**Let's Build the Tiniest Blockchain In Less Than 50 Lines of Python**](https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b) by Gerald Nash, July 2016
 
@@ -101,6 +98,8 @@ Case study: Why you can’t put the music industry on a blockchain_
 _Distributed is the new centralized. Everything is local. Content-addressable storage with crypto hashes._
 
 [**Pro Git**](https://git-scm.com/book) by Scott Chacon and Ben Straub, 2nd Edition, 2014 - FREE (Online Version)
+
+
 
 
 
