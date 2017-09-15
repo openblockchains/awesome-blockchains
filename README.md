@@ -97,9 +97,16 @@ Case study: Why you can’t put the music industry on a blockchain_
 
 _Distributed is the new centralized. Everything is local. Content-addressable storage with crypto hashes._
 
+![](xkcd1597.png)
+
 [**Pro Git**](https://git-scm.com/book) by Scott Chacon and Ben Straub, 2nd Edition, 2014 - FREE (Online Version)
 
+[**Learn Enough Git to Be Dangerous**](https://learnenough.com/git-tutorial) by Michael Hartl - FREE (Online Version)
 
+> Git gets easier once you get the basic idea that branches are homeomorphic endofunctors
+> mapping submanifolds of a Hilbert space.
+> 
+> -- Anonymous
 
 
 
