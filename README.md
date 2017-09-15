@@ -25,6 +25,17 @@ A collection about awesome blockchains - open distributed databases w/ crypto ha
 > -- [Jackson Kelley](https://twitter.com/sjkelleyjr/status/901464041163341824)
 
 
+## Frequently Asked Questions (F.A.Q.s) & Answers
+
+**Q: Is the Git Repo a Blockchain?**
+
+A: Yes, every branch in the git repo is a blockchain. 
+The "classic" Satoshi-blockchain is like a git repo with single master branch (only).
+
+**Q: What is a Blockchain?**
+
+A: A blockchain is a distributed database with a linked list (that is, chain) of blocks secured by crypto hashes.
+
 
 
 ## Articles
