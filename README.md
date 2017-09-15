@@ -105,7 +105,6 @@ _Distributed is the new centralized. Everything is local. Content-addressable st
 
 > Git gets easier once you get the basic idea that branches are homeomorphic endofunctors
 > mapping submanifolds of a Hilbert space.
-> 
 > -- Anonymous
 
 
