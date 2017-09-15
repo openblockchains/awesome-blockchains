@@ -97,7 +97,7 @@ Case study: Why you can’t put the music industry on a blockchain_
 
 _Distributed is the new centralized. Everything is local. Content-addressable storage with crypto hashes._
 
-![](xkcd1597.png)
+![](i/xkcd1597.png)
 
 [**Pro Git**](https://git-scm.com/book) by Scott Chacon and Ben Straub, 2nd Edition, 2014 - FREE (Online Version)
 
