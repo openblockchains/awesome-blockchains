@@ -22,16 +22,16 @@ class Block
   attr_reader :previous_hash
   attr_reader :hash
 
-	def initialize(index, timestamp, data, previous_hash)
-		@index         = index
-		@timestamp     = timestamp
-		@data          = data
-		@previous_hash = previous_hash
-		@hash          = calc_hash
-	end
+  def initialize(index, timestamp, data, previous_hash)
+    @index         = index
+    @timestamp     = timestamp
+    @data          = data
+    @previous_hash = previous_hash
+    @hash          = calc_hash
+  end
 
   def self.first( data="Genesis" )    # create genesis (big bang! first) block
-    ## uses index zero and arbitray previous_hash
+    ## uses index zero and arbitrary previous_hash
     Block.new( 0, Time.now, data, "0" )
   end
 
@@ -40,11 +40,13 @@ class Block
   end
 
 private
+	
   def calc_hash
-		sha = Digest::SHA256.new
-		sha.update @index.to_s + @timestamp.to_s + @data.to_s + previous_hash.to_s
-		sha.hexdigest
-	end
+    sha = Digest::SHA256.new
+    sha.update @index.to_s + @timestamp.to_s + @data.to_s + previous_hash.to_s
+    sha.hexdigest
+  end
+	
 end  # class Block
 
 
@@ -62,7 +64,7 @@ blockchain = [b0, b1, b2, b3]
 pp blockchain
 
 ######
-#  will pretty print something like:
+#  will pretty print (pp) something like:
 #
 # [#<Block:0x1eed2a0
 #   @data="Genesis",
