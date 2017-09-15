@@ -30,11 +30,24 @@ A collection about awesome blockchains - open distributed databases w/ crypto ha
 **Q: Is the Git Repo a Blockchain?**
 
 A: Yes, every branch in the git repo is a blockchain. 
-The "classic" Satoshi-blockchain is like a git repo with single master branch (only).
+The "classic" Satoshi-blockchain is like a git repo with a single master branch (only).
 
-**Q: What is a Blockchain?**
+**Q: What's a Blockchain?**
 
-A: A blockchain is a distributed database with a linked list (that is, chain) of blocks secured by crypto hashes.
+A: A blockchain (originally block chain) is a distributed database with a linked list (that is, chain) of records (that is, blocks) secured by crypto(graphic) hashes.
+
+**Q: What's a Merkle Tree?**
+
+A: A Merkle tree is a hash tree named after Ralph Merkle who patented the concept in 1979. A hash tree is a generalization of hash lists or hash chains where every leaf node (in the tree) is labelled with a data block and every non-leaf node (in the tree) 
+is labelled with the crypto(graphic) hash of the labels of its child nodes. For more see the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) Wikipedia Article.
+
+Note: By adding crypto(graphic) hash functions you can "merkelize" any data structure.
+
+**Q: What's a Merkelized DAG (Directed Acyclic Graph)?**
+
+A: It's a blockchain secured by crypto(graphic) hashes that uses a directed acyclic graph data structure (instead of linear "classic" linked list). 
+
+Note: Git uses merkelized dag (directed acyclic graph)s for its blockchains.
 
 
 
@@ -49,6 +62,13 @@ The Myth of a Costless, Ownerless Network ++
 Lessons from History_
 
 [**I Don’t Believe in Blockchain**](https://www.tbray.org/ongoing/When/201x/2017/05/13/Not-Believing-in-Blockchain) by Tim Bray, May 2017 
+
+
+
+## Do-It-Yourself (DIY) - Build Your Own Blockchain
+
+[**Let's Build the Tiniest Blockchain In Less Than 50 Lines of Python**](https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b) by Gerald Nash, July 2016
+
 
 
 
