@@ -44,7 +44,7 @@ A collection about awesome blockchains - open distributed databases w/ crypto ha
 
 **Q: What's a Blockchain?**
 
-A: A blockchain (originally block chain) is a distributed database with a linked list (that is, chain) of records (that is, blocks) secured by crypto(graphic) hashes.
+A: A blockchain is a distributed database with a linked list (that is, chain) of records (that is, blocks) secured by crypto(graphic) hashes.
 
 **Q: What's a Merkle Tree?**
 
