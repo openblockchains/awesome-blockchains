@@ -103,7 +103,7 @@ private
 
   def calc_hash
     sha = Digest::SHA256.new
-    sha.update @index.to_s + @timestamp.to_s + @data.to_s + previous_hash.to_s
+    sha.update( @index.to_s + @timestamp.to_s + @data.to_s + @previous_hash.to_s )
     sha.hexdigest
   end
   
