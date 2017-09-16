@@ -32,20 +32,15 @@ A collection about awesome blockchains - open distributed databases w/ crypto ha
 > People who compare digital tokens to tulips are essentially saying digital tokens are a bubble backed 
 > by nothing but pure hype and speculation.
 >
-> What they fail to understand is that tulips come from dirt, not a Blockchain.
+> What they fail to understand is that tulips come from dirt, not a blockchain.
 > 
-> And as we all know, Blockchain is possibly the best technological innovation since the Internet. 
+> And as we all know, blockchain is possibly the best technological innovation since the internet. 
 > It will have a tremendous impact on global business and society in general.
 > -- [TulipToken](http://tuliptoken.com)
 
 
 
 ## Frequently Asked Questions (F.A.Q.s) & Answers
-
-**Q: Is the Git Repo a Blockchain?**
-
-A: Yes, every branch in the git repo is a blockchain. 
-The "classic" Satoshi-blockchain is like a git repo with a single master branch (only).
 
 **Q: What's a Blockchain?**
 
@@ -63,6 +58,11 @@ Note: By adding crypto(graphic) hash functions you can "merkelize" any data stru
 A: It's a blockchain secured by crypto(graphic) hashes that uses a directed acyclic graph data structure (instead of linear "classic" linked list). 
 
 Note: Git uses merkelized dag (directed acyclic graph)s for its blockchains.
+
+**Q: Is the Git Repo a Blockchain?**
+
+A: Yes, every branch in the git repo is a blockchain. 
+The "classic" Satoshi-blockchain is like a git repo with a single master branch (only).
 
 
 
