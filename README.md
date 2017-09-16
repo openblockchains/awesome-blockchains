@@ -9,6 +9,8 @@ A collection about awesome blockchains - open distributed databases w/ crypto ha
 
 ## Quotes
 
+### Blockchains and Git
+
 > Yep, that's the joke. Nobody has been able to explain to me how the "blockchain" buzzword is significantly different to "git repo".
 > -- [Yaakov](https://twitter.com/yaakov_h/status/902659507255312384) 
 >
@@ -24,6 +26,18 @@ A collection about awesome blockchains - open distributed databases w/ crypto ha
 
 > The #Blockchain has changed the world. Here I make the argument that the #Blockchain is just like #git.
 > -- [Jackson Kelley](https://twitter.com/sjkelleyjr/status/901464041163341824)
+
+### Blockchains are the next Internets
+
+> People who compare digital tokens to tulips are essentially saying digital tokens are a bubble backed 
+> by nothing but pure hype and speculation.
+>
+> What they fail to understand is that tulips come from dirt, not a Blockchain.
+> 
+> And as we all know, Blockchain is possibly the best technological innovation since the Internet. 
+> It will have a tremendous impact on global business and society in general.
+> -- [TulipToken](http://tuliptoken.com)
+
 
 
 ## Frequently Asked Questions (F.A.Q.s) & Answers
