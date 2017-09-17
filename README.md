@@ -7,6 +7,7 @@ Mining Digital Gold one Block at a Time?! • Don't Expect to Get Insanely Rich 
 
 A collection about awesome blockchains - open distributed databases w/ crypto hashes incl. git ;-).  Blockchains are the new tulips :tulip::tulip::tulip:.
 
+
 ## Quotes
 
 ### Blockchains and Git
@@ -48,7 +49,8 @@ A: A blockchain is a distributed database with a linked list (that is, chain) of
 
 **Q: What's a Merkle Tree?**
 
-A: A Merkle tree is a hash tree named after Ralph Merkle who patented the concept in 1979. A hash tree is a generalization of hash lists or hash chains where every leaf node (in the tree) is labelled with a data block and every non-leaf node (in the tree)
+A: A Merkle tree is a hash tree named after Ralph Merkle who patented the concept in 1979
+(the patent expired in 2002). A hash tree is a generalization of hash lists or hash chains where every leaf node (in the tree) is labelled with a data block and every non-leaf node (in the tree)
 is labelled with the crypto(graphic) hash of the labels of its child nodes. For more see the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) Wikipedia Article.
 
 Note: By adding crypto(graphic) hash functions you can "merkelize" any data structure.
@@ -66,6 +68,34 @@ The "classic" Satoshi-blockchain is like a git repo with a single master branch 
 
 
 
+**Q: What's a Hash? What's a (One-Way) Crypto(graphic) Hash Digest Checksum**?
+
+A: A hash e.g. `eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743`
+is a small digest checksum calculated
+with a one-way crypto(graphic) hash digest checksum function
+e.g. SHA256 (Secure Hash Algorithm 256 Bits)
+from the data. Example from [`blockchain.rb`](blockchain.rb/blockchain.rb):
+
+```ruby
+def calc_hash
+  sha = Digest::SHA256.new
+  sha.update( @index.to_s + @timestamp.to_s + @data.to_s + @previous_hash.to_s )
+  sha.hexdigest   ## returns "eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743"
+end
+```
+
+A blockchain uses
+
+- the block index (e.g. `1`,`2`,`3`,`4`, etc.) and
+- the block timestamp (e.g. `2017-09-15 20:52:38 +0200`) and
+- the block data (e.g. `Transaction Data...`) and finally
+- the hash from the previous block (e.g. `edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b`)
+
+to calculate the new hash digest checksum, that is, the hash
+e.g. `be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4`.
+
+
+
 ## Articles
 
 [**Reflections on the Blockchain**](http://rufuspollock.com/2016/07/02/reflections-on-the-blockchain) by Rufus Pollock (Open Knowledge Foundation), July 2016 --
@@ -79,6 +109,39 @@ Lessons from History_
 [**I Don’t Believe in Blockchain**](https://www.tbray.org/ongoing/When/201x/2017/05/13/Not-Believing-in-Blockchain) by Tim Bray, May 2017
 
 
+## Books
+
+[**Attack of the 50 Foot Blockchain: Bitcoin, Blockchain, Ethereum & Smart Contracts**](https://davidgerard.co.uk/blockchain/table-of-contents/) by David Gerard, London, 2017 --
+_What is a bitcoin? ++
+The Bitcoin ideology ++
+The incredible promises of Bitcoin! ++
+Early Bitcoin: the rise to the first bubble ++
+How Bitcoin mining centralised ++
+Who is Satoshi Nakamoto? ++
+Spending bitcoins in 2017 ++
+Trading bitcoins in 2017: the second crypto bubble ++
+Altcoins ++
+Smart contracts, stupid humans ++
+Business bafflegab, but on the Blockchain ++
+Case study: Why you can’t put the music industry on a blockchain_
+
+[**Mastering Bitcoin - Programming the Open Blockchain**](https://github.com/bitcoinbook/bitcoinbook/blob/second_edition/ch09.asciidoc) 2nd Edition,
+by Andreas M. Antonopoulos, 2017 - FREE (Online Source Version) --
+_What Is Bitcoin? ++
+How Bitcoin Works ++
+Bitcoin Core: The Reference Implementation ++
+Keys, Addresses ++
+Wallets ++
+Transactions ++
+Advanced Transactions and Scripting ++
+The Bitcoin Network ++
+The Blockchain ++
+Mining and Consensus ++
+Bitcoin Security ++
+Blockchain Applications_
+
+
+
 ## Do-It-Yourself (DIY) - Build Your Own Blockchain
 
 ![](i/fake-dilbert-blockchain.png)
@@ -86,8 +149,9 @@ Lessons from History_
 [**Let's Build the Tiniest Blockchain In Less Than 50 Lines of Python**](https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b)
 by Gerald Nash, July 2016
 
-[**Let's Make the Tiniest Blockchain Bigger - Part 2: With More Lines of Python**](https://medium.com/crypto-currently/lets-make-the-tiniest-blockchain-bigger-ac360a328f4d)
+[**Let's Make the Tiniest Blockchain Bigger With More Lines of Python (Part 2)**](https://medium.com/crypto-currently/lets-make-the-tiniest-blockchain-bigger-ac360a328f4d)
 by Gerald Nash, July 2016
+
 
 
 **Blockchain from Scratch - Ruby Version**
@@ -175,12 +239,14 @@ pp blockchain
 
 
 
-## Blockchain (Lite) Libraries
+## Blockchain (Lite) Crypto Hash Libraries
 
 ### Ruby
 
-[**blockchain.lite**](https://github.com/rubylibs/blockchain.lite) -
-blockchainlite gem - build your own blockchain with crypto hashes - revolutionize the world with blockchains, blockchains, blockchains one block at a time
+**blockchain.lite** (github:[rubylibs/blockchain.lite](https://github.com/rubylibs/blockchain.lite),
+gem: [blockchainlite](https://rubygems.org/gems/blockchainlite)) -
+build your own blockchain with crypto hashes -
+revolutionize the world with blockchains, blockchains, blockchains one block at a time
 
 ```ruby
 require 'blockchainlite'
@@ -213,66 +279,47 @@ pp blockchain
 ```
 
 
-## Books
 
-### Blockchains
+## Git, Git, Git - The Stupid Content Tracker with Crypto Hashes
 
-[**Attack of the 50 Foot Blockchain: Bitcoin, Blockchain, Ethereum & Smart Contracts**](https://davidgerard.co.uk/blockchain/table-of-contents/) by David Gerard, London, 2017 --
-_What is a bitcoin? ++
-The Bitcoin ideology ++
-The incredible promises of Bitcoin! ++
-Early Bitcoin: the rise to the first bubble ++
-How Bitcoin mining centralised ++
-Who is Satoshi Nakamoto? ++
-Spending bitcoins in 2017 ++
-Trading bitcoins in 2017: the second crypto bubble ++
-Altcoins ++
-Smart contracts, stupid humans ++
-Business bafflegab, but on the Blockchain ++
-Case study: Why you can’t put the music industry on a blockchain_
-
-[**Mastering Bitcoin - Programming the Open Blockchain**](https://github.com/bitcoinbook/bitcoinbook/blob/second_edition/ch09.asciidoc) 2nd Edition,
-by Andreas M. Antonopoulos, 2017 - FREE (Online Source Version) --
-_What Is Bitcoin? ++
-How Bitcoin Works ++
-Bitcoin Core: The Reference Implementation ++
-Keys, Addresses ++
-Wallets ++
-Transactions ++
-Advanced Transactions and Scripting ++
-The Bitcoin Network ++
-The Blockchain ++
-Mining and Consensus ++
-Bitcoin Security ++
-Blockchain Applications_
-
-
-
-### Git
-
-_Distributed is the new centralized. Everything is local. Content-addressable storage with crypto hashes._
+_Everything is local. Distributed is the new centralized._
 
 ![](i/xkcd1597.png)
 
-[**Learn Enough Git to Be Dangerous**](https://learnenough.com/git-tutorial) by Michael Hartl - FREE (Online Version)
 
-[**Pro Git**](https://git-scm.com/book) by Scott Chacon and Ben Straub, 2nd Edition, 2014 - FREE (Online Version)
+### Books
+
+[**Learn Enough Git to Be Dangerous**](https://learnenough.com/git-tutorial) by Michael Hartl - FREE (Online Version) --
+_Getting started ++
+Backing up and sharing ++
+Intermediate workflow ++
+Collaborating ++
+Conclusion ++
+Advanced setup_
+
+
+[**Pro Git**](https://git-scm.com/book) by Scott Chacon and Ben Straub, 2nd Edition, 2014 - FREE (Online Version) --
+_Getting Started ++
+Git Basics ++
+Git Branching ++
+Git on the Server ++
+Distributed Git ++
+GitHub ++
+Git Tools ++
+Customizing Git ++
+Git and Other Systems ++
+Git Internals ++
+A1: Git in Other Environments ++
+A2: Embedding Git in your Applications ++
+A3: Git Commands_
+
 
 > Git gets easier once you get the basic idea that branches are homeomorphic endofunctors
 > mapping submanifolds of a Hilbert space.
 > -- Anonymous
 
 
-
-### Classic Tulip Mania
-
-_A period in the Dutch Golden Age during which contract prices for bulbs of the recently introduced tulip reached extraordinarily high levels and then dramatically collapsed in February 1637._
-
-**Tulipomania: The Story of the World's Most Coveted Flower & the Extraordinary Passions It Aroused** by Mike Dash, 2001
-
-
-
-## Open Distributed Databases on Git
+### Open Distributed Databases on Git
 
 [**football.db**](https://github.com/openfootball) - open public domain football datasets (incl. clubs, national teams, leagues, match schedules, etc.)
 
@@ -282,6 +329,34 @@ _A period in the Dutch Golden Age during which contract prices for bulbs of the 
 
 > Add a beer transaction to the #blockchain on #git and win a free Wiener Lager beer! Cheers. Prost.
 > -- [Gerald Bauer @ Vienna.html](https://twitter.com/viennahtml/status/907240018435088384)
+
+
+
+## Classic Tulip Mania
+
+_A period in the Dutch Golden Age during which contract prices for bulbs of the recently introduced tulip reached extraordinarily high levels and then dramatically collapsed in February 1637._
+
+### Books
+
+**Tulipomania: The Story of the World's Most Coveted Flower & the Extraordinary Passions It Aroused** by Mike Dash, 2001 --
+_A Mania for Tulips ++
+The Valley of Tien Shan ++
+Within the Abode of Bliss ++
+Stranger from the East ++
+Clusius ++
+Leiden ++
+An Adornment to the Cleavage ++
+The Tulip in the Mirror ++
+Forists ++
+Boom ++
+At the Sign of the Golden Grape ++
+The Orphans of Wouter Winkel ++
+Bust ++
+Goddess of Whores ++
+At the Court of the Tulip King ++
+Late Flowering_
+
+
 
 
 ## Meta
