@@ -17,5 +17,9 @@ Tiniest Blockchain in Python Article (Alternatives):
 - https://gist.github.com/aunyks/8f2c2fd51cc17f342737917e1c2582e2
 - https://gist.github.com/thinkholic/35f3b4bdcd107d0bc088b6681e39e414
 
+blockchain.rb Ruby Alternatives:
+
+- https://github.com/MatiasFMolinari/blockchain-ruby/blob/master/blockchain.rb    Less than 10 Lines!
+
 
 
