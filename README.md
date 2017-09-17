@@ -12,16 +12,16 @@ A collection about awesome blockchains - open distributed databases w/ crypto ha
 ### Blockchains and Git
 
 > Yep, that's the joke. Nobody has been able to explain to me how the "blockchain" buzzword is significantly different to "git repo".
-> -- [Yaakov](https://twitter.com/yaakov_h/status/902659507255312384) 
+> -- [Yaakov](https://twitter.com/yaakov_h/status/902659507255312384)
 >
-> But if you said "let's build a currency where all transactions are stored in a git repo" 
+> But if you said "let's build a currency where all transactions are stored in a git repo"
 > you wouldn't be taken seriously for even 24 hrs.
 > -- [Yaakov](https://twitter.com/yaakov_h/status/902659847224664064)
 
-> Soon explaining git like "a git repo is like a blockchain with commits instead of blocks". 
+> Soon explaining git like "a git repo is like a blockchain with commits instead of blocks".
 > -- [Nicolás Berger](https://twitter.com/nicoberger/status/901776907418697729)
 >
-> "A local branch is like a state channel. It can be pushed and merged into the master blockchain at any moment." 
+> "A local branch is like a state channel. It can be pushed and merged into the master blockchain at any moment."
 > -- [Nicolás Berger](https://twitter.com/nicoberger/status/901777571456614400)
 
 > The #Blockchain has changed the world. Here I make the argument that the #Blockchain is just like #git.
@@ -29,12 +29,12 @@ A collection about awesome blockchains - open distributed databases w/ crypto ha
 
 ### Blockchains are the next Internets
 
-> People who compare digital tokens to tulips are essentially saying digital tokens are a bubble backed 
+> People who compare digital tokens to tulips are essentially saying digital tokens are a bubble backed
 > by nothing but pure hype and speculation.
 >
 > What they fail to understand is that tulips come from dirt, not a blockchain.
-> 
-> And as we all know, blockchain is possibly the best technological innovation since the internet. 
+>
+> And as we all know, blockchain is possibly the best technological innovation since the internet.
 > It will have a tremendous impact on global business and society in general.
 > -- [TulipToken](http://tuliptoken.com)
 
@@ -48,27 +48,27 @@ A: A blockchain is a distributed database with a linked list (that is, chain) of
 
 **Q: What's a Merkle Tree?**
 
-A: A Merkle tree is a hash tree named after Ralph Merkle who patented the concept in 1979. A hash tree is a generalization of hash lists or hash chains where every leaf node (in the tree) is labelled with a data block and every non-leaf node (in the tree) 
+A: A Merkle tree is a hash tree named after Ralph Merkle who patented the concept in 1979. A hash tree is a generalization of hash lists or hash chains where every leaf node (in the tree) is labelled with a data block and every non-leaf node (in the tree)
 is labelled with the crypto(graphic) hash of the labels of its child nodes. For more see the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) Wikipedia Article.
 
 Note: By adding crypto(graphic) hash functions you can "merkelize" any data structure.
 
 **Q: What's a Merkelized DAG (Directed Acyclic Graph)?**
 
-A: It's a blockchain secured by crypto(graphic) hashes that uses a directed acyclic graph data structure (instead of linear "classic" linked list). 
+A: It's a blockchain secured by crypto(graphic) hashes that uses a directed acyclic graph data structure (instead of linear "classic" linked list).
 
 Note: Git uses merkelized dag (directed acyclic graph)s for its blockchains.
 
 **Q: Is the Git Repo a Blockchain?**
 
-A: Yes, every branch in the git repo is a blockchain. 
+A: Yes, every branch in the git repo is a blockchain.
 The "classic" Satoshi-blockchain is like a git repo with a single master branch (only).
 
 
 
 ## Articles
 
-[**Reflections on the Blockchain**](http://rufuspollock.com/2016/07/02/reflections-on-the-blockchain) by Rufus Pollock (Open Knowledge Foundation), July 2016 -- 
+[**Reflections on the Blockchain**](http://rufuspollock.com/2016/07/02/reflections-on-the-blockchain) by Rufus Pollock (Open Knowledge Foundation), July 2016 --
 _The DAO: Code is not Law – and It’s Dangerous to Think So ++
 The Internet changed the world - surely the Blockchain will too? ++
 Gold-rush or Internet-rush? ++
@@ -76,14 +76,19 @@ Governance Matters in Bitcoin ++
 The Myth of a Costless, Ownerless Network ++
 Lessons from History_
 
-[**I Don’t Believe in Blockchain**](https://www.tbray.org/ongoing/When/201x/2017/05/13/Not-Believing-in-Blockchain) by Tim Bray, May 2017 
+[**I Don’t Believe in Blockchain**](https://www.tbray.org/ongoing/When/201x/2017/05/13/Not-Believing-in-Blockchain) by Tim Bray, May 2017
 
 
 ## Do-It-Yourself (DIY) - Build Your Own Blockchain
 
 ![](i/fake-dilbert-blockchain.png)
 
-[**Let's Build the Tiniest Blockchain In Less Than 50 Lines of Python**](https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b) by Gerald Nash, July 2016
+[**Let's Build the Tiniest Blockchain In Less Than 50 Lines of Python**](https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b)
+by Gerald Nash, July 2016
+
+[**Let's Make the Tiniest Blockchain Bigger - Part 2: With More Lines of Python**](https://medium.com/crypto-currently/lets-make-the-tiniest-blockchain-bigger-ac360a328f4d)
+by Gerald Nash, July 2016
+
 
 **Blockchain from Scratch - Ruby Version**
 
@@ -120,7 +125,7 @@ private
     sha.update( @index.to_s + @timestamp.to_s + @data.to_s + @previous_hash.to_s )
     sha.hexdigest
   end
-  
+
 end  # class Block
 
 
@@ -166,8 +171,46 @@ pp blockchain
 #   @timestamp=2017-09-15 20:52:38 +0200>]
 ```
 
-(Source: [`blockchain.rb`](blockchain.rb))
+(Source: [`blockchain.rb`](blockchain.rb/blockchain.rb))
 
+
+
+## Blockchain (Lite) Libraries
+
+### Ruby
+
+[**blockchain.lite**](https://github.com/rubylibs/blockchain.lite) -
+blockchainlite gem - build your own blockchain with crypto hashes - revolutionize the world with blockchains, blockchains, blockchains one block at a time
+
+```ruby
+require 'blockchainlite'
+
+b0 = Block.first( "Genesis" )
+b1 = Block.next( b0, "Transaction Data..." )
+b2 = Block.next( b1, "Transaction Data......" )
+b3 = Block.next( b2, "More Transaction Data..." )
+
+blockchain = [b0, b1, b2, b3]
+
+pp blockchain   
+
+###
+#  will pretty print (pp) something like:
+#
+# [#<Block:0x1eed2a0
+#   @data="Genesis",
+#   @hash="edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b",
+#   @index=0,
+#   @previous_hash="0",
+#   @timestamp=2017-09-15 20:52:38 +0200>,
+#  #<Block:0x1eec9a0
+#   @data="Transaction Data...",
+#   @hash="eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743",
+#   @index=1,
+#   @previous_hash="edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b",
+#   @timestamp=2017-09-15 20:52:38 +0200>,
+#    ...
+```
 
 
 ## Books
@@ -179,14 +222,30 @@ _What is a bitcoin? ++
 The Bitcoin ideology ++
 The incredible promises of Bitcoin! ++
 Early Bitcoin: the rise to the first bubble ++
-How Bitcoin mining centralised ++ 
+How Bitcoin mining centralised ++
 Who is Satoshi Nakamoto? ++
 Spending bitcoins in 2017 ++
 Trading bitcoins in 2017: the second crypto bubble ++
-Altcoins ++ 
-Smart contracts, stupid humans ++ 
-Business bafflegab, but on the Blockchain ++ 
+Altcoins ++
+Smart contracts, stupid humans ++
+Business bafflegab, but on the Blockchain ++
 Case study: Why you can’t put the music industry on a blockchain_
+
+[**Mastering Bitcoin - Programming the Open Blockchain**](https://github.com/bitcoinbook/bitcoinbook/blob/second_edition/ch09.asciidoc) 2nd Edition,
+by Andreas M. Antonopoulos, 2017 - FREE (Online Source Version) --
+_What Is Bitcoin? ++
+How Bitcoin Works ++
+Bitcoin Core: The Reference Implementation ++
+Keys, Addresses ++
+Wallets ++
+Transactions ++
+Advanced Transactions and Scripting ++
+The Bitcoin Network ++
+The Blockchain ++
+Mining and Consensus ++
+Bitcoin Security ++
+Blockchain Applications_
+
 
 
 ### Git
@@ -205,7 +264,7 @@ _Distributed is the new centralized. Everything is local. Content-addressable st
 
 
 
-### Classic Tulip Mania 
+### Classic Tulip Mania
 
 _A period in the Dutch Golden Age during which contract prices for bulbs of the recently introduced tulip reached extraordinarily high levels and then dramatically collapsed in February 1637._
 
@@ -215,7 +274,7 @@ _A period in the Dutch Golden Age during which contract prices for bulbs of the 
 
 ## Open Distributed Databases on Git
 
-[**football.db**](https://github.com/openfootball) - open public domain football datasets (incl. clubs, national teams, leagues, match schedules, etc.) 
+[**football.db**](https://github.com/openfootball) - open public domain football datasets (incl. clubs, national teams, leagues, match schedules, etc.)
 
 [**world.db**](https://github.com/openmundi) - open public domain world (country) datasets
 
