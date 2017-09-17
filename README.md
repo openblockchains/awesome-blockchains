@@ -7,16 +7,16 @@ Mining Digital Gold one Block at a Time?! • Don't Expect to Get Insanely Rich 
 
 A collection about awesome blockchains - open distributed databases w/ crypto hashes incl. git ;-).  Blockchains are the new tulips :tulip::tulip::tulip:.
 
+Contents:
 
-[Quotes](#quotes) •
-[Frequently Asked Questions (F.A.Q.s) & Answers](#frequently-asked-questions-faqs--answers) •
-[Articles](#articles) •
-[Books](#books) •
-[Do-It-Yourself (DIY) - Build Your Own Blockchain](#do-it-yourself-diy---build-your-own-blockchain) •
-[Blockchain (Lite) Crypto Hash Libraries](#blockchain-lite-crypto-hash-libraries) •
-[Git, Git, Git - The Stupid Content Tracker with Crypto Hashes](#git-git-git---the-stupid-content-tracker-with-crypto-hashes) •
-[Classic Tulip Mania](#classic-tulip-mania)
-
+- [Quotes](#quotes)
+- [Frequently Asked Questions (F.A.Q.s) & Answers](#frequently-asked-questions-faqs--answers)
+- [Articles](#articles)
+- [Books](#books)
+- [Do-It-Yourself (DIY) - Build Your Own Blockchain](#do-it-yourself-diy---build-your-own-blockchain)
+- [Blockchain (Lite) Crypto Hash Libraries](#blockchain-lite-crypto-hash-libraries)
+- [Git, Git, Git - The Stupid Content Tracker with Crypto Hashes](#git-git-git---the-stupid-content-tracker-with-crypto-hashes)
+- [Classic Tulip Mania](#classic-tulip-mania)
 
 
 ## Quotes
