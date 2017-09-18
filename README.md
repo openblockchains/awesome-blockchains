@@ -146,6 +146,8 @@ Blockchain Applications_
 
 ![](i/fake-dilbert-blockchain.png)
 
+### Articles
+
 [**Let's Build the Tiniest Blockchain In Less Than 50 Lines of Python**](https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b)
 by Gerald Nash, July 2016
 
@@ -156,6 +158,7 @@ by Gerald Nash, July 2016
 by Xavier Decuyper, July 2017
 
 
+### Samples
 
 **Blockchain from Scratch - Ruby Version**
 
