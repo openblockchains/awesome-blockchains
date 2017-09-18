@@ -9,7 +9,6 @@ A collection about awesome blockchains - open distributed databases w/ crypto ha
 
 Contents:
 
-- [Quotes](#quotes)
 - [Frequently Asked Questions (F.A.Q.s) & Answers](#frequently-asked-questions-faqs--answers)
 - [Articles](#articles)
 - [Books](#books)
@@ -17,38 +16,6 @@ Contents:
 - [Blockchain (Lite) Crypto Hash Libraries](#blockchain-lite-crypto-hash-libraries)
 - [Git, Git, Git - The Stupid Content Tracker with Crypto Hashes](#git-git-git---the-stupid-content-tracker-with-crypto-hashes)
 - [Classic Tulip Mania](#classic-tulip-mania)
-
-
-## Quotes
-
-### Blockchains and Git
-
-> Yep, that's the joke. Nobody has been able to explain to me how the "blockchain" buzzword is significantly different to "git repo".
-> -- [Yaakov](https://twitter.com/yaakov_h/status/902659507255312384)
->
-> But if you said "let's build a currency where all transactions are stored in a git repo"
-> you wouldn't be taken seriously for even 24 hrs.
-> -- [Yaakov](https://twitter.com/yaakov_h/status/902659847224664064)
-
-> Soon explaining git like "a git repo is like a blockchain with commits instead of blocks".
-> -- [Nicolás Berger](https://twitter.com/nicoberger/status/901776907418697729)
->
-> "A local branch is like a state channel. It can be pushed and merged into the master blockchain at any moment."
-> -- [Nicolás Berger](https://twitter.com/nicoberger/status/901777571456614400)
-
-> The #Blockchain has changed the world. Here I make the argument that the #Blockchain is just like #git.
-> -- [Jackson Kelley](https://twitter.com/sjkelleyjr/status/901464041163341824)
-
-### Blockchains are the next Internets
-
-> People who compare digital tokens to tulips are essentially saying digital tokens are a bubble backed
-> by nothing but pure hype and speculation.
->
-> What they fail to understand is that tulips come from dirt, not a blockchain.
->
-> And as we all know, blockchain is possibly the best technological innovation since the internet.
-> It will have a tremendous impact on global business and society in general.
-> -- [TulipToken](http://tuliptoken.com)
 
 
 
@@ -260,6 +227,81 @@ Comments from the [reddit ruby posting](https://www.reddit.com/r/ruby/comments/7
 
 
 
+**Blockchain from Scratch - JavaScript Version**
+
+```js
+class Block {
+
+  constructor(index, data, previousHash) {
+    this.index        = index
+    this.timestamp    = new Date()
+    this.data         = data
+    this.previousHash = previousHash
+    this.hash         = this.calcHash()
+  }
+
+  calcHash() {
+    var sha = SHA256.create()
+    sha.update( this.index.toString() + this.timestamp.toString() + this.data + this.previousHash )
+    return sha.hex()
+  }
+
+  static first( data="Genesis" ) {    // create genesis (big bang! first) block
+    // uses index zero (0) and arbitrary previousHash ("0")
+    return new Block( 0, data, "0" )
+  }
+
+  static next( previous, data="Transaction Data..." ) {
+    return new Block( previous.index+1, data, previous.hash )
+  }
+}
+
+
+//////
+// let's get started
+//   build a blockchain a block at a time
+
+b0 = Block.first( "Genesis" )
+b1 = Block.next( b0, "Transaction Data..." )
+b2 = Block.next( b1, "Transaction Data......" )
+b3 = Block.next( b2, "More Transaction Data..." )
+
+
+blockchain = [b0, b1, b2, b3]
+
+console.log( blockchain )
+
+//////////////////////////////////
+//  will log something like:
+//
+//  [ Block {
+//      index: 0,
+//      timestamp: 2017-09-18T08:25:54.162Z,
+//      data: 'Genesis',
+//      previousHash: '0',
+//      hash: 'c396de4c03ddb5275661982adc75ce5fc5905d2a2457d1266c74436c1f3c50f1' },
+//    Block {
+//      index: 1,
+//      timestamp: 2017-09-18T08:25:54.178Z,
+//      data: 'Transaction Data...',
+//      previousHash: 'c396de4c03ddb5275661982adc75ce5fc5905d2a2457d1266c74436c1f3c50f1',
+//      hash: '493131e09c069645c82795c96e4715cea0f5558be514b5096d853a5b9899154a' },
+//    Block {
+//      index: 2,
+//      timestamp: 2017-09-18T08:25:54.178Z,
+//      data: 'Transaction Data......',
+//      previousHash: '493131e09c069645c82795c96e4715cea0f5558be514b5096d853a5b9899154a',
+//      hash: '97aa3cb5052615d60ff8e6b41bef606562588c4874f011970ac2f218e2f0f4a8' },
+//    Block {
+//      index: 3,
+//      timestamp: 2017-09-18T08:25:54.178Z,
+//      data: 'More Transaction Data...',
+//      previousHash: '97aa3cb5052615d60ff8e6b41bef606562588c4874f011970ac2f218e2f0f4a8',
+//      hash: 'e10e020f832e46c2b60e1c3c0412bd370b2fde5f0f782c16eb87d0313ea0d3a3' } ]
+```
+
+(Source: [`blockchain.js`](blockchain.js/blockchain.js))
+
 
 
 ## Blockchain (Lite) Crypto Hash Libraries
@@ -310,6 +352,25 @@ _Everything is local. Distributed is the new centralized._
 ![](i/xkcd1597.png)
 
 
+### Quotes - Blockchains and Git
+
+> Yep, that's the joke. Nobody has been able to explain to me how the "blockchain" buzzword is significantly different to "git repo".
+> -- [Yaakov](https://twitter.com/yaakov_h/status/902659507255312384)
+>
+> But if you said "let's build a currency where all transactions are stored in a git repo"
+> you wouldn't be taken seriously for even 24 hrs.
+> -- [Yaakov](https://twitter.com/yaakov_h/status/902659847224664064)
+
+> Soon explaining git like "a git repo is like a blockchain with commits instead of blocks".
+> -- [Nicolás Berger](https://twitter.com/nicoberger/status/901776907418697729)
+>
+> "A local branch is like a state channel. It can be pushed and merged into the master blockchain at any moment."
+> -- [Nicolás Berger](https://twitter.com/nicoberger/status/901777571456614400)
+
+> The #Blockchain has changed the world. Here I make the argument that the #Blockchain is just like #git.
+> -- [Jackson Kelley](https://twitter.com/sjkelleyjr/status/901464041163341824)
+
+
 ### Books
 
 [**Learn Enough Git to Be Dangerous**](https://learnenough.com/git-tutorial) by Michael Hartl - FREE (Online Version) --
@@ -355,9 +416,22 @@ A3: Git Commands_
 
 
 
+
 ## Classic Tulip Mania
 
 _A period in the Dutch Golden Age during which contract prices for bulbs of the recently introduced tulip reached extraordinarily high levels and then dramatically collapsed in February 1637._
+
+### Quotes - Blockchains are the next Internets / Tulips
+
+> People who compare digital tokens to tulips are essentially saying digital tokens are a bubble backed
+> by nothing but pure hype and speculation.
+>
+> What they fail to understand is that tulips come from dirt, not a blockchain.
+>
+> And as we all know, blockchain is possibly the best technological innovation since the internet.
+> It will have a tremendous impact on global business and society in general.
+> -- [TulipToken](http://tuliptoken.com)
+
 
 ### Books
 
