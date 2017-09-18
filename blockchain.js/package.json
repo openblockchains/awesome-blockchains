@@ -1,0 +1,9 @@
+{
+  "name": "blockchain.js",
+  "version": "1.0.0",
+  "main": "blockchain.js",
+  "license": "Public Domain",
+  "dependencies": {
+    "js-sha256": "^0.6.0"
+  }
+}
