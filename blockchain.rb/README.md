@@ -34,9 +34,7 @@ From the [reddit ruby posting](https://www.reddit.com/r/ruby/comments/70c30f/bui
 >>>
 >>>> While you're on to the fact that blockchain is not quite as interesting without proof of
 >>>> work, those are two totally independent concepts, and one is not needed to illustrate the
->>>> other. While you're on to the fact that blockchain is not quite as interesting
->>>> without proof of work, those are two totally independent concepts,
->>>> and one is not needed to illustrate the other.
+>>>> other.
 
 
 
