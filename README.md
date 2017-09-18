@@ -86,7 +86,7 @@ Distributed consensus (related technology: distributed databases, Raft) ++
 Minting new coins (mining) ++
 Embedded identities (related technology: TLS) ++
 Smart contracts: Like SQL expressions & triggers ++
-What can we really do with blockchains?
+What can we really do with blockchains?_
 
 
 [**Reflections on the Blockchain**](http://rufuspollock.com/2016/07/02/reflections-on-the-blockchain) by Rufus Pollock (Open Knowledge Foundation), July 2016 --
@@ -151,6 +151,9 @@ by Gerald Nash, July 2016
 
 [**Let's Make the Tiniest Blockchain Bigger With More Lines of Python (Part 2)**](https://medium.com/crypto-currently/lets-make-the-tiniest-blockchain-bigger-ac360a328f4d)
 by Gerald Nash, July 2016
+
+[**Writing a Tiny Blockchain in JavaScript**](https://www.savjee.be/2017/07/Writing-tiny-blockchain-in-JavaScript/)
+by Xavier Decuyper, July 2017
 
 
 
