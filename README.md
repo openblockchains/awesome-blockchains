@@ -176,28 +176,28 @@ class Block
   attr_reader :previous_hash
   attr_reader :hash
 
-  def initialize(index, timestamp, data, previous_hash)
+  def initialize(index, data, previous_hash)
     @index         = index
-    @timestamp     = timestamp
+    @timestamp     = Time.now
     @data          = data
     @previous_hash = previous_hash
     @hash          = calc_hash
   end
 
   def self.first( data="Genesis" )    # create genesis (big bang! first) block
-    ## uses index zero and arbitrary previous_hash
-    Block.new( 0, Time.now, data, "0" )
+    ## uses index zero (0) and arbitrary previous_hash ("0")
+    Block.new( 0, data, "0" )
   end
 
   def self.next( previous, data="Transaction Data..." )
-    Block.new( previous.index+1, Time.now, data, previous.hash )
+    Block.new( previous.index+1, data, previous.hash )
   end
 
 private
 
   def calc_hash
     sha = Digest::SHA256.new
-    sha.update( @index.to_s + @timestamp.to_s + @data.to_s + @previous_hash.to_s )
+    sha.update( @index.to_s + @timestamp.to_s + @data + @previous_hash )
     sha.hexdigest
   end
 
@@ -247,6 +247,18 @@ pp blockchain
 ```
 
 (Source: [`blockchain.rb`](blockchain.rb/blockchain.rb))
+
+
+Comments from the [reddit ruby posting](https://www.reddit.com/r/ruby/comments/70c30f/build_your_own_blockchain_in_20_lines_of_ruby/):
+
+> Wait, so a blockchain is just a linked list?
+>
+>> No. A linked list is only required to have a reference to the previous element, a block must
+>> have an identifier depending on the previous block's identifier, meaning that you cannot
+>> replace a block without recomputing every single block that comes after.
+>> In this implementation that happens as the previous digest is input in the calc_hash method.
+
+
 
 
 
