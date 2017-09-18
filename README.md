@@ -336,7 +336,7 @@ console.log( blockchain )
 
 ### Ruby
 
-**blockchain.lite** (github: [rubylibs/blockchain.lite](https://github.com/rubylibs/blockchain.lite),
+**blockchain.lite** (github: [openblockchains/blockchain.lite.rb](https://github.com/openblockchains/blockchain.lite.rb),
 gem: [blockchainlite](https://rubygems.org/gems/blockchainlite)) -
 build your own blockchain with crypto hashes -
 revolutionize the world with blockchains, blockchains, blockchains one block at a time
