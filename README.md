@@ -84,6 +84,15 @@ Governance Matters in Bitcoin ++
 The Myth of a Costless, Ownerless Network ++
 Lessons from History_
 
+[**On the Dangers of a Blockchain Monoculture**](https://tonyarcieri.com/on-the-dangers-of-a-blockchain-monoculture) by Tony Arcieri, January 2016 -- 
+_The Bitcoin blockchain: the world's worst database ++ 
+Next-generation protocols ++
+Decentralized ledger protocols ++ 
+Bitcoin-NG ++
+Blockchain! Blockchain! Blockchain! ++ 
+The great decentralized database in the sky_
+
+
 [**I Don’t Believe in Blockchain**](https://www.tbray.org/ongoing/When/201x/2017/05/13/Not-Believing-in-Blockchain) by Tim Bray, May 2017
 
 
