@@ -76,6 +76,19 @@ e.g. `be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4`.
 
 ## Articles
 
+[**Blockchains by analogies and applications: How blockchain compares to Git, Raft, and other technologies.**](https://www.oreilly.com/ideas/blockchains-by-analogies-and-applications)
+by Kieren James-Lubin, January 2016 --
+_Blockchains are databases ++
+Understanding transactions ++
+Persistent, replicated databases (related technology: Git) ++
+Peer-to-peer networks (related technology: BitTorrent) ++
+Distributed consensus (related technology: distributed databases, Raft) ++
+Minting new coins (mining) ++
+Embedded identities (related technology: TLS) ++
+Smart contracts: Like SQL expressions & triggers ++
+What can we really do with blockchains?
+
+
 [**Reflections on the Blockchain**](http://rufuspollock.com/2016/07/02/reflections-on-the-blockchain) by Rufus Pollock (Open Knowledge Foundation), July 2016 --
 _The DAO: Code is not Law – and It’s Dangerous to Think So ++
 The Internet changed the world - surely the Blockchain will too? ++
