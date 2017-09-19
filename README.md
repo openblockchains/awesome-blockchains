@@ -443,6 +443,11 @@ A3: Git Commands_
 > -- [Gerald Bauer @ Vienna.html](https://twitter.com/viennahtml/status/907240018435088384)
 
 
+### Open Distributed (Hyper) Ledgers on Git
+
+[**Schilling**](https://github.com/openblockchains/schilling) - Schilling on the Blockchain! - Rock-Solid Alpine Dollar from Austria
+
+
 
 
 ## Classic Tulip Mania
