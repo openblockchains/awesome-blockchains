@@ -254,6 +254,35 @@ Comments from the [reddit ruby posting](https://www.reddit.com/r/ruby/comments/7
 >> In this implementation that happens as the previous digest is input in the calc_hash method.
 
 
+What about Proof of Work?
+
+Let's add a proof of work to the blockchain. In the classic blockchain you have to compute a block hash that starts with leading zeros (`00`). The more leading zeros the harder (more difficult) to compute. Let's keep it easy to compute with two leading zeros (`00`), that is, 16^2 = 256 possibilites. Three leading zeros (`000`) would be 16^3 = 4_096 possibilites and four zeros (`0000`) would be 16^4 = 65_536 and so on. Example:
+
+``` ruby
+def compute_hash_with_proof_of_work
+  nonce = 0
+  loop do
+    hash = calc_hash_with_nonce( nonce )
+    if hash.start_with?( "00" )  
+      return [nonce,hash]     ## bingo! proof of work if hash starts with leading zeros (00)
+    else
+      nonce += 1              ## keep trying (and trying and trying)
+    end
+  end
+end
+
+def calc_hash_with_nonce( nonce=0 )
+  sha = Digest::SHA256.new
+  sha.update( nonce.to_s + @index.to_s + @timestamp.to_s + @data + @previous_hash )
+  sha.hexdigest
+end
+```
+
+That's the magic of the proof of work. See the sample source code for details.
+
+(Source: [`blockchain_with_proof_of_work.rb`](blockchain.rb/blockchain_with_proof_of_work.rb))
+
+
 
 **Blockchain from Scratch - JavaScript Version**
 
@@ -329,6 +358,7 @@ console.log( blockchain )
 ```
 
 (Source: [`blockchain.js`](blockchain.js/blockchain.js))
+
 
 
 
