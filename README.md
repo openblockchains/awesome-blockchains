@@ -543,7 +543,7 @@ Clusius ++
 Leiden ++
 An Adornment to the Cleavage ++
 The Tulip in the Mirror ++
-Forists ++
+Florists ++
 Boom ++
 At the Sign of the Golden Grape ++
 The Orphans of Wouter Winkel ++
