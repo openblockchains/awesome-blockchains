@@ -57,7 +57,7 @@ from the data. Example from [`blockchain.rb`](blockchain.rb/blockchain.rb):
 ```ruby
 def calc_hash
   sha = Digest::SHA256.new
-  sha.update( @index.to_s + @timestamp.to_s + @data.to_s + @previous_hash.to_s )
+  sha.update( @index.to_s + @timestamp.to_s + @data + @previous_hash )
   sha.hexdigest   ## returns "eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743"
 end
 ```
@@ -65,7 +65,7 @@ end
 A blockchain uses
 
 - the block index (e.g. `1`,`2`,`3`,`4`, etc.) and
-- the block timestamp (e.g. `2017-09-15 20:52:38 +0200`) and
+- the block timestamp (e.g. `2017-09-15 20:52:38`) and
 - the block data (e.g. `Transaction Data...`) and finally
 - the hash from the previous block (e.g. `edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b`)
 
@@ -220,29 +220,29 @@ will pretty print (pp) something like:
 
 ```
 [#<Block:0x1eed2a0
-  @data="Genesis",
-  @hash="edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b",
-  @index=0,
-  @previous_hash="0",
-  @timestamp=2017-09-15 20:52:38 +0200>,
+  @index         = 0,
+  @timestamp     = 2017-09-15 20:52:38,
+  @data          = "Genesis",
+  @previous_hash = "0",
+  @hash          = "edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b">,
  #<Block:0x1eec9a0
-  @data="Transaction Data...",
-  @hash="eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743",
-  @index=1,
-  @previous_hash="edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b",
-  @timestamp=2017-09-15 20:52:38 +0200>,
+  @index         = 1,
+  @timestamp     = 2017-09-15 20:52:38,
+  @data          = "Transaction Data...",
+  @previous_hash = "edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b",
+  @hash          = "eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743">,
  #<Block:0x1eec838
-  @data="Transaction Data......",
-  @hash="be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4",
-  @index=2,
-  @previous_hash="eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743",
-  @timestamp=2017-09-15 20:52:38 +0200>,
+  @index         = 2,
+  @timestamp     = 2017-09-15 20:52:38,
+  @data          = "Transaction Data......",
+  @previous_hash = "eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743",
+  @hash          = "be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4">,
  #<Block:0x1eec6d0
-  @data="More Transaction Data...",
-  @hash="5ee2981606328abfe0c3b1171440f0df746c1e1f8b3b56c351727f7da7ae5d8d",
-  @index=3,
-  @previous_hash="be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4",
-  @timestamp=2017-09-15 20:52:38 +0200>]
+  @index         = 3,
+  @timestamp     = 2017-09-15 20:52:38,
+  @data          = "More Transaction Data...",
+  @previous_hash = "be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4",
+  @hash          = "5ee2981606328abfe0c3b1171440f0df746c1e1f8b3b56c351727f7da7ae5d8d">]
 ```
 
 
@@ -288,28 +288,28 @@ Now the sample will pretty print (pp) something like:
 ```
 [#<Block:0x1e204f0
   @index         = 0,
-  @timestamp     = 2017-09-20 20:13:38 +0200,
+  @timestamp     = 2017-09-20 20:13:38,
   @data          = "Genesis",
   @previous_hash = "0",
   @nonce         = 242,
   @hash          = "00b8e77e27378f9aa0afbcea3a2882bb62f6663771dee053364beb1887e18bcf">,
  #<Block:0x1e56e20
   @index         = 1,
-  @timestamp     = 2017-09-20 20:13:38 +0200,
+  @timestamp     = 2017-09-20 20:13:38,
   @data          = "Transaction Data...",
   @previous_hash = "00b8e77e27378f9aa0afbcea3a2882bb62f6663771dee053364beb1887e18bcf",
   @nonce         = 46,
   @hash          = "00aae8d2e9387e13c71b33f8cd205d336ac250d2828011f5970062912985a9af">,
  #<Block:0x1e2bd58
   @index         = 2,
-  @timestamp     = 2017-09-20 20:13:38 +0200,
+  @timestamp     = 2017-09-20 20:13:38,
   @data          = "Transaction Data......",
   @previous_hash = "00aae8d2e9387e13c71b33f8cd205d336ac250d2828011f5970062912985a9af",
   @nonce         = 350,
   @hash          = "00ea45e0f4683c3bec4364f349ee2b6816be0c9fd95cfd5ffcc6ed572c62f190">,
  #<Block:0x1fa8338
   @index         = 3,
-  @timestamp     = 2017-09-20 20:13:38 +0200,
+  @timestamp     = 2017-09-20 20:13:38,
   @data          = "More Transaction Data...",
   @previous_hash = "00ea45e0f4683c3bec4364f349ee2b6816be0c9fd95cfd5ffcc6ed572c62f190",
   @nonce         = 59,
@@ -363,39 +363,38 @@ b3 = Block.next( b2, "More Transaction Data..." )
 blockchain = [b0, b1, b2, b3]
 
 console.log( blockchain )
-
-//////////////////////////////////
-//  will log something like:
-//
-//  [ Block {
-//      index: 0,
-//      timestamp: 2017-09-18T08:25:54.162Z,
-//      data: 'Genesis',
-//      previousHash: '0',
-//      hash: 'c396de4c03ddb5275661982adc75ce5fc5905d2a2457d1266c74436c1f3c50f1' },
-//    Block {
-//      index: 1,
-//      timestamp: 2017-09-18T08:25:54.178Z,
-//      data: 'Transaction Data...',
-//      previousHash: 'c396de4c03ddb5275661982adc75ce5fc5905d2a2457d1266c74436c1f3c50f1',
-//      hash: '493131e09c069645c82795c96e4715cea0f5558be514b5096d853a5b9899154a' },
-//    Block {
-//      index: 2,
-//      timestamp: 2017-09-18T08:25:54.178Z,
-//      data: 'Transaction Data......',
-//      previousHash: '493131e09c069645c82795c96e4715cea0f5558be514b5096d853a5b9899154a',
-//      hash: '97aa3cb5052615d60ff8e6b41bef606562588c4874f011970ac2f218e2f0f4a8' },
-//    Block {
-//      index: 3,
-//      timestamp: 2017-09-18T08:25:54.178Z,
-//      data: 'More Transaction Data...',
-//      previousHash: '97aa3cb5052615d60ff8e6b41bef606562588c4874f011970ac2f218e2f0f4a8',
-//      hash: 'e10e020f832e46c2b60e1c3c0412bd370b2fde5f0f782c16eb87d0313ea0d3a3' } ]
 ```
 
 (Source: [`blockchain.js`](blockchain.js/blockchain.js))
 
+will log something like:
 
+```
+[ Block {
+     index        : 0,
+     timestamp    : 2017-09-18T08:25:54.162Z,
+     data         : 'Genesis',
+     previousHash : '0',
+     hash         : 'c396de4c03ddb5275661982adc75ce5fc5905d2a2457d1266c74436c1f3c50f1' },
+   Block {
+     index        : 1,
+     timestamp    : 2017-09-18T08:25:54.178Z,
+     data         : 'Transaction Data...',
+     previousHash : 'c396de4c03ddb5275661982adc75ce5fc5905d2a2457d1266c74436c1f3c50f1',
+     hash         : '493131e09c069645c82795c96e4715cea0f5558be514b5096d853a5b9899154a' },
+   Block {
+     index        : 2,
+     timestamp    : 2017-09-18T08:25:54.178Z,
+     data         : 'Transaction Data......',
+     previousHash : '493131e09c069645c82795c96e4715cea0f5558be514b5096d853a5b9899154a',
+     hash         : '97aa3cb5052615d60ff8e6b41bef606562588c4874f011970ac2f218e2f0f4a8' },
+   Block {
+     index        : 3,
+     timestamp    : 2017-09-18T08:25:54.178Z,
+     data         : 'More Transaction Data...',
+     previousHash : '97aa3cb5052615d60ff8e6b41bef606562588c4874f011970ac2f218e2f0f4a8',
+     hash         : 'e10e020f832e46c2b60e1c3c0412bd370b2fde5f0f782c16eb87d0313ea0d3a3' } ]
+```
 
 
 ## Blockchain (Lite) Crypto Hash Libraries
@@ -418,23 +417,24 @@ b3 = Block.next( b2, "More Transaction Data..." )
 blockchain = [b0, b1, b2, b3]
 
 pp blockchain   
+```
 
-###
-#  will pretty print (pp) something like:
-#
-# [#<Block:0x1eed2a0
-#   @data="Genesis",
-#   @hash="edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b",
-#   @index=0,
-#   @previous_hash="0",
-#   @timestamp=2017-09-15 20:52:38 +0200>,
-#  #<Block:0x1eec9a0
-#   @data="Transaction Data...",
-#   @hash="eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743",
-#   @index=1,
-#   @previous_hash="edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b",
-#   @timestamp=2017-09-15 20:52:38 +0200>,
-#    ...
+will pretty print (pp) something like:
+
+```
+[#<Block:0x1eed2a0
+  @index         = 0,
+  @timestamp     = 2017-09-15 20:52:38,
+  @data          = "Genesis",
+  @previous_hash = "0",
+  @hash          = "edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b">,
+ #<Block:0x1eec9a0
+  @index         = 1,
+  @timestamp     = 2017-09-15 20:52:38,
+  @data          = "Transaction Data...",
+  @hash          = "eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743",
+  @previous_hash = "edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b">,
+  ...
 ```
 
 
