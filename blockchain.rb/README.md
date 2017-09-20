@@ -5,9 +5,20 @@ inspired by
 by Gerald Nash
 
 
+**Starter (Version)**
+
 to run use:
 
     $ ruby ./blockchain.rb
+    
+
+**Proof of Work (Version)**
+
+to run use:
+
+    $ ruby ./blockchain_with_proof_of_work.rb
+
+
 
 
 
