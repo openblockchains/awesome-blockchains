@@ -160,7 +160,7 @@ by Xavier Decuyper, July 2017
 
 ### Samples
 
-**Blockchain from Scratch - Ruby Version**
+#### Blockchain from Scratch - Ruby Version
 
 ```ruby
 class Block
@@ -212,36 +212,38 @@ blockchain = [b0, b1, b2, b3]
 
 pp blockchain
 
-######
-#  will pretty print (pp) something like:
-#
-# [#<Block:0x1eed2a0
-#   @data="Genesis",
-#   @hash="edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b",
-#   @index=0,
-#   @previous_hash="0",
-#   @timestamp=2017-09-15 20:52:38 +0200>,
-#  #<Block:0x1eec9a0
-#   @data="Transaction Data...",
-#   @hash="eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743",
-#   @index=1,
-#   @previous_hash="edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b",
-#   @timestamp=2017-09-15 20:52:38 +0200>,
-#  #<Block:0x1eec838
-#   @data="Transaction Data......",
-#   @hash="be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4",
-#   @index=2,
-#   @previous_hash="eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743",
-#   @timestamp=2017-09-15 20:52:38 +0200>,
-#  #<Block:0x1eec6d0
-#   @data="More Transaction Data...",
-#   @hash="5ee2981606328abfe0c3b1171440f0df746c1e1f8b3b56c351727f7da7ae5d8d",
-#   @index=3,
-#   @previous_hash="be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4",
-#   @timestamp=2017-09-15 20:52:38 +0200>]
 ```
 
 (Source: [`blockchain.rb`](blockchain.rb/blockchain.rb))
+
+will pretty print (pp) something like:
+
+```
+[#<Block:0x1eed2a0
+  @data="Genesis",
+  @hash="edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b",
+  @index=0,
+  @previous_hash="0",
+  @timestamp=2017-09-15 20:52:38 +0200>,
+ #<Block:0x1eec9a0
+  @data="Transaction Data...",
+  @hash="eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743",
+  @index=1,
+  @previous_hash="edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b",
+  @timestamp=2017-09-15 20:52:38 +0200>,
+ #<Block:0x1eec838
+  @data="Transaction Data......",
+  @hash="be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4",
+  @index=2,
+  @previous_hash="eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743",
+  @timestamp=2017-09-15 20:52:38 +0200>,
+ #<Block:0x1eec6d0
+  @data="More Transaction Data...",
+  @hash="5ee2981606328abfe0c3b1171440f0df746c1e1f8b3b56c351727f7da7ae5d8d",
+  @index=3,
+  @previous_hash="be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4",
+  @timestamp=2017-09-15 20:52:38 +0200>]
+```
 
 
 Comments from the [reddit ruby posting](https://www.reddit.com/r/ruby/comments/70c30f/build_your_own_blockchain_in_20_lines_of_ruby/):
@@ -254,11 +256,11 @@ Comments from the [reddit ruby posting](https://www.reddit.com/r/ruby/comments/7
 >> In this implementation that happens as the previous digest is input in the calc_hash method.
 
 
-What about Proof of Work?
+**What about Proof of Work?**
 
 Let's add a proof of work to the blockchain. In the classic blockchain you have to compute a block hash that starts with leading zeros (`00`). The more leading zeros the harder (more difficult) to compute. Let's keep it easy to compute with two leading zeros (`00`), that is, 16^2 = 256 possibilites. Three leading zeros (`000`) would be 16^3 = 4_096 possibilites and four zeros (`0000`) would be 16^4 = 65_536 and so on. Example:
 
-``` ruby
+```ruby
 def compute_hash_with_proof_of_work
   nonce = 0
   loop do
@@ -278,13 +280,47 @@ def calc_hash_with_nonce( nonce=0 )
 end
 ```
 
-That's the magic of the proof of work. See the sample source code for details.
-
 (Source: [`blockchain_with_proof_of_work.rb`](blockchain.rb/blockchain_with_proof_of_work.rb))
 
+Let's rerun the sample with the proof of work machinery added.
+Now the sample will pretty print (pp) something like:
+
+```
+[#<Block:0x1e204f0
+  @index         = 0,
+  @timestamp     = 2017-09-20 20:13:38 +0200,
+  @data          = "Genesis",
+  @previous_hash = "0",
+  @nonce         = 242,
+  @hash          = "00b8e77e27378f9aa0afbcea3a2882bb62f6663771dee053364beb1887e18bcf">,
+ #<Block:0x1e56e20
+  @index         = 1,
+  @timestamp     = 2017-09-20 20:13:38 +0200,
+  @data          = "Transaction Data...",
+  @previous_hash = "00b8e77e27378f9aa0afbcea3a2882bb62f6663771dee053364beb1887e18bcf",
+  @nonce         = 46,
+  @hash          = "00aae8d2e9387e13c71b33f8cd205d336ac250d2828011f5970062912985a9af">,
+ #<Block:0x1e2bd58
+  @index         = 2,
+  @timestamp     = 2017-09-20 20:13:38 +0200,
+  @data          = "Transaction Data......",
+  @previous_hash = "00aae8d2e9387e13c71b33f8cd205d336ac250d2828011f5970062912985a9af",
+  @nonce         = 350,
+  @hash          = "00ea45e0f4683c3bec4364f349ee2b6816be0c9fd95cfd5ffcc6ed572c62f190">,
+ #<Block:0x1fa8338
+  @index         = 3,
+  @timestamp     = 2017-09-20 20:13:38 +0200,
+  @data          = "More Transaction Data...",
+  @previous_hash = "00ea45e0f4683c3bec4364f349ee2b6816be0c9fd95cfd5ffcc6ed572c62f190",
+  @nonce         = 59,
+  @hash          = "00436f0fca677652963e904ce4c624606a255946b921132d5b1f70f7d86c4ab8">]
+```
+
+See the difference? All hashes now start with leading zeros (`00`) and the nonce is the random "lucky number"
+that makes it happen. That's the magic behind the proof of work. 
 
 
-**Blockchain from Scratch - JavaScript Version**
+##### Blockchain from Scratch - JavaScript Version
 
 ```js
 class Block {
