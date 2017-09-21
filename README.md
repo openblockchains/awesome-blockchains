@@ -10,9 +10,9 @@ A collection about awesome blockchains - open distributed databases w/ crypto ha
 Contents:
 
 - [Frequently Asked Questions (F.A.Q.s) & Answers](#frequently-asked-questions-faqs--answers)
-- [Articles](#articles)
-- [Books](#books)
 - [Do-It-Yourself (DIY) - Build Your Own Blockchain](#do-it-yourself-diy---build-your-own-blockchain)
+- [Blockchain Articles](#articles)
+- [Blockchain Books](#books)
 - [Blockchain (Lite) Crypto Hash Libraries](#blockchain-lite-crypto-hash-libraries)
 - [Git, Git, Git - The Stupid Content Tracker with Crypto Hashes](#git-git-git---the-stupid-content-tracker-with-crypto-hashes)
 - [Classic Tulip Mania](#classic-tulip-mania)
@@ -71,74 +71,6 @@ A blockchain uses
 
 to calculate the new hash digest checksum, that is, the hash
 e.g. `be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4`.
-
-
-
-## Articles
-
-[**Blockchains by analogies and applications: How blockchain compares to Git, Raft, and other technologies.**](https://www.oreilly.com/ideas/blockchains-by-analogies-and-applications)
-by Kieren James-Lubin, January 2016 --
-_Blockchains are databases ++
-Understanding transactions ++
-Persistent, replicated databases (related technology: Git) ++
-Peer-to-peer networks (related technology: BitTorrent) ++
-Distributed consensus (related technology: distributed databases, Raft) ++
-Minting new coins (mining) ++
-Embedded identities (related technology: TLS) ++
-Smart contracts: Like SQL expressions & triggers ++
-What can we really do with blockchains?_
-
-
-[**Reflections on the Blockchain**](http://rufuspollock.com/2016/07/02/reflections-on-the-blockchain) by Rufus Pollock (Open Knowledge Foundation), July 2016 --
-_The DAO: Code is not Law – and It’s Dangerous to Think So ++
-The Internet changed the world - surely the Blockchain will too? ++
-Gold-rush or Internet-rush? ++
-Governance Matters in Bitcoin ++
-The Myth of a Costless, Ownerless Network ++
-Lessons from History_
-
-[**On the Dangers of a Blockchain Monoculture**](https://tonyarcieri.com/on-the-dangers-of-a-blockchain-monoculture) by Tony Arcieri, January 2016 -- 
-_The Bitcoin blockchain: the world's worst database ++ 
-Next-generation protocols ++
-Decentralized ledger protocols ++ 
-Bitcoin-NG ++
-Blockchain! Blockchain! Blockchain! ++ 
-The great decentralized database in the sky_
-
-
-[**I Don’t Believe in Blockchain**](https://www.tbray.org/ongoing/When/201x/2017/05/13/Not-Believing-in-Blockchain) by Tim Bray, May 2017
-
-
-## Books
-
-[**Attack of the 50 Foot Blockchain: Bitcoin, Blockchain, Ethereum & Smart Contracts**](https://davidgerard.co.uk/blockchain/table-of-contents/) by David Gerard, London, 2017 --
-_What is a bitcoin? ++
-The Bitcoin ideology ++
-The incredible promises of Bitcoin! ++
-Early Bitcoin: the rise to the first bubble ++
-How Bitcoin mining centralised ++
-Who is Satoshi Nakamoto? ++
-Spending bitcoins in 2017 ++
-Trading bitcoins in 2017: the second crypto bubble ++
-Altcoins ++
-Smart contracts, stupid humans ++
-Business bafflegab, but on the Blockchain ++
-Case study: Why you can’t put the music industry on a blockchain_
-
-[**Mastering Bitcoin - Programming the Open Blockchain**](https://github.com/bitcoinbook/bitcoinbook/blob/second_edition/ch09.asciidoc) 2nd Edition,
-by Andreas M. Antonopoulos, 2017 - FREE (Online Source Version) --
-_What Is Bitcoin? ++
-How Bitcoin Works ++
-Bitcoin Core: The Reference Implementation ++
-Keys, Addresses ++
-Wallets ++
-Transactions ++
-Advanced Transactions and Scripting ++
-The Bitcoin Network ++
-The Blockchain ++
-Mining and Consensus ++
-Bitcoin Security ++
-Blockchain Applications_
 
 
 
@@ -317,7 +249,7 @@ Now the sample will pretty print (pp) something like:
 ```
 
 See the difference? All hashes now start with leading zeros (`00`) and the nonce is the random "lucky number"
-that makes it happen. That's the magic behind the proof of work. 
+that makes it happen. That's the magic behind the proof of work.
 
 
 ##### Blockchain from Scratch - JavaScript Version
@@ -395,6 +327,75 @@ will log something like:
      previousHash : '97aa3cb5052615d60ff8e6b41bef606562588c4874f011970ac2f218e2f0f4a8',
      hash         : 'e10e020f832e46c2b60e1c3c0412bd370b2fde5f0f782c16eb87d0313ea0d3a3' } ]
 ```
+
+
+## Blockchain Articles
+
+[**Blockchains by analogies and applications: How blockchain compares to Git, Raft, and other technologies.**](https://www.oreilly.com/ideas/blockchains-by-analogies-and-applications)
+by Kieren James-Lubin, January 2016 --
+_Blockchains are databases ++
+Understanding transactions ++
+Persistent, replicated databases (related technology: Git) ++
+Peer-to-peer networks (related technology: BitTorrent) ++
+Distributed consensus (related technology: distributed databases, Raft) ++
+Minting new coins (mining) ++
+Embedded identities (related technology: TLS) ++
+Smart contracts: Like SQL expressions & triggers ++
+What can we really do with blockchains?_
+
+
+[**Reflections on the Blockchain**](http://rufuspollock.com/2016/07/02/reflections-on-the-blockchain) by Rufus Pollock (Open Knowledge Foundation), July 2016 --
+_The DAO: Code is not Law – and It’s Dangerous to Think So ++
+The Internet changed the world - surely the Blockchain will too? ++
+Gold-rush or Internet-rush? ++
+Governance Matters in Bitcoin ++
+The Myth of a Costless, Ownerless Network ++
+Lessons from History_
+
+[**On the Dangers of a Blockchain Monoculture**](https://tonyarcieri.com/on-the-dangers-of-a-blockchain-monoculture) by Tony Arcieri, January 2016 --
+_The Bitcoin blockchain: the world's worst database ++
+Next-generation protocols ++
+Decentralized ledger protocols ++
+Bitcoin-NG ++
+Blockchain! Blockchain! Blockchain! ++
+The great decentralized database in the sky_
+
+
+[**I Don’t Believe in Blockchain**](https://www.tbray.org/ongoing/When/201x/2017/05/13/Not-Believing-in-Blockchain) by Tim Bray, May 2017
+
+
+
+## Blockchain Books
+
+[**Attack of the 50 Foot Blockchain: Bitcoin, Blockchain, Ethereum & Smart Contracts**](https://davidgerard.co.uk/blockchain/table-of-contents/) by David Gerard, London, 2017 --
+_What is a bitcoin? ++
+The Bitcoin ideology ++
+The incredible promises of Bitcoin! ++
+Early Bitcoin: the rise to the first bubble ++
+How Bitcoin mining centralised ++
+Who is Satoshi Nakamoto? ++
+Spending bitcoins in 2017 ++
+Trading bitcoins in 2017: the second crypto bubble ++
+Altcoins ++
+Smart contracts, stupid humans ++
+Business bafflegab, but on the Blockchain ++
+Case study: Why you can’t put the music industry on a blockchain_
+
+[**Mastering Bitcoin - Programming the Open Blockchain**](https://github.com/bitcoinbook/bitcoinbook/blob/second_edition/ch09.asciidoc) 2nd Edition,
+by Andreas M. Antonopoulos, 2017 - FREE (Online Source Version) --
+_What Is Bitcoin? ++
+How Bitcoin Works ++
+Bitcoin Core: The Reference Implementation ++
+Keys, Addresses ++
+Wallets ++
+Transactions ++
+Advanced Transactions and Scripting ++
+The Bitcoin Network ++
+The Blockchain ++
+Mining and Consensus ++
+Bitcoin Security ++
+Blockchain Applications_
+
 
 
 ## Blockchain (Lite) Crypto Hash Libraries

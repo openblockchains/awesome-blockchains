@@ -5,6 +5,15 @@ inspired by
 by Gerald Nash
 
 
+**Starter (Version)**
+
 to run use:
 
     $ python ./blockchain.py
+
+
+**Proof of Work (Version)**
+
+to run use:
+
+    $ python ./blockchain_with_proof_of_work.py

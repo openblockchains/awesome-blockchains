@@ -1,3 +1,10 @@
+###########################
+#  build your own blockchain from scratch in ruby!
+#
+#  to run use:
+#    $ ruby ./blockchain_with_proof_of_work.rb
+
+
 require "digest"    # for hash checksum digest function SHA256
 require "pp"        # for pp => pretty printer
 
@@ -35,7 +42,7 @@ private
     nonce = 0
     loop do
       hash = calc_hash_with_nonce( nonce )
-      if hash.start_with?( "00" )  
+      if hash.start_with?( "00" )
         return [nonce,hash]    ## bingo! proof of work if hash starts with leading zeros (00)
       else
         nonce += 1             ## keep trying (and trying and trying)
