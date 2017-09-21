@@ -331,19 +331,6 @@ will log something like:
 
 ## Blockchain Articles
 
-[**Blockchains by analogies and applications: How blockchain compares to Git, Raft, and other technologies.**](https://www.oreilly.com/ideas/blockchains-by-analogies-and-applications)
-by Kieren James-Lubin, January 2016 --
-_Blockchains are databases ++
-Understanding transactions ++
-Persistent, replicated databases (related technology: Git) ++
-Peer-to-peer networks (related technology: BitTorrent) ++
-Distributed consensus (related technology: distributed databases, Raft) ++
-Minting new coins (mining) ++
-Embedded identities (related technology: TLS) ++
-Smart contracts: Like SQL expressions & triggers ++
-What can we really do with blockchains?_
-
-
 [**Reflections on the Blockchain**](http://rufuspollock.com/2016/07/02/reflections-on-the-blockchain) by Rufus Pollock (Open Knowledge Foundation), July 2016 --
 _The DAO: Code is not Law – and It’s Dangerous to Think So ++
 The Internet changed the world - surely the Blockchain will too? ++
@@ -380,6 +367,17 @@ Building the minimum viable blockchain -
  Blocks are never final ++
 Properties of the (minimum viable) blockchain_
 
+[**Blockchains by analogies and applications: How blockchain compares to Git, Raft, and other technologies.**](https://www.oreilly.com/ideas/blockchains-by-analogies-and-applications)
+by Kieren James-Lubin, January 2016 --
+_Blockchains are databases ++
+Understanding transactions ++
+Persistent, replicated databases (related technology: Git) ++
+Peer-to-peer networks (related technology: BitTorrent) ++
+Distributed consensus (related technology: distributed databases, Raft) ++
+Minting new coins (mining) ++
+Embedded identities (related technology: TLS) ++
+Smart contracts: Like SQL expressions & triggers ++
+What can we really do with blockchains?_
 
 
 ## Blockchain Books
