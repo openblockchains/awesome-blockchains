@@ -11,8 +11,8 @@ Contents:
 
 - [Frequently Asked Questions (F.A.Q.s) & Answers](#frequently-asked-questions-faqs--answers)
 - [Do-It-Yourself (DIY) - Build Your Own Blockchain](#do-it-yourself-diy---build-your-own-blockchain)
-- [Blockchain Articles](#articles)
-- [Blockchain Books](#books)
+- [Blockchain Articles](#blockchain-articles)
+- [Blockchain Books](#blockchain-books)
 - [Blockchain (Lite) Crypto Hash Libraries](#blockchain-lite-crypto-hash-libraries)
 - [Git, Git, Git - The Stupid Content Tracker with Crypto Hashes](#git-git-git---the-stupid-content-tracker-with-crypto-hashes)
 - [Classic Tulip Mania](#classic-tulip-mania)
