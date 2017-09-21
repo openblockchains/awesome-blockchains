@@ -364,6 +364,23 @@ The great decentralized database in the sky_
 [**I Don’t Believe in Blockchain**](https://www.tbray.org/ongoing/When/201x/2017/05/13/Not-Believing-in-Blockchain) by Tim Bray, May 2017
 
 
+[**Minimum Viable Blockchain**](https://www.igvita.com/2014/05/05/minimum-viable-block-chain/) by Ilya Grigorik, May 2014 --
+_Securing transactions with triple-entry bookkeeping ++
+Securing transactions with PKI ++
+Balance = Σ(receipts) ++
+Multi-party transfers & verification ++
+Double-spending and distributed consensus -
+ Requirements for a distributed consensus network;
+ Protecting the network from Sybil attacks;
+Proof-of-work as a participation requirement ++
+Building the minimum viable blockchain -
+ Adding "blocks" & transaction fee incentives;
+ Racing to claim the transaction fees;
+ Resolving chain conflicts;
+ Blocks are never final ++
+Properties of the (minimum viable) blockchain_
+
+
 
 ## Blockchain Books
 
