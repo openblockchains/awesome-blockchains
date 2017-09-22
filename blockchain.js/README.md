@@ -5,7 +5,20 @@ inspired by
 by Gerald Nash
 
 
+One time install:
+
+    $ npm install         -- or npm install -g js-sha256
+
+
+**Starter (Version)**
+
 to run use:
 
-    $ npm install        -- or npm install -g js-sha256
     $ node ./blockchain.js
+
+
+**Proof of Work (Version)**
+
+to run use:
+
+    $ node ./blockchain_with_proof_of_work.js

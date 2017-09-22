@@ -18,11 +18,11 @@ class Block:
     self.previous_hash      = previous_hash
     self.nonce, self.hash   = self.compute_hash_with_proof_of_work()
 
-  def compute_hash_with_proof_of_work( self ):
+  def compute_hash_with_proof_of_work( self, difficulty="00" ):
     nonce = 0
     while True:    ## loop forever
       hash = self.calc_hash_with_nonce( nonce )
-      if hash.startswith( "00" ):
+      if hash.startswith( difficulty ):
         return [nonce,hash]    ## bingo! proof of work if hash starts with leading zeros (00)
       else:
         nonce += 1             ## keep trying (and trying and trying)

@@ -16,34 +16,41 @@ Contents:
 - [Blockchain (Lite) Crypto Hash Libraries](#blockchain-lite-crypto-hash-libraries)
 - [Git, Git, Git - The Stupid Content Tracker with Crypto Hashes](#git-git-git---the-stupid-content-tracker-with-crypto-hashes)
 - [Classic Tulip Mania](#classic-tulip-mania)
+- [Awesome Awesomeness](#awesome-awesomeness)
 
 
 
 ## Frequently Asked Questions (F.A.Q.s) & Answers
 
+
 **Q: What's a Blockchain?**
 
-A: A blockchain is a distributed database with a linked list (that is, chain) of records (that is, blocks) secured by crypto(graphic) hashes.
+A: A blockchain is a distributed database - a list (that is, chain) of records (that is, blocks) linked and secured by
+digital fingerprints (that is, hashes
+also known as (one-way) crypto(graphic) hash digest checksums).
+Example from [`blockchain.rb`](blockchain.rb/blockchain.rb):
 
-**Q: What's a Merkle Tree?**
-
-A: A Merkle tree is a hash tree named after Ralph Merkle who patented the concept in 1979
-(the patent expired in 2002). A hash tree is a generalization of hash lists or hash chains where every leaf node (in the tree) is labelled with a data block and every non-leaf node (in the tree)
-is labelled with the crypto(graphic) hash of the labels of its child nodes. For more see the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) Wikipedia Article.
-
-Note: By adding crypto(graphic) hash functions you can "merkelize" any data structure.
-
-**Q: What's a Merkelized DAG (Directed Acyclic Graph)?**
-
-A: It's a blockchain secured by crypto(graphic) hashes that uses a directed acyclic graph data structure (instead of linear "classic" linked list).
-
-Note: Git uses merkelized dag (directed acyclic graph)s for its blockchains.
-
-**Q: Is the Git Repo a Blockchain?**
-
-A: Yes, every branch in the git repo is a blockchain.
-The "classic" Satoshi-blockchain is like a git repo with a single master branch (only).
-
+```
+[#<Block:0x1eed2a0
+  @index         = 0,
+  @timestamp     = 2017-09-15 20:52:38,
+  @data          = "Genesis",
+  @previous_hash = "0",
+  @hash          = "edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b">,
+ #<Block:0x1eec9a0
+  @index         = 1,
+  @timestamp     = 2017-09-15 20:52:38,
+  @data          = "Transaction Data...",
+  @previous_hash = "edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b",
+  @hash          = "eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743">,
+ #<Block:0x1eec838
+  @index         = 2,
+  @timestamp     = 2017-09-15 20:52:38,
+  @data          = "Transaction Data......",
+  @previous_hash = "eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743",
+  @hash          = "be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4">,
+  ...
+```
 
 
 **Q: What's a Hash? What's a (One-Way) Crypto(graphic) Hash Digest Checksum**?
@@ -71,6 +78,28 @@ A blockchain uses
 
 to calculate the new hash digest checksum, that is, the hash
 e.g. `be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4`.
+
+
+**Q: What's a Merkle Tree?**
+
+A: A Merkle tree is a hash tree named after Ralph Merkle who patented the concept in 1979
+(the patent expired in 2002). A hash tree is a generalization of hash lists or hash chains where every leaf node (in the tree) is labelled with a data block and every non-leaf node (in the tree)
+is labelled with the crypto(graphic) hash of the labels of its child nodes. For more see the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) Wikipedia Article.
+
+Note: By adding crypto(graphic) hash functions you can "merkelize" any data structure.
+
+
+**Q: What's a Merkelized DAG (Directed Acyclic Graph)?**
+
+A: It's a blockchain secured by crypto(graphic) hashes that uses a directed acyclic graph data structure (instead of linear "classic" linked list).
+
+Note: Git uses merkelized dag (directed acyclic graph)s for its blockchains.
+
+
+**Q: Is the Git Repo a Blockchain?**
+
+A: Yes, every branch in the git repo is a blockchain.
+The "classic" Satoshi-blockchain is like a git repo with a single master branch (only).
 
 
 
@@ -193,11 +222,11 @@ Comments from the [reddit ruby posting](https://www.reddit.com/r/ruby/comments/7
 Let's add a proof of work to the blockchain. In the classic blockchain you have to compute a block hash that starts with leading zeros (`00`). The more leading zeros the harder (more difficult) to compute. Let's keep it easy to compute with two leading zeros (`00`), that is, 16^2 = 256 possibilites. Three leading zeros (`000`) would be 16^3 = 4_096 possibilites and four zeros (`0000`) would be 16^4 = 65_536 and so on. Example:
 
 ```ruby
-def compute_hash_with_proof_of_work
+def compute_hash_with_proof_of_work( difficulty="00" )
   nonce = 0
   loop do
     hash = calc_hash_with_nonce( nonce )
-    if hash.start_with?( "00" )  
+    if hash.start_with?( difficulty )  
       return [nonce,hash]     ## bingo! proof of work if hash starts with leading zeros (00)
     else
       nonce += 1              ## keep trying (and trying and trying)
@@ -567,6 +596,19 @@ Bust ++
 Goddess of Whores ++
 At the Court of the Tulip King ++
 Late Flowering_
+
+
+
+## Awesome Awesomeness
+
+_A curated list of awesome lists._
+
+- [**Awesome Blockchain**](https://github.com/igorbarinov/awesome-blockchain) by Igor Barinov et al -- a curated list of the bitcoin blockchain services
+- [**Awesome Blockchain**](https://github.com/imbaniac/awesome-blockchain) by Tim Reznich et al -- a curated list of blockchain services and exchanges
+- [**Awesome Blockchain**](https://github.com/istinspring/awesome-blockchain) by `istinspring` et al -- a curated list of awesome projects and services based on blockchain technology
+- [**Awesome Coins**](https://github.com/kennethreitz/awesome-coins) by Kenneth Reitz et al -- a guide to cryto-currencies and their algos
+- [**Awesome Git**](https://github.com/dictcp/awesome-git) by Dick Tang et al -- a curated list of amazingly awesome Git tools, resources and shiny things
+- [**Awesome**](https://github.com/sindresorhus/awesome) by Sindre Sorhus et al -- a curated list of awesome lists
 
 
 

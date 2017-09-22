@@ -38,11 +38,11 @@ class Block
 
 private
 
-  def compute_hash_with_proof_of_work
+  def compute_hash_with_proof_of_work( difficulty="00" )
     nonce = 0
     loop do
       hash = calc_hash_with_nonce( nonce )
-      if hash.start_with?( "00" )
+      if hash.start_with?( difficulty )
         return [nonce,hash]    ## bingo! proof of work if hash starts with leading zeros (00)
       else
         nonce += 1             ## keep trying (and trying and trying)
