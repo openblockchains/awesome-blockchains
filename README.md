@@ -25,9 +25,8 @@ Contents:
 
 **Q: What's a Blockchain?**
 
-A: A blockchain is a distributed database - a list (that is, chain) of records (that is, blocks) linked and secured by
-digital fingerprints (that is, hashes
-also known as (one-way) crypto(graphic) hash digest checksums).
+A: A blockchain is a distributed database with a list (that is, chain) of records (that is, blocks) linked and secured by
+digital fingerprints (that is, cryptho hashes). 
 Example from [`blockchain.rb`](blockchain.rb/blockchain.rb):
 
 ```
@@ -447,7 +446,7 @@ Blockchain Applications_
 ### Ruby
 
 **blockchain.lite** (github: [openblockchains/blockchain.lite.rb](https://github.com/openblockchains/blockchain.lite.rb),
-gem: [blockchainlite](https://rubygems.org/gems/blockchainlite)) -
+gem: [blockchain-lite](https://rubygems.org/gems/blockchain-lite)) -
 build your own blockchain with crypto hashes -
 revolutionize the world with blockchains, blockchains, blockchains one block at a time
 
