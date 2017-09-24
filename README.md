@@ -1,6 +1,20 @@
 
 Mining Digital Gold one Block at a Time?! • Don't Expect to Get Insanely Rich (Quick) • Tulips :tulip::tulip::tulip: (like Blockchains) are Great and Gorgeous (and will Endure)  
 
+```ruby
+b0 = Block.first(
+        { from: "Dutchgrown", to: "Vincent", what: "Tulip Miami Sunset",    qty: 10 },
+        { from: "Keukenhof",  to: "Anne",    what: "Tulip Semper Augustus", qty: 7  } )
+
+b1 = Block.next( b0,
+         { from: "Flowers",   to: "Ruben",   what: "Tulip Admiral van Eijck", qty: 5 },
+         { from: "Vicent",    to: "Anne",    what: "Tulip Miami Sunset",      qty: 3 },
+         { from: "Anne",      to: "Julia",   what: "Tulip Semper Augustus",   qty: 1 },
+         { from: "Julia",     to: "Luuk",    what: "Tulip Semper Augustus",   qty: 1 } )
+...
+```
+
+(Source: [`blockchain_with_transactions.rb`](blockchain.rb/blockchain.rb))
 
 
 # Awesome Blockchains
