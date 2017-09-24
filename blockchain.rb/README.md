@@ -10,7 +10,7 @@ by Gerald Nash
 to run use:
 
     $ ruby ./blockchain.rb
-    
+
 
 **Proof of Work (Version)**
 
@@ -18,6 +18,12 @@ to run use:
 
     $ ruby ./blockchain_with_proof_of_work.rb
 
+
+**Transactions (Version)**
+
+to run use:
+
+    $ ruby ./blockchain_with_transactions.rb
 
 
 

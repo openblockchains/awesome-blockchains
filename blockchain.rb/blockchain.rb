@@ -30,6 +30,13 @@ class Block
     @hash          = calc_hash
   end
 
+  def calc_hash
+    sha = Digest::SHA256.new
+    sha.update( @index.to_s + @timestamp.to_s + @data + @previous_hash )
+    sha.hexdigest
+  end
+
+
   def self.first( data="Genesis" )    # create genesis (big bang! first) block
     ## uses index zero (0) and arbitrary previous_hash ("0")
     Block.new( 0, data, "0" )
@@ -37,14 +44,6 @@ class Block
 
   def self.next( previous, data="Transaction Data..." )
     Block.new( previous.index+1, data, previous.hash )
-  end
-
-private
-
-  def calc_hash
-    sha = Digest::SHA256.new
-    sha.update( @index.to_s + @timestamp.to_s + @data + @previous_hash )
-    sha.hexdigest
   end
 
 end  # class Block

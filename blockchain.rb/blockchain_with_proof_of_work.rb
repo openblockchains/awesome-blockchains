@@ -26,18 +26,6 @@ class Block
     @nonce, @hash  = compute_hash_with_proof_of_work
   end
 
-  def self.first( data="Genesis" )    # create genesis (big bang! first) block
-    ## uses index zero (0) and arbitrary previous_hash ("0")
-    Block.new( 0, data, "0" )
-  end
-
-  def self.next( previous, data="Transaction Data..." )
-    Block.new( previous.index+1, data, previous.hash )
-  end
-
-
-private
-
   def compute_hash_with_proof_of_work( difficulty="00" )
     nonce = 0
     loop do
@@ -54,6 +42,16 @@ private
     sha = Digest::SHA256.new
     sha.update( nonce.to_s + @index.to_s + @timestamp.to_s + @data + @previous_hash )
     sha.hexdigest
+  end
+
+
+  def self.first( data="Genesis" )    # create genesis (big bang! first) block
+    ## uses index zero (0) and arbitrary previous_hash ("0")
+    Block.new( 0, data, "0" )
+  end
+
+  def self.next( previous, data="Transaction Data..." )
+    Block.new( previous.index+1, data, previous.hash )
   end
 
 end  # class Block
