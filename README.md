@@ -479,7 +479,7 @@ build your own blockchain with crypto hashes -
 revolutionize the world with blockchains, blockchains, blockchains one block at a time
 
 ```ruby
-require 'blockchainlite'
+require 'blockchain-lite'
 
 b0 = Block.first( "Genesis" )
 b1 = Block.next( b0, "Transaction Data..." )
