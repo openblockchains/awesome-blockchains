@@ -458,6 +458,15 @@ Mining and Consensus ++
 Bitcoin Security ++
 Blockchain Applications_
 
+[**Blockchain for Dummies, IBM Limited Edition**](https://www.ibm.com/blockchain/what-is-blockchain.html) by Manav Gupta, 2017 - FREE (Digital Download w/ Email) --
+_Grasping Blockchain Fundamentals ++
+Taking a Look at How Blockchain Works ++
+Propelling Business with Blockchains ++
+Blockchain in Action: Use Cases ++
+Hyperledger, a Linux Foundation Project ++
+Ten Steps to Your First Blockchain application_
+
+
 
 
 ## Blockchain (Lite) Crypto Hash Libraries
