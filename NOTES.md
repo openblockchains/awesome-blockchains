@@ -1,6 +1,41 @@
 # Notes
 
 
+## How many blocks?
+
+- xx blocks / week, / month, / year
+- a block every 20 month  (a block every hour)
+
+
+## Blockchains Samples
+
+Add - why? why not?
+
+- Bitcoin (started in )  - blocks/year  - blocks in 1.1.2017, in 1.1.2018
+- Bitcoin Forks
+  - Bitcoin Cash (Blockchain)
+  - Bitcoin XL (Blockchain)
+  - ...
+
+## More Questions
+
+- Q: What's a Sidechain?
+- Q: What's a Hyper Ledger Book?
+
+
+## Blockchain in Austria
+
+Add AUSTRIA.md page?
+
+- Blockchain Austria (Bundesministerium f. Wirtschaft)
+- Bundesrechenzentrum
+- Stadt Wien 
+
+
+## Blockchain - Data Structure vs Network
+
+How many (network) nodes?
+
 
 ## More Build Your Own Blockchain Samples / Projects
 
