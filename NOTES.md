@@ -4,7 +4,7 @@
 ## How many blocks?
 
 - xx blocks / week, / month, / year
-- a block every 20 month  (a block every hour)
+- a block every 20 minutes (a block every hour)
 
 
 ## Blockchains Samples
@@ -16,6 +16,13 @@ Add - why? why not?
   - Bitcoin Cash (Blockchain)
   - Bitcoin XL (Blockchain)
   - ...
+
+Bitcoin Block Header - 80 bytes 
+includes:
+- timestamp   (in unix epoch time - (mili?)seconds since 1970 - unsigned int for 2023 problem/overflow)
+- merkle_tree_hash  (transactions / txs )   - SHA512 ??
+
+
 
 ## More Questions
 
