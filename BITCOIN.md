@@ -129,9 +129,11 @@ Now resulting in something like:
 
 Check your balance - mining rewards in bitcoins (BTC):
 
-   $ bitcoin-cli -regtest -datadir=. -conf=./bitcoin.conf getbalance
+    $ bitcoin-cli -regtest -datadir=. -conf=./bitcoin.conf getbalance
 
-12462.50000000
+resulting in:
+
+    12462.50000000
 
 Congrats. You now own 12 462 bitcoins (BTC) on your own (local) blockchain.
 
@@ -140,16 +142,16 @@ Let's query the first block, that is, `15262fb31ca5680c0af236c0fbb6b3d39a1686afc
 
 Note: You can get the hash for the block with `getblockhash`. Example:
 
-   $ bitcoin-cli -regtest -datadir=. -conf=./bitcoin.conf getblockhash 1
+    $ bitcoin-cli -regtest -datadir=. -conf=./bitcoin.conf getblockhash 1
 
 Resulting in:
 
-   15262fb31ca5680c0af236c0fbb6b3d39a1686afcd46a01549c2cc2a4626b791
+    15262fb31ca5680c0af236c0fbb6b3d39a1686afcd46a01549c2cc2a4626b791
 
 
 Now let's query for the frist block with `getblock`. Example:
 
-   $ bitcoin-cli -regtest -datadir=. -conf=./bitcoin.conf getblock 15262fb31ca5680c0af236c0fbb6b3d39a1686afcd46a01549c2cc2a4626b791
+    $ bitcoin-cli -regtest -datadir=. -conf=./bitcoin.conf getblock 15262fb31ca5680c0af236c0fbb6b3d39a1686afcd46a01549c2cc2a4626b791
 
 Resulting in:
 
