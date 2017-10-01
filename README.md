@@ -123,11 +123,13 @@ The "classic" Satoshi-blockchain is like a git repo with a single master branch 
 
 ### Articles
 
-[**Let's Build the Tiniest Blockchain In Less Than 50 Lines of Python**](https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b)
-by Gerald Nash, July 2016
 
-[**Let's Make the Tiniest Blockchain Bigger With More Lines of Python (Part 2)**](https://medium.com/crypto-currently/lets-make-the-tiniest-blockchain-bigger-ac360a328f4d)
-by Gerald Nash, July 2016
+**Let's Build the Tiniest Blockchain in Python Series** by Gerald Nash
+
+- [**Let's Build the Tiniest Blockchain In Less Than 50 Lines of Python (Part 1)**](https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b), July 2016
+- [**Let's Make the Tiniest Blockchain Bigger With More Lines of Python (Part 2)**](https://medium.com/crypto-currently/lets-make-the-tiniest-blockchain-bigger-ac360a328f4d), July 2016
+
+<!-- break -->
 
 [**Build Your Own Blockchain: A Python Tutorial**](http://ecomunsing.com/build-your-own-blockchain)
 by Eric Munsing, March 2017
@@ -135,6 +137,19 @@ by Eric Munsing, March 2017
 [**Writing a Tiny Blockchain in JavaScript**](https://www.savjee.be/2017/07/Writing-tiny-blockchain-in-JavaScript/)
 by Xavier Decuyper, July 2017
 
+**Building Blockchain in Go Series** by Ivan Kuznetsov, [(Source)](https://github.com/Jeiwan/blockchain_go)
+
+- [**Part 1: Basic Prototype**](https://jeiwan.cc/posts/building-blockchain-in-go-part-1/), August 2017
+- [**Part 2: Proof-of-Work**](https://jeiwan.cc/posts/building-blockchain-in-go-part-2/), August 2017
+- [**Part 3: Persistence and CLI**](https://jeiwan.cc/posts/building-blockchain-in-go-part-3/), August 2017
+- [**Part 4: Transactions 1**](https://jeiwan.cc/posts/building-blockchain-in-go-part-4/), September 2017
+- [**Part 5: Addresses**](https://jeiwan.cc/posts/building-blockchain-in-go-part-5/), September 2017
+- [**Part 6: Transactions 2**](https://jeiwan.cc/posts/building-blockchain-in-go-part-6/), September 2017
+
+<!-- break -->
+
+[**Learn Blockchains by Building One (in Python)**](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46)
+by Daniel van Flymen, September 2017, [(Source)](https://github.com/dvf/blockchain) -- The fastest way to learn how Blockchains work is to build one
 
 
 ### Samples
