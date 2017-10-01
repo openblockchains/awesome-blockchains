@@ -20,7 +20,7 @@ Add a configuration file - `bitconf.conf` to your working folder:
     rpcpassword=semperaugustus
 
 
-**What's the `regtest`?**
+**What's `regtest`?**
 
 `regtest` is the regression test mode.
 Using the regression test mode option switch `-regtest` you can
@@ -72,7 +72,7 @@ Let's query for `getblockchaininfo`:
 
 Resulting in something like:
 
-```` json
+``` json
 {
   "chain": "regtest",
   "blocks": 0,
