@@ -132,7 +132,7 @@ The "classic" Satoshi-blockchain is like a git repo with a single master branch 
 <!-- break -->
 
 [**Build Your Own Blockchain: A Python Tutorial**](http://ecomunsing.com/build-your-own-blockchain)
-by Eric Munsing, March 2017
+by Eric Munsing, March 2017, [(Source)](https://github.com/emunsing/tutorials/blob/master/BuildYourOwnBlockchain.ipynb)
 
 [**Writing a Tiny Blockchain in JavaScript**](https://www.savjee.be/2017/07/Writing-tiny-blockchain-in-JavaScript/)
 by Xavier Decuyper, July 2017
@@ -253,12 +253,14 @@ Comments from the [reddit ruby posting](https://www.reddit.com/r/ruby/comments/7
 
 **What about Proof of Work?**
 
-Let's add a proof of work to the blockchain. In the classic blockchain you have to compute a block hash that starts with leading zeros (`00`). The more leading zeros the harder (more difficult) to compute. Let's keep it easy to compute with two leading zeros (`00`), that is, 16^2 = 256 possibilites (^1,2). Three leading zeros (`000`) would be 16^3 = 4_096 possibilites and four zeros (`0000`) would be 16^4 = 65_536 and so on. Example:
+Let's add a proof of work to the blockchain. In the classic blockchain you have to compute a block hash that starts with leading zeros (`00`). The more leading zeros the harder (more difficult) to compute. Let's keep it easy to compute with two leading zeros (`00`), that is, 16^2 = 256 possibilites (^1,2). Three leading zeros (`000`) would be 16^3 = 4_096 possibilites and four zeros (`0000`) would be 16^4 = 65_536 and so on.
 
 (^1): 16 possibilties because it's a hex or hexadecimal or base 16 number, that is, `0` `1` `2` `3` `4` `6` `7` `8` `9` `a` (10) `b` (11) `c` (12) `d` (13) `e` (14) `f` (15).
 
 (^2): A random secure hash algorithm needs on average 256 tries (might be lets say 305 tries, for example, because it's NOT a perfect statistic distribution of possibilities).
 
+
+Example:
 
 ```ruby
 def compute_hash_with_proof_of_work( difficulty="00" )
@@ -492,6 +494,10 @@ Ten Steps to Your First Blockchain application_
 
 ## Blockchain (Lite) Crypto Hash Libraries
 
+[Ruby](#ruby) •
+[JavaScript](#javascript)
+
+
 ### Ruby
 
 **blockchain.lite** (github: [openblockchains/blockchain.lite.rb](https://github.com/openblockchains/blockchain.lite.rb),
@@ -530,6 +536,58 @@ will pretty print (pp) something like:
   ...
 ```
 
+
+### JavaScript
+
+**blockchain.lite** (github: [openblockchains/blockchain.lite.js](https://github.com/openblockchains/blockchain.lite.js),
+npm: [blockchain-lite](https://www.npmjs.com/package/blockchain-lite)) -
+build your own blockchain with crypto hashes -
+revolutionize the world with blockchains, blockchains, blockchains one block at a time
+
+```js
+const Blocks = require( "blockchain-lite" )
+
+// use basic block
+let Block = Blocks.basic
+
+let b0 = Block.first( 'Genesis' )
+let b1 = Block.next( b0, 'Transaction Data...' )
+let b2 = Block.next( b1, 'Transaction Data......' )
+let b3 = Block.next( b2, 'More Transaction Data...' )
+
+let blockchain = [b0, b1, b2, b3]
+
+console.log( blockchain )
+```
+
+will log something like:
+
+```
+[ Block {
+    index: 0,
+    timestamp: 2017-09-25 17:03:38,
+    data: 'Genesis',
+    previousHash: '0',
+    hash: '08f4fa71628c5bc6b430228738bc8c41afaf508ece0b1cf9c9cac53d02e11829' },
+  Block {
+    index: 1,
+    timestamp: 2017-09-25 17:13:38,
+    data: 'Transaction Data...',
+    previousHash: '08f4fa71628c5bc6b430228738bc8c41afaf508ece0b1cf9c9cac53d02e11829',
+    hash: '740a4aeb3441484c96d1e7f63d31b716220ccee3b6fe94547cae2afbb6010626' },
+  Block {
+    index: 2,
+    timestamp: 2017-09-25 17:23:38,
+    data: 'Transaction Data......',
+    previousHash: '740a4aeb3441484c96d1e7f63d31b716220ccee3b6fe94547cae2afbb6010626',
+    hash: '28b6892a069e2ff7f1c3128ab495d7cd9b9b1636a51a7f69db93a14b1ee6b1a7' },
+  Block {
+    index: 3,
+    timestamp: 2017-09-25 17:33:38,
+    data: 'More Transaction Data...',
+    previousHash: '28b6892a069e2ff7f1c3128ab495d7cd9b9b1636a51a7f69db93a14b1ee6b1a7',
+    hash: '4cc0329b2c0cb32e0451fa3179bd944d4cd0fcf410939172f979e9fd2aa9f5f3' } ]
+```
 
 
 ## Git, Git, Git - The Stupid Content Tracker with Crypto Hashes
