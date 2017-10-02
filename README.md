@@ -706,6 +706,14 @@ Late Flowering_
 
 
 
+## Events, Meetups, Orgs
+
+_Revolutionize the World one Country at a Time. Blockchainers of the World, Unite!_
+
+- [**Blockchain Austria • Blockkette Österreich**](https://blockchainaustria.github.io) -- distributed centralized page for blockchain meetups & orgs in Austria (Central Europe)
+
+
+
 ## Awesome Awesomeness
 
 _A curated list of awesome lists._
