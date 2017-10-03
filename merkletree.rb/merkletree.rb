@@ -4,6 +4,7 @@
 # inspired by building a merkle tree (in c++) in the book
 #    Mastering Bitcoin - Programming the Open Blockchain by Andreas M. Antonopoulos
 #     see https://github.com/bitcoinbook/bitcoinbook/blob/second_edition/ch09.asciidoc#merkle-trees
+#         https://github.com/bitcoinbook/bitcoinbook/blob/second_edition/code/merkle.cpp
 #
 #  to run use:
 #    $ ruby ./merkletree.rb
