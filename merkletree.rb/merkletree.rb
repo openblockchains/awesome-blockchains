@@ -1,8 +1,8 @@
-###############################################
-#  build your own merkletree from scratch
+###############################################################
+#  calc(ulate) your own merkle tree hash from scratch in ruby
 #
 # inspired by building a merkle tree (in c++) in the book
-#    Mastering Bitcoin - Programming the Open Blockchain
+#    Mastering Bitcoin - Programming the Open Blockchain by Andreas M. Antonopoulos
 #     see https://github.com/bitcoinbook/bitcoinbook/blob/second_edition/ch09.asciidoc#merkle-trees
 #
 #  to run use:
