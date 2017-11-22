@@ -34,14 +34,21 @@ web: [bitcoincashplus.org](http://bitcoincashplus.org),
 twitter: [bitcoincashplus](https://twitter.com/bitcoincashplus)
 
 
-## Bitcoin Gold
+## Bitcoin Gold (BTG)
+
+web: [bitcoingold.org](https://bitcoingold.org),
+github: [BTCGPU](https://github.com/BTCGPU),
+twitter: [bitcoingold](https://twitter.com/bitcoingold)
 
 
+## Bitcoin Silver (BTCS)
 
-## Bitcoin Silver
+web: [bitcoinsilver.org](http://bitcoinsilver.org)
 
-## Super Bitcoin
 
+## Super (Smart) Bitcoin (SBTC)
+
+web: [supersmartbitcoin.com](http://supersmartbitcoin.com)
 
 
 
