@@ -1,18 +1,42 @@
 
 # Awesome Bitcoin Blockchains
 
-_Fork! Fork! Free Money for Existing Holders!_
+_Fork! Fork! Get Rich Starting Your Own Magical Internet Money Blockchain! Free Money for Existing Holders!_
+
+<!--
+    todo:  add starting date / block of fork
+           add pre-mining (how long in days/weeks or blocks)
+           add what's different? new blocksize, new hash-algorithm, etc.
+  -->
 
 
-## Bitcoin Original
+## Bitcoin Original "Classic Gold" (BTC)
+
+web: [bitcoin.org](https://bitcoin.org),
+github: [bitcoin](https://github.com/bitcoin)
+
 
 ## Bitcoin Unlimited
 
-## Bitcoin Cash
+web: [bitcoinunlimited.info](https://bitcoinunlimited.info),
+github: [BitcoinUnlimited](https://github.com/BitcoinUnlimited)
+
+
+## Bitcoin Cash (BCH)
+
+web: [bitcoincash.org](https://bitcoincash.org),
+wikipedia: [Bitcoin_Cash](https://en.wikipedia.org/wiki/Bitcoin_Cash)
+
 
 ## Bitcoin Cash Plus
 
+web: [bitcoincashplus.org](http://bitcoincashplus.org),
+twitter: [bitcoincashplus](https://twitter.com/bitcoincashplus)
+
+
 ## Bitcoin Gold
+
+
 
 ## Bitcoin Silver
 
