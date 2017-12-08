@@ -665,7 +665,7 @@ A3: Git Commands_
 
 [**world.db**](https://github.com/openmundi) - open public domain world (country) datasets
 
-[**beer.db**](https://github.com/openmundi) - open public domain beer & brewery datasets
+[**beer.db**](https://github.com/openbeer) - open public domain beer & brewery datasets
 
 > Add a beer transaction to the #blockchain on #git and win a free Wiener Lager beer! Cheers. Prost.
 > -- [Gerald Bauer @ Vienna.html](https://twitter.com/viennahtml/status/907240018435088384)
