@@ -761,8 +761,6 @@ Latest (and Greatest) Investment Opportunity!
 > -- [Anshul Dhawan](https://twitter.com/TheAnshulDhawan/status/938551642202324993)
 
 
-![](i/cryptokitty46.png)
-
 
 ## Events, Meetups, Orgs
 
