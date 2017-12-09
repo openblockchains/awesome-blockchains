@@ -165,6 +165,12 @@ by Daniel van Flymen, September 2017, [(Source)](https://github.com/dvf/blockcha
 [**Node.js Blockchain Imlementation: BrewChain: Chain+WebSockets+HTTP Server**](http://www.darrenbeck.co.uk/blockchain/nodejs/nodejscrypto/) by Darren Beck, November 2017, [(Source)](https://github.com/dbbddb/BrewChain) -- Protecting the tea making ledger from unscrupulous colleagues
 
 
+### Talk Notes
+
+- [**Blockchain! Blockchain! Blockchain! - Build Your Own Blockchains in JavaScript from Zero (Scratch)**](https://github.com/geraldb/talks/blob/master/blockchain.md), Vienna.js, September 2017 
+- [**Blockchain! Blockchain! Blockchain! - Build Your Own Blockchains in Ruby from Zero (Scratch)**](https://github.com/geraldb/talks/blob/master/blockchain_ruby.md), Vienna.rb, Dezember 2017
+
+
 
 ### Samples
 
@@ -629,6 +635,10 @@ _Everything is local. Distributed is the new centralized._
 > The #Blockchain has changed the world. Here I make the argument that the #Blockchain is just like #git.
 > -- [Jackson Kelley](https://twitter.com/sjkelleyjr/status/901464041163341824)
 
+> `git merge [-m REF] [-g BLOB] --push`
+>  Merge and push all signed commits to the blockchain.
+> -- [Git Commands](https://twitter.com/git_commands/status/935574015015612416)
+
 
 ### Books
 
@@ -718,6 +728,40 @@ Goddess of Whores ++
 At the Court of the Tulip King ++
 Late Flowering_
 
+
+
+## Breaking News: CryptoKitties (Yes, Cute Little Cartoon Cats) on the Blockchain!
+
+Collectible. Breedable. Adorable.
+
+Collect and breed digital cats. Start meow. Buy! Sell! Hold!
+
+Learn more @ [cryptokitties.co](https://cryptokitties.co)
+
+![](i/cryptokitties.png)
+
+Latest (and Greatest) Investment Opportunity!
+
+> Blockchain has unlocked the magic of digital scarcity, and combining that with the power of
+> making the digital goods persistent gives them a potential value that is only limited by how much
+> prestige a wealthy person might place on ownership of the item.
+>
+> -- [Justin Poirier](https://twitter.com/tokenizedcap/status/938460753589424128)‏
+
+> All I want for Christmas is a CryptoKitty.
+>
+> -- [Kayla Williams](https://twitter.com/kaylaw/status/938590748655550464)
+
+> I got a fever. And the only prescription is more CryptoKitties.
+>
+> -- [Eduardo Salazar](https://twitter.com/ceduardosalazar/status/938558630663634944)
+
+> [My Gen 7 CryptoKitty #104375](https://www.cryptokitties.co/kitty/104375). The Future is Meow.
+>
+> -- [Anshul Dhawan](https://twitter.com/TheAnshulDhawan/status/938551642202324993)
+
+
+![](i/cryptokitty46.png)
 
 
 ## Events, Meetups, Orgs
