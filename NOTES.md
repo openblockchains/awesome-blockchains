@@ -46,22 +46,35 @@ How many (network) nodes?
 
 ## More Build Your Own Blockchain Samples / Projects
 
+### Python
 
-**SharpChain** github: [ZenXChaos/SharpChain](https://github.com/ZenXChaos/SharpChain) -- Lite version of the Blockchain. C# Data integrity.
-
-**NaiveChain** github: [lhartikk/naivechain](https://github.com/lhartikk/naivechain) -- A blockchain implementation in 200 lines of code (in JavaScript).
-
-- https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54
-
+**Dumbcoin** - An educational python implementation of a bitcoin-like blockchain
+- https://github.com/julienr/ipynb_playground/blob/master/bitcoin/dumbcoin/dumbcoin.ipynb
 
 Tiniest Blockchain in Python Article (Alternatives):
 
 - https://gist.github.com/aunyks/8f2c2fd51cc17f342737917e1c2582e2
 - https://gist.github.com/thinkholic/35f3b4bdcd107d0bc088b6681e39e414
 
+
+### Ruby
+
 blockchain.rb Ruby Alternatives:
 
 - https://github.com/MatiasFMolinari/blockchain-ruby/blob/master/blockchain.rb    Less than 10 Lines!
 
+
+### JavaScript
+
+**NaiveChain** github: [lhartikk/naivechain](https://github.com/lhartikk/naivechain) -- A blockchain implementation in 200 lines of code (in JavaScript).
+
+- https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54
+
+
+
+### Uncategorized / More
+
+
+**SharpChain** github: [ZenXChaos/SharpChain](https://github.com/ZenXChaos/SharpChain) -- Lite version of the Blockchain. C# Data integrity.
 
 
