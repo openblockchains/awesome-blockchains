@@ -20,6 +20,9 @@ Digest::SHA256.hexdigest( 'Hello, World! - Hello, World! - Hello, World! - Hello
 #=> "9e513dbdfe60a14f0cac37aeacbe24fa961b428e8ddeb4d6a66006b29425bbd2"
 ```
 
+note: 1 hex digit (0-9a-f) = 4 bits; 2 hex digits = 1 byte = 8 bits;
+always 64 hex digits (0-9a-f) = 32x8 bytes = 256 bits  
+
 
 convert from hex (base 16) to decimal number (base 10)
 
