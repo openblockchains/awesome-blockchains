@@ -166,18 +166,18 @@ by Daniel van Flymen, September 2017, [(Source)](https://github.com/dvf/blockcha
 
 [**Creating Your First Blockchain with Java, Part 1**](https://medium.com/programmers-blockchain/create-simple-blockchain-java-tutorial-from-scratch-6eeed3cb03fa) by Kass, December 2017, [(Source)](https://github.com/CryptoKass/NoobChain-Tutorial-Part-1)
 
-[**blockchain-lite - Build your own blockchains with crypto hashes; revolutionize the world with blockchains, blockchains, blockchains one block at a time!**](https://planetruby.github.io/advent2017/01-blockchain-lite) by Gerald Bauer, Ruby Advent Calendar 2017 @ Day 1, December 2017
+[**blockchain-lite - Build your own blockchains with crypto hashes; revolutionize the world with blockchains, blockchains, blockchains one block at a time!**](https://planetruby.github.io/advent2017/01-blockchain-lite) by Gerald Bauer, Ruby Advent Calendar 2017 / Day 1, December 2017
 
-[**merkletree library - Build Your Own Crypto Hash Trees; Grow Your Own Money on Trees**](https://planetruby.github.io/advent2017/19-merkletree.html) by Gerald Bauer, Ruby Advent Calendar 2017 @ Day 19, December 2017
+[**merkletree library - Build Your Own Crypto Hash Trees; Grow Your Own Money on Trees**](https://planetruby.github.io/advent2017/19-merkletree.html) by Gerald Bauer, Ruby Advent Calendar 2017 / Day 19, December 2017
 
-[**centralbank command line tool (and library) - Print Your Own Money / Cryptocurrency; Run Your Own Federated Central Bank Nodes on the Blockchain Peer-to-Peer over HTTP**](https://planetruby.github.io/advent2017/24-centralbank.html) by Gerald Bauer, Ruby Advent Calendar 2017 @ Day 24, December 2017
+[**centralbank command line tool (and library) - Print Your Own Money / Cryptocurrency; Run Your Own Federated Central Bank Nodes on the Blockchain Peer-to-Peer over HTTP**](https://planetruby.github.io/advent2017/24-centralbank.html) by Gerald Bauer, Ruby Advent Calendar 2017 / Day 24, December 2017
 
 
 
 ### Talk Notes
 
-- [**Blockchain! Blockchain! Blockchain! - Build Your Own Blockchains in JavaScript from Zero (Scratch)**](https://github.com/geraldb/talks/blob/master/blockchain.md), Vienna.js, September 2017 
-- [**Blockchain! Blockchain! Blockchain! - Build Your Own Blockchains in Ruby from Zero (Scratch)**](https://github.com/geraldb/talks/blob/master/blockchain_ruby.md), Vienna.rb, Dezember 2017
+- [**Blockchain! Blockchain! Blockchain! - Build Your Own Blockchains in JavaScript from Zero (Scratch)**](https://github.com/geraldb/talks/blob/master/blockchain.md) by Gerald Bauer, Vienna.js, September 2017 
+- [**Blockchain! Blockchain! Blockchain! - Build Your Own Blockchains in Ruby from Zero (Scratch)**](https://github.com/geraldb/talks/blob/master/blockchain_ruby.md) by Gerald Bauer, Vienna.rb, Dezember 2017
 
 
 
@@ -512,7 +512,8 @@ Blockchain Applications_
 
 
 
-[**Programming Cryptocurrencies and Blockchains in Ruby ( Beta / Rough Draft )**](http://yukimotopress.github.io/blockchains) @ Yuki & Moto Press Bookshelf, by Gerald Bauer et al, 2018 - FREE (Online Source Version) --
+[**Programming Cryptocurrencies and Blockchains in Ruby ( Beta / Rough Draft )**](http://yukimotopress.github.io/blockchains)
+by Gerald Bauer et al, 2018 - FREE (Online Source Version) @ Yuki & Moto Press Bookshelf --
 _Digital $$$ Alchemy - What's a Blockchain? -
 How-To Turn Digital Bits Into $$$ or €€€? •
 Decentralize Payments. Decentralize Transactions. Decentralize Blockchains. •
