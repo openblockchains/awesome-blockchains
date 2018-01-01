@@ -166,6 +166,12 @@ by Daniel van Flymen, September 2017, [(Source)](https://github.com/dvf/blockcha
 
 [**Creating Your First Blockchain with Java, Part 1**](https://medium.com/programmers-blockchain/create-simple-blockchain-java-tutorial-from-scratch-6eeed3cb03fa) by Kass, December 2017, [(Source)](https://github.com/CryptoKass/NoobChain-Tutorial-Part-1)
 
+[**blockchain-lite - Build your own blockchains with crypto hashes; revolutionize the world with blockchains, blockchains, blockchains one block at a time!**](https://planetruby.github.io/advent2017/01-blockchain-lite) by Gerald Bauer, Ruby Advent Calendar 2017 @ Day 1, December 2017
+
+[**merkletree library - Build Your Own Crypto Hash Trees; Grow Your Own Money on Trees**](https://planetruby.github.io/advent2017/19-merkletree.html) by Gerald Bauer, Ruby Advent Calendar 2017 @ Day 19, December 2017
+
+[**centralbank command line tool (and library) - Print Your Own Money / Cryptocurrency; Run Your Own Federated Central Bank Nodes on the Blockchain Peer-to-Peer over HTTP**](https://planetruby.github.io/advent2017/24-centralbank.html) by Gerald Bauer, Ruby Advent Calendar 2017 @ Day 24, December 2017
+
 
 
 ### Talk Notes
@@ -507,13 +513,12 @@ Blockchain Applications_
 
 
 [**Programming Cryptocurrencies and Blockchains in Ruby ( Beta / Rough Draft )**](http://yukimotopress.github.io/blockchains) @ Yuki & Moto Press Bookshelf, by Gerald Bauer et al, 2018 - FREE (Online Source Version) --
-
 _Digital $$$ Alchemy - What's a Blockchain? -
 How-To Turn Digital Bits Into $$$ or €€€? •
 Decentralize Payments. Decentralize Transactions. Decentralize Blockchains. •
-The Proof of the Pudding is ... The Bitcoin (BTC) Blockchain(s)  
+The Proof of the Pudding is ... The Bitcoin (BTC) Blockchain(s)
 ++
-Building Blockchains from Scratch - 
+Building Blockchains from Scratch -
 A Blockchain in Ruby in 20 Lines! A Blockchain is a Data Structure  •
 What about Proof-of-Work? What about Consensus?   •
 Find the Lucky Number - Nonce == Number Used Once
@@ -530,11 +535,11 @@ Transactions
 Merkle Tree -
 Build Your Own Crypto Hash Trees; Grow Your Own Money on Trees  •
 What's a Merkle Tree?   •
-Transactions  
+Transactions
 ++
 Central Bank -
 Run Your Own Federated Central Bank Nodes on the Blockchain Peer-to-Peer over HTTP  •
-Inside Mining - Printing Cryptos, Cryptos, Cryptos on the Blockchain 
+Inside Mining - Printing Cryptos, Cryptos, Cryptos on the Blockchain
 ++
 Awesome Crypto
 ++
@@ -737,6 +742,9 @@ A3: Git Commands_
 
 _A period in the Dutch Golden Age during which contract prices for bulbs of the recently introduced tulip reached extraordinarily high levels and then dramatically collapsed in February 1637._
 
+![](i/tulipmania-ii.png)
+
+
 ### Quotes - Blockchains are the next Internets / Tulips
 
 > People who compare digital tokens to tulips are essentially saying digital tokens are a bubble backed
@@ -821,7 +829,7 @@ More @ [openblockchains/awesome-cryptokitties](https://github.com/openblockchain
 
 _Revolutionize the world one country at a time. Blockchainers of the world, unite!_
 
-- [**Blockchain Austria • Blockkette Österreich**](https://github.com/austriacodes/blockchainaustria) -- distributed centralized page for blockchain meetups & orgs in Austria (Central Europe)
+- [**Blockchain Austria • Blockkette Österreich**](https://github.com/austriacodes/blockchain-austria) -- distributed centralized page for blockchain meetups & orgs in Austria (Central Europe)
 
 
 
