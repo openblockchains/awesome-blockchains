@@ -760,9 +760,6 @@ _A period in the Dutch Golden Age during which contract prices for bulbs of the 
 
 ### Books
 
-![](i/tulipmania.png)
-
-
 **Tulipomania: The Story of the World's Most Coveted Flower & the Extraordinary Passions It Aroused** by Mike Dash, 2001 --
 _A Mania for Tulips ++
 The Valley of Tien Shan ++
@@ -781,6 +778,17 @@ Goddess of Whores ++
 At the Court of the Tulip King ++
 Late Flowering_
 
+**Tulipmania: Money, Honor, and Knowledge in the Dutch Golden Age** by Anne Goldgar, 2007  --
+_Something Strange ++
+Art & Flowers ++
+Bloemisten ++
+Grieving Money ++
+Bad Faith ++
+Cabbage Fever ++ 
+Glossary ++ 
+A Note on Money_
+
+![](i/tulipmania.png)
 
 
 ## Breaking News: CryptoKitties (Yes, Cute Little Cartoon Cats) on the Blockchain!
