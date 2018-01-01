@@ -822,6 +822,19 @@ Latest (and Greatest) Investment Opportunity!
 > -- [Anshul Dhawan](https://twitter.com/TheAnshulDhawan/status/938551642202324993)
 
 
+![](i/cryptokitties-genes01.png)
+
+> - Fabulous Persian Spock Gerbil Gold Cottoncandy - Extremely rare gen 5 swift virgin | 2.9 ETH
+> - Rarity: 0.00264% Gen 5 JAGUAR FABULOUS GOLD DALI!! VIRGIN! 
+> - Rarity: 0.0015% Princess Bubblegum is now for sale! Gen 12 | Brisk | Virgin | Chartreux | Bubblegum | Otaku | Emeraldgreen | Saycheese | Mauveover | Spock - Starts ETH 20/Ends ETH 10 
+> - Gold ducat, Gen 5, Virgin, Swift. Very cheap 
+> - Cheap Gen 1 cute kittie with rare genes! Only 0.125 ETH 
+> - UNIQUE Virgin Peach Googly Gold Mauveover gen:2 cooldown:1 0.87992% RARE
+> - SUPER CHEAP: Gerbil, Ragdoll, Scarlet, Chestnut, Cotton Candy!!! 0.02 ETH (~$14)
+> - I'm giving away a Gen 1 FAST Gold for free...
+>
+> -- [CrypoKittiesMarket](https://www.reddit.com/r/CryptoKittiesMarket)
+
 ### Awesome CryptoKitties (and CryptoCopycats)
 
 ![](i/cryptokitties-modernart-paintings.png)
