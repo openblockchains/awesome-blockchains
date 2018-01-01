@@ -167,6 +167,7 @@ by Daniel van Flymen, September 2017, [(Source)](https://github.com/dvf/blockcha
 [**Creating Your First Blockchain with Java, Part 1**](https://medium.com/programmers-blockchain/create-simple-blockchain-java-tutorial-from-scratch-6eeed3cb03fa) by Kass, December 2017, [(Source)](https://github.com/CryptoKass/NoobChain-Tutorial-Part-1)
 
 
+
 ### Talk Notes
 
 - [**Blockchain! Blockchain! Blockchain! - Build Your Own Blockchains in JavaScript from Zero (Scratch)**](https://github.com/geraldb/talks/blob/master/blockchain.md), Vienna.js, September 2017 
@@ -503,6 +504,43 @@ Mining and Consensus ++
 Bitcoin Security ++
 Blockchain Applications_
 
+
+
+[**Programming Cryptocurrencies and Blockchains in Ruby ( Beta / Rough Draft )**](http://yukimotopress.github.io/blockchains) @ Yuki & Moto Press Bookshelf, by Gerald Bauer et al, 2018 - FREE (Online Source Version) --
+
+_Digital $$$ Alchemy - What's a Blockchain? -
+How-To Turn Digital Bits Into $$$ or €€€? •
+Decentralize Payments. Decentralize Transactions. Decentralize Blockchains. •
+The Proof of the Pudding is ... The Bitcoin (BTC) Blockchain(s)  
+++
+Building Blockchains from Scratch - 
+A Blockchain in Ruby in 20 Lines! A Blockchain is a Data Structure  •
+What about Proof-of-Work? What about Consensus?   •
+Find the Lucky Number - Nonce == Number Used Once
+++
+Adding Transactions -
+The World's Worst Database - Bitcoin Blockchain Mining  •
+Tulips on the Blockchain! Adding Transactions
+++
+Blockchain Lite -
+Basic Blocks  •
+Proof-of-Work Blocks  •
+Transactions
+++
+Merkle Tree -
+Build Your Own Crypto Hash Trees; Grow Your Own Money on Trees  •
+What's a Merkle Tree?   •
+Transactions  
+++
+Central Bank -
+Run Your Own Federated Central Bank Nodes on the Blockchain Peer-to-Peer over HTTP  •
+Inside Mining - Printing Cryptos, Cryptos, Cryptos on the Blockchain 
+++
+Awesome Crypto
+++
+Case Studies - Dutch Gulden  • Shilling  • CryptoKitties (and CryptoCopycats)_
+
+
 [**Blockchain for Dummies, IBM Limited Edition**](https://www.ibm.com/blockchain/what-is-blockchain.html) by Manav Gupta, 2017 - FREE (Digital Download w/ Email) --
 _Grasping Blockchain Fundamentals ++
 Taking a Look at How Blockchain Works ++
@@ -683,12 +721,13 @@ A3: Git Commands_
 [**beer.db**](https://github.com/openbeer) - open public domain beer & brewery datasets
 
 > Add a beer transaction to the #blockchain on #git and win a free Wiener Lager beer! Cheers. Prost.
-> -- [Gerald Bauer @ Vienna.html](https://twitter.com/viennahtml/status/907240018435088384)
+> -- [Gerald Bauer @ Austria Codes](https://twitter.com/austriacodes/status/907240018435088384)
+
 
 
 ### Open Distributed (Hyper) Ledger Books on Git
 
-[**Schilling**](https://github.com/openblockchains/schilling) - Schilling on the Blockchain! - Rock-Solid Alpine Dollar from Austria
+[**Shilling (or Schilling)**](https://github.com/bitshilling/bitshilling) - Shilling on the Blockchain! - Rock-Solid Alpine Dollar from Austria
 
 [**Tulips**](https://github.com/openblockchains/tulips) - Tulips on the Blockchain! - Learn by Example from the Real World (Anno 1637) - Buy! Sell! Hold! Enjoy the Beauty of Admiral of Admirals, Semper Augustus, and More
 
@@ -711,6 +750,9 @@ _A period in the Dutch Golden Age during which contract prices for bulbs of the 
 
 
 ### Books
+
+![](i/tulipmania.png)
+
 
 **Tulipomania: The Story of the World's Most Coveted Flower & the Extraordinary Passions It Aroused** by Mike Dash, 2001 --
 _A Mania for Tulips ++
@@ -758,9 +800,20 @@ Latest (and Greatest) Investment Opportunity!
 >
 > -- [Eduardo Salazar](https://twitter.com/ceduardosalazar/status/938558630663634944)
 
-> [My Gen 7 CryptoKitty #104375](https://www.cryptokitties.co/kitty/104375). The Future is Meow.
+> My Gen 7 CryptoKitty #104375. The Future is Meow.
 >
 > -- [Anshul Dhawan](https://twitter.com/TheAnshulDhawan/status/938551642202324993)
+
+
+### Awesome CryptoKitties (and CryptoCopycats)
+
+![](i/cryptokitties-modernart-paintings.png)
+
+A collection about Awesome CryptoKitties (Yes, Cute Little Cartoon Cats) on the Blockchain! and CryptoCopycats - digital collectibles secured on a distributed public databases w/ crypto hashes. Are CryptoPuppies the new CryptoKitties? Learn by Example from the Real World (Anno 2017) - Buy! Sell! Hodl!
+
+More @ [openblockchains/awesome-cryptokitties](https://github.com/openblockchains/awesome-cryptokitties)
+
+![](i/cryptokitties-modernart-paintings-iii.png)
 
 
 
@@ -768,7 +821,7 @@ Latest (and Greatest) Investment Opportunity!
 
 _Revolutionize the world one country at a time. Blockchainers of the world, unite!_
 
-- [**Blockchain Austria • Blockkette Österreich**](https://blockchainaustria.github.io) -- distributed centralized page for blockchain meetups & orgs in Austria (Central Europe)
+- [**Blockchain Austria • Blockkette Österreich**](https://github.com/austriacodes/blockchainaustria) -- distributed centralized page for blockchain meetups & orgs in Austria (Central Europe)
 
 
 
@@ -780,6 +833,7 @@ _A curated list of awesome lists._
 - [**Awesome Blockchain**](https://github.com/imbaniac/awesome-blockchain) by Tim Reznich et al -- a curated list of blockchain services and exchanges
 - [**Awesome Blockchain**](https://github.com/istinspring/awesome-blockchain) by `istinspring` et al -- a curated list of awesome projects and services based on blockchain technology
 - [**Awesome Coins**](https://github.com/kennethreitz/awesome-coins) by Kenneth Reitz et al -- a guide to cryto-currencies and their algos
+- [**Awesome CryptoKitties (and CryptoCopycats)**](https://github.com/openblockchains/awesome-cryptokitties) by Gerald Bauer et al -- a curated list about the awesome crypto kitties and copycats
 - [**Awesome Git**](https://github.com/dictcp/awesome-git) by Dick Tang et al -- a curated list of amazingly awesome Git tools, resources and shiny things
 - [**Awesome**](https://github.com/sindresorhus/awesome) by Sindre Sorhus et al -- a curated list of awesome lists
 
