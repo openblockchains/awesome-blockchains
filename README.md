@@ -799,8 +799,14 @@ Collect and breed digital cats. Start meow. Buy! Sell! Hold!
 
 Learn more @ [cryptokitties.co](https://cryptokitties.co)
 
-![](i/cryptokitties.png)
 
+![](i/cryptokitties-top10-sales.png)
+
+
+<!-- note: changed pic; was:
+   ![](i/cryptokitties.png)
+  -->
+  
 Latest (and Greatest) Investment Opportunity!
 
 > Blockchain has unlocked the magic of digital scarcity, and combining that with the power of
