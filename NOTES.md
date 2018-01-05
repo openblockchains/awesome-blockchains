@@ -1,6 +1,14 @@
 # Notes
 
 
+## Tulip Mania 
+
+**Notice:** The tulip bubble was about future contracts (which specified cancellation fines) and never about the price of a tulip. Tulips are planted in autumn. They were underground while the mania happened. Often financial derivaties make bubbles and not the market per se.
+
+by [Josua Schmid](https://github.com/schmijos)
+
+
+
 ## How many blocks?
 
 - xx blocks / week, / month, / year
