@@ -5,6 +5,8 @@
 
 [Josua Schmid](https://github.com/schmijos) writes:
 
+Interesting for the context is that blockchain ETFs just started in November 2017.
+
 **Notice:** The tulip bubble was about future contracts (which specified cancellation fines) and never about the price of a tulip. Tulips are planted in autumn. They were underground while the mania happened. Often financial derivaties make bubbles and not the market per se.
 
 
