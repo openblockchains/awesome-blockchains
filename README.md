@@ -744,8 +744,6 @@ A3: Git Commands_
 
 _A period in the Dutch Golden Age during which contract prices for bulbs of the recently introduced tulip reached extraordinarily high levels and then dramatically collapsed in February 1637._
 
-**Notice:** The tulip bubble was about future contracts (which specified cancellation fines) and never about the price of a tulip. Tulips are planted in autumn. They were underground while the mania happened. Often financial derivaties make bubbles and not the market per se.
-
 ![](i/tulipmania-ii.png)
 
 
