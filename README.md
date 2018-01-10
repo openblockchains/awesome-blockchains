@@ -556,6 +556,14 @@ Blockchain in Action: Use Cases ++
 Hyperledger, a Linux Foundation Project ++
 Ten Steps to Your First Blockchain application_
 
+[**Building Ethereum ĐApps**](https://www.manning.com/books/building-ethereum-dapps) by Roberto Infante, 2018 - FREE chapter 1 --
+_Understanding decentralized applications ++
+The Ethereum blockchain ++
+Building smart contracts in Solidity ++
+Deploying smart contracts on the Ethereum blockchain ++
+Developing Ethereum Dapps with Truffle ++
+Best design and security practice_
+
 
 
 
