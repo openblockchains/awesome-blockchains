@@ -7,6 +7,10 @@
 //  - https://medium.com/@mycoralhealth/code-your-own-blockchain-in-less-than-200-lines-of-go-e296282bcffc
 //  - https://medium.com/@mycoralhealth/code-your-own-blockchain-mining-algorithm-in-go-82c6a71aba1f
 //  - and (many) others
+//
+//  to run use:
+//    $ go run blockchain_with_proof_of_work.go
+
 
 
 package main
