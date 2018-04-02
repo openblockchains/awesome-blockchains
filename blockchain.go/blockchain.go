@@ -10,25 +10,25 @@ package main
 
 import (
   "fmt"
-	"crypto/sha256"
-	"encoding/hex"
-	"time"
+  "crypto/sha256"
+  "encoding/hex"
+  "time"
   "strconv"
 )
 
 type Block struct {
-	Time          int64       // seconds since (unix) epoch (1970-01-01)
-	Data          string
-	Prev          string      // use []byte/int256/uint256 ??
-	Hash          string      // use []byteint256/uint256 ??
+  Time          int64       // seconds since (unix) epoch (1970-01-01)
+  Data          string
+  Prev          string      // use []byte/int256/uint256 ??
+  Hash          string      // use []byteint256/uint256 ??
 }
 
 
 func calcHash( data string ) string {
-	h := sha256.New()
-	h.Write( []byte(data) )
-	hashed := h.Sum(nil)
-	return hex.EncodeToString(hashed)
+  h := sha256.New()
+  h.Write( []byte(data) )
+  hashed := h.Sum(nil)
+  return hex.EncodeToString(hashed)
 }
 
 
@@ -36,12 +36,11 @@ func NewBlock(data string, prev string) Block {
   t    := time.Now().Unix()
   hash := calcHash( strconv.FormatInt(t,10) + prev + data )
 
-	return Block { t, data, prev, hash }
+  return Block { t, data, prev, hash }
 }
 
 
 func main() {
-
   b0 := NewBlock( "Hello, Cryptos!", "0000000000000000000000000000000000000000000000000000000000000000" )
   b1 := NewBlock( "Hello, Cryptos! - Hello, Cryptos!", b0.Hash )
 
