@@ -3,7 +3,14 @@
 //
 //  references:
 //  - https://jeiwan.cc/posts/building-blockchain-in-go-part-1/
+//  - https://jeiwan.cc/posts/building-blockchain-in-go-part-2/
+//  - https://medium.com/@mycoralhealth/code-your-own-blockchain-in-less-than-200-lines-of-go-e296282bcffc
+//  - https://medium.com/@mycoralhealth/code-your-own-blockchain-mining-algorithm-in-go-82c6a71aba1f
 //  - and (many) others
+//
+//
+//  to run use:
+//    $ go run blockchain.go
 
 
 package main
@@ -24,17 +31,25 @@ type Block struct {
 }
 
 
+// bin(ary) bytes and integer number to (conversion) string helpers
+func binToStr( bytes []byte ) string {
+  return hex.EncodeToString( bytes )
+}
+
+func intToStr( num int64 ) string {
+  return strconv.FormatInt( num, 10 )
+}
+
+
 func calcHash( data string ) string {
-  h := sha256.New()
-  h.Write( []byte(data) )
-  hashed := h.Sum(nil)
-  return hex.EncodeToString(hashed)
+  hashed := sha256.Sum256( []byte(data) )
+  return binToStr( hashed[:] )   // note: [:] converts [32]byte to []byte
 }
 
 
 func NewBlock(data string, prev string) Block {
   t    := time.Now().Unix()
-  hash := calcHash( strconv.FormatInt(t,10) + prev + data )
+  hash := calcHash( intToStr(t) + prev + data )
 
   return Block { t, data, prev, hash }
 }
