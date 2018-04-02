@@ -50,7 +50,6 @@ func calcHash( data string ) string {
 }
 
 func computeHashWithProofOfWork( data string, difficulty string ) (int64,string) {
-  //var nonce int64 = 0
   nonce := int64( 0 )
   for {
     hash := calcHash( intToStr(nonce) + data )
@@ -73,7 +72,6 @@ func NewBlock( data string, prev string ) Block {
 
 
 func main() {
-
   b0 := NewBlock( "Hello, Cryptos!", "0000000000000000000000000000000000000000000000000000000000000000" )
   b1 := NewBlock( "Hello, Cryptos! - Hello, Cryptos!", b0.Hash )
 
