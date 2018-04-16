@@ -566,6 +566,14 @@ Blockchain in Action: Use Cases ++
 Hyperledger, a Linux Foundation Project ++
 Ten Steps to Your First Blockchain application_
 
+
+[**Get Rich Quick "Business Blockchain" Bible - The Secrets of Free Easy Money**](https://github.com/openblockchains/get-rich-quick-bible) - FREE --
+_Step 1: Sell hot air. How? ++
+Step 2: Pump up your tokens. How? ++
+Step 3: Revolutionize the World. How?_
+
+
+
 [**Building Ethereum ĐApps**](https://www.manning.com/books/building-ethereum-dapps) by Roberto Infante, 2018 - FREE chapter 1 --
 _Understanding decentralized applications ++
 The Ethereum blockchain ++
