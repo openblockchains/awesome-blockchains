@@ -558,6 +558,20 @@ Awesome Crypto
 Case Studies - Dutch Gulden  • Shilling  • CryptoKitties (and CryptoCopycats)_
 
 
+[**Programming Blockchains in Ruby from Scratch Step-by-Step Starting w/ Crypto Hashes... ( Beta / Rough Draft )**](https://github.com/openblockchains/programming-blockchains-step-by-step)
+by Gerald Bauer et al, 2018 - FREE (Online Version) --
+_(Crypto) Hash ++
+(Crypto) Block ++
+(Crypto) Block with Proof-of-Work ++
+Blockchain! Blockchain! Blockchain! ++
+Blockchain Broken? ++
+Timestamping ++
+Mining, Mining, Mining - What's Your Hash Rate? ++
+Bitcoin, Bitcoin, Bitcoin ++
+(Crypto) Block with Transactions (Tx)_
+
+
+
 [**Blockchain for Dummies, IBM Limited Edition**](https://www.ibm.com/blockchain/what-is-blockchain.html) by Manav Gupta, 2017 - FREE (Digital Download w/ Email) --
 _Grasping Blockchain Fundamentals ++
 Taking a Look at How Blockchain Works ++
@@ -594,13 +608,14 @@ Decentralized Apps ++
 Ethereum Standards (EIPs/ERCs)_
 
 
-[**Building Ethereum Đecentralized Apps**](https://www.manning.com/books/building-ethereum-dapps) by Roberto Infante, 2018 - FREE chapter 1 --
+[**Building Decentralized Apps on the Ethereum Blockchain**](https://www.manning.com/books/building-ethereum-dapps) by Roberto Infante, 2018 - FREE chapter 1 --
 _Understanding decentralized applications ++
 The Ethereum blockchain ++
 Building contract services in (JavaScript-like) Solidity ++
-Uploading contract services on the Ethereum blockchain ++
+Running contract services on the Ethereum blockchain ++
 Developing Ethereum Decentralized apps with Truffle ++
 Best design and security practice_
+
 
 
 
