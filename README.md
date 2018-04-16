@@ -567,19 +567,39 @@ Hyperledger, a Linux Foundation Project ++
 Ten Steps to Your First Blockchain application_
 
 
-[**Get Rich Quick "Business Blockchain" Bible - The Secrets of Free Easy Money**](https://github.com/openblockchains/get-rich-quick-bible) - FREE --
+[**Get Rich Quick "Business Blockchain" Bible - The Secrets of Free Easy Money**](https://github.com/openblockchains/get-rich-quick-bible), 2018 - FREE --
 _Step 1: Sell hot air. How? ++
 Step 2: Pump up your tokens. How? ++
 Step 3: Revolutionize the World. How?_
 
 
+[**Mastering Ethereum - Building Contract Services and Decentralized Apps on the Blockchain**](https://github.com/ethereumbook/ethereumbook) - 
+by Andreas M. Antonopoulos, Gavin Wood, 2018 - FREE (Online Source Version) 
+_What is Ethereum ++
+Introduction ++ 
+Ethereum Clients ++
+Ethereum Testnets ++
+Keys and Addresses ++ 
+Wallets	++ 
+Transactions ++
+Contract Services ++
+Tokens ++ 
+Oracles ++ 
+Accounting & Gas ++
+EVM (Ethereum Virtual Machine) ++ 	
+Consensus ++		
+DevP2P (Peer-To-Peer) Protocol ++
+Dev Tools and Frameworks ++
+Decentralized Apps ++ 
+Ethereum Standards (EIPs/ERCs)_
 
-[**Building Ethereum ĐApps**](https://www.manning.com/books/building-ethereum-dapps) by Roberto Infante, 2018 - FREE chapter 1 --
+
+[**Building Ethereum Đecentralized Apps**](https://www.manning.com/books/building-ethereum-dapps) by Roberto Infante, 2018 - FREE chapter 1 --
 _Understanding decentralized applications ++
 The Ethereum blockchain ++
-Building smart contracts in Solidity ++
-Deploying smart contracts on the Ethereum blockchain ++
-Developing Ethereum Dapps with Truffle ++
+Building contract services in (JavaScript-like) Solidity ++
+Uploading contract services on the Ethereum blockchain ++
+Developing Ethereum Decentralized apps with Truffle ++
 Best design and security practice_
 
 
