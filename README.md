@@ -523,6 +523,19 @@ Blockchain Applications_
 
 
 
+[**Programming Blockchains in Ruby from Scratch Step-by-Step Starting w/ Crypto Hashes... ( Beta / Rough Draft )**](https://github.com/openblockchains/programming-blockchains-step-by-step)
+by Gerald Bauer et al, 2018 - FREE (Online Version) --
+_(Crypto) Hash ++
+(Crypto) Block ++
+(Crypto) Block with Proof-of-Work ++
+Blockchain! Blockchain! Blockchain! ++
+Blockchain Broken? ++
+Timestamping ++
+Mining, Mining, Mining - What's Your Hash Rate? ++
+Bitcoin, Bitcoin, Bitcoin ++
+(Crypto) Block with Transactions (Tx)_
+
+
 [**Programming Cryptocurrencies and Blockchains in Ruby ( Beta / Rough Draft )**](http://yukimotopress.github.io/blockchains)
 by Gerald Bauer et al, 2018 - FREE (Online Version) @ Yuki & Moto Press Bookshelf --
 _Digital $$$ Alchemy - What's a Blockchain? -
@@ -556,19 +569,6 @@ Inside Mining - Printing Cryptos, Cryptos, Cryptos on the Blockchain
 Awesome Crypto
 ++
 Case Studies - Dutch Gulden  • Shilling  • CryptoKitties (and CryptoCopycats)_
-
-
-[**Programming Blockchains in Ruby from Scratch Step-by-Step Starting w/ Crypto Hashes... ( Beta / Rough Draft )**](https://github.com/openblockchains/programming-blockchains-step-by-step)
-by Gerald Bauer et al, 2018 - FREE (Online Version) --
-_(Crypto) Hash ++
-(Crypto) Block ++
-(Crypto) Block with Proof-of-Work ++
-Blockchain! Blockchain! Blockchain! ++
-Blockchain Broken? ++
-Timestamping ++
-Mining, Mining, Mining - What's Your Hash Rate? ++
-Bitcoin, Bitcoin, Bitcoin ++
-(Crypto) Block with Transactions (Tx)_
 
 
 
