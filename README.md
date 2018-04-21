@@ -25,6 +25,7 @@ Contents:
 
 - [Frequently Asked Questions (F.A.Q.s) & Answers](#frequently-asked-questions-faqs--answers)
 - [Do-It-Yourself (DIY) - Build Your Own Blockchain](#do-it-yourself-diy---build-your-own-blockchain)
+  - [Python](#python) • [Ruby](#ruby) • [JavaScript](#javascript) • [Java](#java) • [Go](#go)
 - [Blockchain Articles](#blockchain-articles)
 - [Blockchain Books](#blockchain-books)
 - [Blockchain (Lite) Crypto Hash Libraries](#blockchain-lite-crypto-hash-libraries)
@@ -117,17 +118,14 @@ The "classic" Satoshi-blockchain is like a git repo with a single master branch 
 ![](i/fake-dilbert-blockchain.png)
 
 
-### Articles
-
 [Python](#python) •
 [Ruby](#ruby) •
 [JavaScript](#javascript) •
 [Java](#java) •
-[Go](#go) •
+[Go](#go)
 
 
-
-#### Python
+### Python
 
 **Let's Build the Tiniest Blockchain in Python Series** by Gerald Nash
 
@@ -156,7 +154,7 @@ by Daniel van Flymen, September 2017, [(Source)](https://github.com/dvf/blockcha
 by Adil Moujahid, March 2018, [(Source)](https://github.com/adilmoujahid/blockchain-python-tutorial)
 
 
-#### Ruby
+### Ruby
 
 [**How Does Bitcoin Force Consensus Among Byzantine Generals?**](http://www.akitaonrails.com/2017/11/01/how-does-bitcoin-force-consensus-among-byzantine-generals) by Fabio Akita, November 2017
 
@@ -168,7 +166,7 @@ by Adil Moujahid, March 2018, [(Source)](https://github.com/adilmoujahid/blockch
 
 
 
-#### JavaScript
+### JavaScript
 
 [**Writing a Tiny Blockchain in JavaScript**](https://www.savjee.be/2017/07/Writing-tiny-blockchain-in-JavaScript/)
 by Xavier Decuyper, July 2017
@@ -179,13 +177,13 @@ by Xavier Decuyper, July 2017
 
 
 
-#### Java
+### Java
 
 [**Creating Your First Blockchain with Java, Part 1**](https://medium.com/programmers-blockchain/create-simple-blockchain-java-tutorial-from-scratch-6eeed3cb03fa) by Kass, December 2017, [(Source)](https://github.com/CryptoKass/NoobChain-Tutorial-Part-1)
 
 
 
-#### Go
+### Go
 
 **Building Blockchain in Go Series** by Ivan Kuznetsov, [(Source)](https://github.com/Jeiwan/blockchain_go)
 
@@ -214,6 +212,7 @@ Blockchain Series in Go by by Coral Health [(Source)](https://github.com/mycoral
 - [**Blockchain! Blockchain! Blockchain! - Build Your Own Blockchains in JavaScript from Zero (Scratch)**](https://github.com/geraldb/talks/blob/master/blockchain.md) by Gerald Bauer, Vienna.js, September 2017
 - [**Blockchain! Blockchain! Blockchain! - Build Your Own Blockchains in Ruby from Zero (Scratch)**](https://github.com/geraldb/talks/blob/master/blockchain_ruby.md) by Gerald Bauer, Vienna.rb, Dezember 2017
 - [**Blockchain vs (Hyper) Ledger -- Inside (Hyper) Ledger Lite - Add Transactions One Block at a Time and Balance the Accounts (Books)**](https://github.com/geraldb/talks/blob/master/hyperledger.md) by Gerald Bauer, Hyperledger Vienna, March 2018
+- [**Blockchain! Blockchain! Blockchain! - Build Your Own Blockchains in Go from Zero (Scratch)**](https://github.com/geraldb/talks/blob/master/blockchain_go.md) by Gerald Bauer, Vienna.go, April 2018
 
 
 
