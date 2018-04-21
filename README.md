@@ -45,19 +45,16 @@ Example from [`blockchain.rb`](blockchain.rb/blockchain.rb):
 
 ```
 [#<Block:0x1eed2a0
-  @index         = 0,
   @timestamp     = 1637-09-15 20:52:38,
   @data          = "Genesis",
-  @previous_hash = "0",
+  @previous_hash = "0000000000000000000000000000000000000000000000000000000000000000",
   @hash          = "edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b">,
  #<Block:0x1eec9a0
-  @index         = 1,
   @timestamp     = 1637-09-15 21:02:38,
   @data          = "Transaction Data...",
   @previous_hash = "edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b",
   @hash          = "eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743">,
  #<Block:0x1eec838
-  @index         = 2,
   @timestamp     = 1637-09-15 21:12:38,
   @data          = "Transaction Data......",
   @previous_hash = "eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743",
@@ -77,17 +74,16 @@ from the data. Example from [`blockchain.rb`](blockchain.rb/blockchain.rb):
 ```ruby
 def calc_hash
   sha = Digest::SHA256.new
-  sha.update( @index.to_s + @timestamp.to_s + @data + @previous_hash )
+  sha.update( @timestamp.to_s + @previous_hash + @data )
   sha.hexdigest   ## returns "eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743"
 end
 ```
 
 A blockchain uses
 
-- the block index (e.g. `1`,`2`,`3`,`4`, etc.) and
 - the block timestamp (e.g. `1637-09-15 20:52:38`) and
-- the block data (e.g. `Transaction Data...`) and finally
-- the hash from the previous block (e.g. `edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b`)
+- the hash from the previous block (e.g. `edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b`) and finally
+- the block data (e.g. `Transaction Data...`)
 
 to calculate the new hash digest checksum, that is, the hash
 e.g. `be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4`.
@@ -123,6 +119,15 @@ The "classic" Satoshi-blockchain is like a git repo with a single master branch 
 
 ### Articles
 
+[Python](#python) •
+[Ruby](#ruby) •
+[JavaScript](#javascript) •
+[Java](#java) •
+[Go](#go) •
+
+
+
+#### Python
 
 **Let's Build the Tiniest Blockchain in Python Series** by Gerald Nash
 
@@ -134,8 +139,53 @@ The "classic" Satoshi-blockchain is like a git repo with a single master branch 
 [**Build Your Own Blockchain: A Python Tutorial**](http://ecomunsing.com/build-your-own-blockchain)
 by Eric Munsing, March 2017, [(Source)](https://github.com/emunsing/tutorials/blob/master/BuildYourOwnBlockchain.ipynb)
 
+
+[**Learn Blockchains by Building One (in Python)**](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46)
+by Daniel van Flymen, September 2017, [(Source)](https://github.com/dvf/blockchain) -- The fastest way to learn how Blockchains work is to build one
+
+
+**Build Your Own Blockchain (in Python 3) Series** by Jack Schultz, [(Source)](https://github.com/jackschultz/jbc)
+
+- [**Part 1: Creating, Storing, Syncing, Displaying, Mining, and Proving Work**](https://bigishdata.com/2017/10/17/write-your-own-blockchain-part-1-creating-storing-syncing-displaying-mining-and-proving-work/), October 2017
+- [**Part 2: Syncing Chains From Different Nodes**](https://bigishdata.com/2017/10/27/build-your-own-blockchain-part-2-syncing-chains-from-different-nodes/), October 2017
+- [**Part 3: Writing Nodes that Mine and Talk**](https://bigishdata.com/2017/11/02/build-your-own-blockchain-part-3-writing-nodes-that-mine/), November 2017
+
+<!-- break -->
+
+[**A Practical Introduction to Blockchain with Python**](http://adilmoujahid.com/posts/2018/03/intro-blockchain-bitcoin-python/)
+by Adil Moujahid, March 2018, [(Source)](https://github.com/adilmoujahid/blockchain-python-tutorial)
+
+
+#### Ruby
+
+[**How Does Bitcoin Force Consensus Among Byzantine Generals?**](http://www.akitaonrails.com/2017/11/01/how-does-bitcoin-force-consensus-among-byzantine-generals) by Fabio Akita, November 2017
+
+[**blockchain-lite - Build your own blockchains with crypto hashes; revolutionize the world with blockchains, blockchains, blockchains one block at a time!**](https://planetruby.github.io/calendar/advent2017/01-blockchain-lite) by Gerald Bauer, Ruby Advent Calendar 2017 / Day 1, December 2017
+
+[**merkletree library - Build Your Own Crypto Hash Trees; Grow Your Own Money on Trees**](https://planetruby.github.io/calendar/advent2017/19-merkletree.html) by Gerald Bauer, Ruby Advent Calendar 2017 / Day 19, December 2017
+
+[**centralbank command line tool (and library) - Print Your Own Money / Cryptocurrency; Run Your Own Federated Central Bank Nodes on the Blockchain Peer-to-Peer over HTTP**](https://planetruby.github.io/calendar/advent2017/24-centralbank.html) by Gerald Bauer, Ruby Advent Calendar 2017 / Day 24, December 2017
+
+
+
+#### JavaScript
+
 [**Writing a Tiny Blockchain in JavaScript**](https://www.savjee.be/2017/07/Writing-tiny-blockchain-in-JavaScript/)
 by Xavier Decuyper, July 2017
+
+[**Node.js Blockchain Imlementation: BrewChain: Chain+WebSockets+HTTP Server**](http://www.darrenbeck.co.uk/blockchain/nodejs/nodejscrypto/) by Darren Beck, November 2017, [(Source)](https://github.com/dbbddb/BrewChain) -- Protecting the tea making ledger from unscrupulous colleagues
+
+[**Build your own Blockchain in Javascript/Visualization of Blockchains**](https://github.com/nambrot/blockchain-in-js) by Nam Chu Hoai,  January 2018
+
+
+
+#### Java
+
+[**Creating Your First Blockchain with Java, Part 1**](https://medium.com/programmers-blockchain/create-simple-blockchain-java-tutorial-from-scratch-6eeed3cb03fa) by Kass, December 2017, [(Source)](https://github.com/CryptoKass/NoobChain-Tutorial-Part-1)
+
+
+
+#### Go
 
 **Building Blockchain in Go Series** by Ivan Kuznetsov, [(Source)](https://github.com/Jeiwan/blockchain_go)
 
@@ -149,34 +199,6 @@ by Xavier Decuyper, July 2017
 
 <!-- break -->
 
-**Build Your Own Blockchain (in Python 3) Series** by Jack Schultz, [(Source)](https://github.com/jackschultz/jbc)
-
-- [**Part 1: Creating, Storing, Syncing, Displaying, Mining, and Proving Work**](https://bigishdata.com/2017/10/17/write-your-own-blockchain-part-1-creating-storing-syncing-displaying-mining-and-proving-work/), October 2017
-- [**Part 2: Syncing Chains From Different Nodes**](https://bigishdata.com/2017/10/27/build-your-own-blockchain-part-2-syncing-chains-from-different-nodes/), October 2017
-- [**Part 3: Writing Nodes that Mine and Talk**](https://bigishdata.com/2017/11/02/build-your-own-blockchain-part-3-writing-nodes-that-mine/), November 2017
-
-<!-- break -->
-
-[**Learn Blockchains by Building One (in Python)**](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46)
-by Daniel van Flymen, September 2017, [(Source)](https://github.com/dvf/blockchain) -- The fastest way to learn how Blockchains work is to build one
-
-[**How Does Bitcoin Force Consensus Among Byzantine Generals?**](http://www.akitaonrails.com/2017/11/01/how-does-bitcoin-force-consensus-among-byzantine-generals) by Fabio Akita, November 2017
-
-[**Node.js Blockchain Imlementation: BrewChain: Chain+WebSockets+HTTP Server**](http://www.darrenbeck.co.uk/blockchain/nodejs/nodejscrypto/) by Darren Beck, November 2017, [(Source)](https://github.com/dbbddb/BrewChain) -- Protecting the tea making ledger from unscrupulous colleagues
-
-[**Creating Your First Blockchain with Java, Part 1**](https://medium.com/programmers-blockchain/create-simple-blockchain-java-tutorial-from-scratch-6eeed3cb03fa) by Kass, December 2017, [(Source)](https://github.com/CryptoKass/NoobChain-Tutorial-Part-1)
-
-[**blockchain-lite - Build your own blockchains with crypto hashes; revolutionize the world with blockchains, blockchains, blockchains one block at a time!**](https://planetruby.github.io/calendar/advent2017/01-blockchain-lite) by Gerald Bauer, Ruby Advent Calendar 2017 / Day 1, December 2017
-
-[**merkletree library - Build Your Own Crypto Hash Trees; Grow Your Own Money on Trees**](https://planetruby.github.io/calendar/advent2017/19-merkletree.html) by Gerald Bauer, Ruby Advent Calendar 2017 / Day 19, December 2017
-
-[**centralbank command line tool (and library) - Print Your Own Money / Cryptocurrency; Run Your Own Federated Central Bank Nodes on the Blockchain Peer-to-Peer over HTTP**](https://planetruby.github.io/calendar/advent2017/24-centralbank.html) by Gerald Bauer, Ruby Advent Calendar 2017 / Day 24, December 2017
-
-[**Build your own Blockchain in Javascript/Visualization of Blockchains**](https://github.com/nambrot/blockchain-in-js) by Nam Chu Hoai,  January 2018
-
-[**A Practical Introduction to Blockchain with Python**](http://adilmoujahid.com/posts/2018/03/intro-blockchain-bitcoin-python/)
-by Adil Moujahid, March 2018, [(Source)](https://github.com/adilmoujahid/blockchain-python-tutorial)
-
 Blockchain Series in Go by by Coral Health [(Source)](https://github.com/mycoralhealth/blockchain-tutorial)
 
 - [**Code your own blockchain in less than 200 lines of Go!**](https://medium.com/@mycoralhealth/code-your-own-blockchain-in-less-than-200-lines-of-go-e296282bcffc) by Coral Health, January 2018
@@ -185,11 +207,14 @@ Blockchain Series in Go by by Coral Health [(Source)](https://github.com/mycoral
 
 
 
+
+
 ### Talk Notes
 
-- [**Blockchain! Blockchain! Blockchain! - Build Your Own Blockchains in JavaScript from Zero (Scratch)**](https://github.com/geraldb/talks/blob/master/blockchain.md) by Gerald Bauer, Vienna.js, September 2017 
+- [**Blockchain! Blockchain! Blockchain! - Build Your Own Blockchains in JavaScript from Zero (Scratch)**](https://github.com/geraldb/talks/blob/master/blockchain.md) by Gerald Bauer, Vienna.js, September 2017
 - [**Blockchain! Blockchain! Blockchain! - Build Your Own Blockchains in Ruby from Zero (Scratch)**](https://github.com/geraldb/talks/blob/master/blockchain_ruby.md) by Gerald Bauer, Vienna.rb, Dezember 2017
 - [**Blockchain vs (Hyper) Ledger -- Inside (Hyper) Ledger Lite - Add Transactions One Block at a Time and Balance the Accounts (Books)**](https://github.com/geraldb/talks/blob/master/hyperledger.md) by Gerald Bauer, Hyperledger Vienna, March 2018
+
 
 
 ### Samples
@@ -199,14 +224,12 @@ Blockchain Series in Go by by Coral Health [(Source)](https://github.com/mycoral
 ```ruby
 class Block
 
-  attr_reader :index
   attr_reader :timestamp
   attr_reader :data
   attr_reader :previous_hash
   attr_reader :hash
 
-  def initialize(index, data, previous_hash)
-    @index         = index
+  def initialize(data, previous_hash)
     @timestamp     = Time.now
     @data          = data
     @previous_hash = previous_hash
@@ -214,19 +237,19 @@ class Block
   end
 
   def self.first( data="Genesis" )    # create genesis (big bang! first) block
-    ## uses index zero (0) and arbitrary previous_hash ("0")
-    Block.new( 0, data, "0" )
+    ## note: uses all zero for previous_hash ("0")
+    Block.new( data, "0000000000000000000000000000000000000000000000000000000000000000" )
   end
 
   def self.next( previous, data="Transaction Data..." )
-    Block.new( previous.index+1, data, previous.hash )
+    Block.new( data, previous.hash )
   end
 
 private
 
   def calc_hash
     sha = Digest::SHA256.new
-    sha.update( @index.to_s + @timestamp.to_s + @data + @previous_hash )
+    sha.update( @timestamp.to_s + @previous_hash + @data )
     sha.hexdigest
   end
 
@@ -254,25 +277,21 @@ will pretty print (pp) something like:
 
 ```
 [#<Block:0x1eed2a0
-  @index         = 0,
   @timestamp     = 1637-09-15 20:52:38,
   @data          = "Genesis",
-  @previous_hash = "0",
+  @previous_hash = "0000000000000000000000000000000000000000000000000000000000000000",
   @hash          = "edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b">,
  #<Block:0x1eec9a0
-  @index         = 1,
   @timestamp     = 1637-09-15 21:02:38,
   @data          = "Transaction Data...",
   @previous_hash = "edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b",
   @hash          = "eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743">,
  #<Block:0x1eec838
-  @index         = 2,
   @timestamp     = 1637-09-15 21:12:38,
   @data          = "Transaction Data......",
   @previous_hash = "eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743",
   @hash          = "be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4">,
  #<Block:0x1eec6d0
-  @index         = 3,
   @timestamp     = 1637-09-15 21:22:38,
   @data          = "More Transaction Data...",
   @previous_hash = "be50017ee4bbcb33844b3dc2b7c4e476d46569b5df5762d14ceba9355f0a85f4",
@@ -317,7 +336,7 @@ end
 
 def calc_hash_with_nonce( nonce=0 )
   sha = Digest::SHA256.new
-  sha.update( nonce.to_s + @index.to_s + @timestamp.to_s + @data + @previous_hash )
+  sha.update( nonce.to_s + @timestamp.to_s + @previous_hash + @data )
   sha.hexdigest
 end
 ```
@@ -329,28 +348,24 @@ Now the sample will pretty print (pp) something like:
 
 ```
 [#<Block:0x1e204f0
-  @index         = 0,
   @timestamp     = 1637-09-20 20:13:38,
   @data          = "Genesis",
-  @previous_hash = "0",
+  @previous_hash = "0000000000000000000000000000000000000000000000000000000000000000",
   @nonce         = 242,
   @hash          = "00b8e77e27378f9aa0afbcea3a2882bb62f6663771dee053364beb1887e18bcf">,
  #<Block:0x1e56e20
-  @index         = 1,
   @timestamp     = 1637-09-20 20:23:38,
   @data          = "Transaction Data...",
   @previous_hash = "00b8e77e27378f9aa0afbcea3a2882bb62f6663771dee053364beb1887e18bcf",
   @nonce         = 46,
   @hash          = "00aae8d2e9387e13c71b33f8cd205d336ac250d2828011f5970062912985a9af">,
  #<Block:0x1e2bd58
-  @index         = 2,
   @timestamp     = 1637-09-20 20:33:38,
   @data          = "Transaction Data......",
   @previous_hash = "00aae8d2e9387e13c71b33f8cd205d336ac250d2828011f5970062912985a9af",
   @nonce         = 350,
   @hash          = "00ea45e0f4683c3bec4364f349ee2b6816be0c9fd95cfd5ffcc6ed572c62f190">,
  #<Block:0x1fa8338
-  @index         = 3,
   @timestamp     = 1637-09-20 20:43:38,
   @data          = "More Transaction Data...",
   @previous_hash = "00ea45e0f4683c3bec4364f349ee2b6816be0c9fd95cfd5ffcc6ed572c62f190",
@@ -367,8 +382,7 @@ that makes it happen. That's the magic behind the proof of work.
 ```js
 class Block {
 
-  constructor(index, data, previousHash) {
-    this.index        = index
+  constructor(data, previousHash) {
     this.timestamp    = new Date()
     this.data         = data
     this.previousHash = previousHash
@@ -377,17 +391,17 @@ class Block {
 
   calcHash() {
     var sha = SHA256.create()
-    sha.update( this.index.toString() + this.timestamp.toString() + this.data + this.previousHash )
+    sha.update( this.timestamp.toString() + this.previousHash + this.data )
     return sha.hex()
   }
 
   static first( data="Genesis" ) {    // create genesis (big bang! first) block
-    // uses index zero (0) and arbitrary previousHash ("0")
-    return new Block( 0, data, "0" )
+    // uses all-zero previousHash
+    return new Block( data, "0000000000000000000000000000000000000000000000000000000000000000" )
   }
 
   static next( previous, data="Transaction Data..." ) {
-    return new Block( previous.index+1, data, previous.hash )
+    return new Block( data, previous.hash )
   }
 }
 
@@ -413,30 +427,27 @@ will log something like:
 
 ```
 [ Block {
-     index        : 0,
      timestamp    : 1637-09-18 08:25:54,
      data         : 'Genesis',
-     previousHash : '0',
+     previousHash : '0000000000000000000000000000000000000000000000000000000000000000',
      hash         : 'c396de4c03ddb5275661982adc75ce5fc5905d2a2457d1266c74436c1f3c50f1' },
    Block {
-     index        : 1,
      timestamp    : 1637-09-18 08:35:54,
      data         : 'Transaction Data...',
      previousHash : 'c396de4c03ddb5275661982adc75ce5fc5905d2a2457d1266c74436c1f3c50f1',
      hash         : '493131e09c069645c82795c96e4715cea0f5558be514b5096d853a5b9899154a' },
    Block {
-     index        : 2,
      timestamp    : 1637-09-18 08:45:54,
      data         : 'Transaction Data......',
      previousHash : '493131e09c069645c82795c96e4715cea0f5558be514b5096d853a5b9899154a',
      hash         : '97aa3cb5052615d60ff8e6b41bef606562588c4874f011970ac2f218e2f0f4a8' },
    Block {
-     index        : 3,
      timestamp    : 1637-09-18 08:55:54,
      data         : 'More Transaction Data...',
      previousHash : '97aa3cb5052615d60ff8e6b41bef606562588c4874f011970ac2f218e2f0f4a8',
      hash         : 'e10e020f832e46c2b60e1c3c0412bd370b2fde5f0f782c16eb87d0313ea0d3a3' } ]
 ```
+
 
 
 ## Blockchain Articles
@@ -587,24 +598,24 @@ Step 2: Pump up your tokens. How? ++
 Step 3: Revolutionize the World. How?_
 
 
-[**Mastering Ethereum - Building Contract Services and Decentralized Apps on the Blockchain**](https://github.com/ethereumbook/ethereumbook) - 
-by Andreas M. Antonopoulos, Gavin Wood, 2018 - FREE (Online Source Version) 
+[**Mastering Ethereum - Building Contract Services and Decentralized Apps on the Blockchain**](https://github.com/ethereumbook/ethereumbook) -
+by Andreas M. Antonopoulos, Gavin Wood, 2018 - FREE (Online Source Version)
 _What is Ethereum ++
-Introduction ++ 
+Introduction ++
 Ethereum Clients ++
 Ethereum Testnets ++
-Keys and Addresses ++ 
-Wallets	++ 
+Keys and Addresses ++
+Wallets	++
 Transactions ++
 Contract Services ++
-Tokens ++ 
-Oracles ++ 
+Tokens ++
+Oracles ++
 Accounting & Gas ++
 EVM (Ethereum Virtual Machine) ++ 	
 Consensus ++		
 DevP2P (Peer-To-Peer) Protocol ++
 Dev Tools and Frameworks ++
-Decentralized Apps ++ 
+Decentralized Apps ++
 Ethereum Standards (EIPs/ERCs)_
 
 
@@ -650,13 +661,11 @@ will pretty print (pp) something like:
 
 ```
 [#<Block:0x1eed2a0
-  @index         = 0,
   @timestamp     = 1637-09-15 20:52:38,
   @data          = "Genesis",
-  @previous_hash = "0",
+  @previous_hash = "0000000000000000000000000000000000000000000000000000000000000000",
   @hash          = "edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b">,
  #<Block:0x1eec9a0
-  @index         = 1,
   @timestamp     = 1637-09-15 21:02:38,
   @data          = "Transaction Data...",
   @hash          = "eb8ecbf6d5870763ae246e37539d82e37052cb32f88bb8c59971f9978e437743",
@@ -692,29 +701,25 @@ will log something like:
 
 ```
 [ Block {
-    index: 0,
-    timestamp: 2017-09-25 17:03:38,
-    data: 'Genesis',
-    previousHash: '0',
-    hash: '08f4fa71628c5bc6b430228738bc8c41afaf508ece0b1cf9c9cac53d02e11829' },
+    timestamp:     2017-09-25 17:03:38,
+    data:         'Genesis',
+    previousHash: '0000000000000000000000000000000000000000000000000000000000000000',
+    hash:         '08f4fa71628c5bc6b430228738bc8c41afaf508ece0b1cf9c9cac53d02e11829' },
   Block {
-    index: 1,
-    timestamp: 2017-09-25 17:13:38,
-    data: 'Transaction Data...',
+    timestamp:     2017-09-25 17:13:38,
+    data:         'Transaction Data...',
     previousHash: '08f4fa71628c5bc6b430228738bc8c41afaf508ece0b1cf9c9cac53d02e11829',
-    hash: '740a4aeb3441484c96d1e7f63d31b716220ccee3b6fe94547cae2afbb6010626' },
+    hash:         '740a4aeb3441484c96d1e7f63d31b716220ccee3b6fe94547cae2afbb6010626' },
   Block {
-    index: 2,
-    timestamp: 2017-09-25 17:23:38,
-    data: 'Transaction Data......',
+    timestamp:     2017-09-25 17:23:38,
+    data:         'Transaction Data......',
     previousHash: '740a4aeb3441484c96d1e7f63d31b716220ccee3b6fe94547cae2afbb6010626',
-    hash: '28b6892a069e2ff7f1c3128ab495d7cd9b9b1636a51a7f69db93a14b1ee6b1a7' },
+    hash:         '28b6892a069e2ff7f1c3128ab495d7cd9b9b1636a51a7f69db93a14b1ee6b1a7' },
   Block {
-    index: 3,
-    timestamp: 2017-09-25 17:33:38,
-    data: 'More Transaction Data...',
+    timestamp:     2017-09-25 17:33:38,
+    data:         'More Transaction Data...',
     previousHash: '28b6892a069e2ff7f1c3128ab495d7cd9b9b1636a51a7f69db93a14b1ee6b1a7',
-    hash: '4cc0329b2c0cb32e0451fa3179bd944d4cd0fcf410939172f979e9fd2aa9f5f3' } ]
+    hash:         '4cc0329b2c0cb32e0451fa3179bd944d4cd0fcf410939172f979e9fd2aa9f5f3' } ]
 ```
 
 
@@ -846,8 +851,8 @@ Art & Flowers ++
 Bloemisten ++
 Grieving Money ++
 Bad Faith ++
-Cabbage Fever ++ 
-Glossary ++ 
+Cabbage Fever ++
+Glossary ++
 A Note on Money_
 
 ![](i/tulipmania.png)
@@ -868,7 +873,7 @@ Learn more @ [cryptokitties.co](https://cryptokitties.co)
 <!-- note: changed pic; was:
    ![](i/cryptokitties.png)
   -->
-  
+
 Latest (and Greatest) Investment Opportunity!
 
 > Blockchain has unlocked the magic of digital scarcity, and combining that with the power of
@@ -893,10 +898,10 @@ Latest (and Greatest) Investment Opportunity!
 ![](i/cryptokitties-genes01.png)
 
 > - Fabulous Persian Spock Gerbil Gold Cottoncandy - Extremely rare gen 5 swift virgin | 2.9 ETH
-> - Rarity: 0.00264% Gen 5 JAGUAR FABULOUS GOLD DALI!! VIRGIN! 
-> - Rarity: 0.0015% Princess Bubblegum is now for sale! Gen 12 | Brisk | Virgin | Chartreux | Bubblegum | Otaku | Emeraldgreen | Saycheese | Mauveover | Spock - Starts ETH 20/Ends ETH 10 
-> - Gold ducat, Gen 5, Virgin, Swift. Very cheap 
-> - Cheap Gen 1 cute kittie with rare genes! Only 0.125 ETH 
+> - Rarity: 0.00264% Gen 5 JAGUAR FABULOUS GOLD DALI!! VIRGIN!
+> - Rarity: 0.0015% Princess Bubblegum is now for sale! Gen 12 | Brisk | Virgin | Chartreux | Bubblegum | Otaku | Emeraldgreen | Saycheese | Mauveover | Spock - Starts ETH 20/Ends ETH 10
+> - Gold ducat, Gen 5, Virgin, Swift. Very cheap
+> - Cheap Gen 1 cute kittie with rare genes! Only 0.125 ETH
 > - UNIQUE Virgin Peach Googly Gold Mauveover gen:2 cooldown:1 0.87992% RARE
 > - SUPER CHEAP: Gerbil, Ragdoll, Scarlet, Chestnut, Cotton Candy!!! 0.02 ETH (~$14)
 > - I'm giving away a Gen 1 FAST Gold for free...
