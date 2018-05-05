@@ -63,6 +63,8 @@ Example from [`blockchain.rb`](blockchain.rb/blockchain.rb):
   ...
 ```
 
+![](i/blockchain-jesus.png)
+
 
 **Q: What's a Hash? What's a (One-Way) Crypto(graphic) Hash Digest Checksum**?
 
