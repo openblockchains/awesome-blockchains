@@ -219,7 +219,8 @@ Blockchain Series in Go by by Coral Health [(Source)](https://github.com/mycoral
 
 ### More
 
-See [Build your own Blockchain / Cryptocurrency](https://github.com/danistefanovic/build-your-own-x#build-your-own-blockchain--cryptocurrency) @ Build your own [X] 
+See [**Build your own Blockchain / Cryptocurrency**](https://github.com/danistefanovic/build-your-own-x#build-your-own-blockchain--cryptocurrency) @ Build your own (insert technology here)
+
 
 
 
@@ -604,10 +605,6 @@ _Step 1: Sell hot air. How? ++
 Step 2: Pump up your tokens. How? ++
 Step 3: Revolutionize the World. How?_
 
-[**Best of Bitcoin Maximalist - Scammers, Morons, Clowns, Shills & BagHODLers - Inside The New New Crypto Ponzi Economics (Book Edition) **](https://github.com/bitsblocks/bitcoin-maximalist), 2018 - FREE 
-
-[**Crypto Facts - Decentralize Payments - Efficient, Low Cost, Fair, Clean - True or False?**](https://github.com/bitsblocks/crypto-facts), 2018 - FREE 
-
 
 [**Mastering Ethereum - Building Contract Services and Decentralized Apps on the Blockchain**](https://github.com/ethereumbook/ethereumbook) -
 by Andreas M. Antonopoulos, Gavin Wood, 2018 - FREE (Online Source Version)
@@ -639,7 +636,12 @@ Developing Ethereum Decentralized apps with Truffle ++
 Best design and security practice_
 
 
-[**IslandCoin White Paper - A Pen and Paper Cash System - How to Run a Blockchain on a Deserted Island (Book Edition)**](https://github.com/bitsblocks/islandcoin-whitepaper)
+
+[**Best of Bitcoin Maximalist - Scammers, Morons, Clowns, Shills & BagHODLers - Inside The New New Crypto Ponzi Economics**](https://github.com/bitsblocks/bitcoin-maximalist), 2018 - FREE 
+
+[**Crypto Facts - Decentralize Payments - Efficient, Low Cost, Fair, Clean - True or False?**](https://github.com/bitsblocks/crypto-facts), 2018 - FREE 
+
+[**IslandCoin White Paper - A Pen and Paper Cash System - How to Run a Blockchain on a Deserted Island**](https://github.com/bitsblocks/islandcoin-whitepaper)
 by Tal Kol -- 
 _Motivation ++
 Consensus ++
