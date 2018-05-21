@@ -217,6 +217,11 @@ Blockchain Series in Go by by Coral Health [(Source)](https://github.com/mycoral
 - [**Blockchain! Blockchain! Blockchain! - Build Your Own Blockchains in Go from Zero (Scratch)**](https://github.com/geraldb/talks/blob/master/blockchain_go.md) by Gerald Bauer, Vienna.go, April 2018
 
 
+### More
+
+See [Build your own Blockchain / Cryptocurrency](https://github.com/danistefanovic/build-your-own-x#build-your-own-blockchain--cryptocurrency) @ Build your own [X] 
+
+
 
 ### Samples
 
@@ -502,6 +507,7 @@ Smart contracts: Like SQL expressions & triggers ++
 What can we really do with blockchains?_
 
 
+
 ## Blockchain Books
 
 [**Attack of the 50 Foot Blockchain: Bitcoin, Blockchain, Ethereum & Smart Contracts**](https://davidgerard.co.uk/blockchain/table-of-contents/) by David Gerard, London, 2017 --
@@ -535,7 +541,7 @@ Blockchain Applications_
 
 
 
-[**Programming Blockchains in Ruby from Scratch Step-by-Step Starting w/ Crypto Hashes... ( Beta / Rough Draft )**](https://github.com/openblockchains/programming-blockchains-step-by-step)
+[**Programming Blockchains in Ruby from Scratch Step-by-Step Starting w/ Crypto Hashes... ( Beta / Rough Draft )**](https://github.com/yukimotopress/programming-blockchains-step-by-step)
 by Gerald Bauer et al, 2018 - FREE (Online Version) --
 _(Crypto) Hash ++
 (Crypto) Block ++
@@ -593,10 +599,14 @@ Hyperledger, a Linux Foundation Project ++
 Ten Steps to Your First Blockchain application_
 
 
-[**Get Rich Quick "Business Blockchain" Bible - The Secrets of Free Easy Money**](https://github.com/openblockchains/get-rich-quick-bible), 2018 - FREE --
+[**Get Rich Quick "Business Blockchain" Bible - The Secrets of Free Easy Money**](https://github.com/bitsblocks/get-rich-quick-bible), 2018 - FREE --
 _Step 1: Sell hot air. How? ++
 Step 2: Pump up your tokens. How? ++
 Step 3: Revolutionize the World. How?_
+
+[**Best of Bitcoin Maximalist - Scammers, Morons, Clowns, Shills & BagHODLers - Inside The New New Crypto Ponzi Economics (Book Edition) **](https://github.com/bitsblocks/bitcoin-maximalist), 2018 - FREE 
+
+[**Crypto Facts - Decentralize Payments - Efficient, Low Cost, Fair, Clean - True or False?**](https://github.com/bitsblocks/crypto-facts), 2018 - FREE 
 
 
 [**Mastering Ethereum - Building Contract Services and Decentralized Apps on the Blockchain**](https://github.com/ethereumbook/ethereumbook) -
@@ -628,6 +638,16 @@ Running contract services on the Ethereum blockchain ++
 Developing Ethereum Decentralized apps with Truffle ++
 Best design and security practice_
 
+
+[**IslandCoin White Paper - A Pen and Paper Cash System - How to Run a Blockchain on a Deserted Island (Book Edition)**](https://github.com/bitsblocks/islandcoin-whitepaper)
+by Tal Kol -- 
+_Motivation ++
+Consensus ++
+Transaction and Block Specification -
+Transaction format •
+Block format •
+Genesis block ++
+References_
 
 
 
