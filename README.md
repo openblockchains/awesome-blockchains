@@ -196,6 +196,7 @@ by Xavier Decuyper, July 2017
 - [**Part 5: Addresses**](https://jeiwan.cc/posts/building-blockchain-in-go-part-5/), September 2017
 - [**Part 6: Transactions 2**](https://jeiwan.cc/posts/building-blockchain-in-go-part-6/), September 2017
 - [**Part 7: Network**](https://jeiwan.cc/posts/building-blockchain-in-go-part-7/), October 2017
+-  [**Part 8：Chinese video course for blockchain in Go**](https://www.youtube.com/channel/UCRxmNhjCYQkGVbKSumcK5Wg/videos?view_as=subscriber) ,June 2018
 
 <!-- break -->
 
@@ -974,3 +975,5 @@ _A curated list of awesome lists._
 ![](https://publicdomainworks.github.io/buttons/zero88x31.png)
 
 The awesome list is dedicated to the public domain. Use it as you please with no restrictions whatsoever.
+
+
