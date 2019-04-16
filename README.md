@@ -526,9 +526,6 @@ Business bafflegab, but on the Blockchain ++
 Case study: Why you can’t put the music industry on a blockchain_
 
 
-![](i/trolly-ponzi.png)
-
-
 [**Mastering Bitcoin - Programming the Open Blockchain**](https://github.com/bitcoinbook/bitcoinbook/blob/second_edition/ch09.asciidoc) 2nd Edition,
 by Andreas M. Antonopoulos, 2017 - FREE (Online Source Version) --
 _What Is Bitcoin? ++
@@ -544,6 +541,9 @@ Mining and Consensus ++
 Bitcoin Security ++
 Blockchain Applications_
 
+---
+
+![](i/trolly-ponzi.png)
 
 **BEWARE: Bitcoin is a gigantic ponzi scheme¹.
 To the moon!? The new gold standard!? 
@@ -562,6 +562,7 @@ without loops and jumps (gotos) and all "stateless"!? LOL.**
 (that's the energy efficiency in Germany) that's 
 about 179 kilograms of CO₂ per bitcoin transaction (300 kW/h × 0.596 kg). For more insights see the [Bitcoin Energy Consumption Index](https://digiconomist.net/bitcoin-energy-consumption).
 
+---
 
 
 [**Programming Bitcoin from Scratch**](https://github.com/jimmysong/programmingbitcoin) by Jimmy Song, 2019 - FREE (Online Source Version) -- _[Chapter 6 - Script](https://github.com/jimmysong/programmingbitcoin/blob/master/ch06.asciidoc) - How Script Works • Example Operations • Parsing the Script Fields • Combining the Script Fields • Standard Scripts • p2pk • Problems with p2pk • Solving the Problems with p2pkh • Scripts Can Be Arbitrarily Constructed • Conclusion ++_
