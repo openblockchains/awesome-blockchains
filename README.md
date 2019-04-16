@@ -525,6 +525,27 @@ Smart contracts, stupid humans ++
 Business bafflegab, but on the Blockchain ++
 Case study: Why you can’t put the music industry on a blockchain_
 
+
+**BEWARE: Bitcoin is a gigantic ponzi scheme¹.
+To the moon!? The new gold standard!? 
+Do NOT "invest" trying to get-rich-quick HODLing. 
+Why not? The bitcoin code is archaic and out-of-date.
+Burn, baby, burn! Proof-of-work / waste is a global
+energy environmental disaster
+using 300 kW/h per bitcoin transaction (!) that's about 179 kilograms of CO₂ emissions².
+Programmable money (or the internet of value) 
+for all future generations with (bitcoin) script
+without loops and jumps (gotos) and all "stateless"!? LOL.**
+
+¹:  ![](i/trolly-ponzi.png)
+
+(Source: [Best of Bitcoin Maximalist - Scammers, Morons, Clowns, Shills & BagHODLers - Inside The New New Crypto Ponzi Economics](https://bitsblocks.github.io/bitcoin-maximalist))
+
+²: Assuming let's say 0.596 kilograms of CO₂ per kW/h 
+(that's the energy efficiency in Germany) that's 
+about 179 kilograms of CO₂ per bitcoin transaction (300 kW/h × 0.596 kg). For more insights see the [Bitcoin Energy Consumption Index](https://digiconomist.net/bitcoin-energy-consumption).
+
+
 [**Mastering Bitcoin - Programming the Open Blockchain**](https://github.com/bitcoinbook/bitcoinbook/blob/second_edition/ch09.asciidoc) 2nd Edition,
 by Andreas M. Antonopoulos, 2017 - FREE (Online Source Version) --
 _What Is Bitcoin? ++
@@ -540,6 +561,15 @@ Mining and Consensus ++
 Bitcoin Security ++
 Blockchain Applications_
 
+- [**Programming Bitcoin from Scratch**](https://github.com/jimmysong/programmingbitcoin) by Jimmy Song, 2019 - FREE (Online Source Version)
+  - [Chapter 6 - Script](https://github.com/jimmysong/programmingbitcoin/blob/master/ch06.asciidoc) - How Script Works • Example Operations • Parsing the Script Fields • Combining the Script Fields • Standard Scripts • p2pk • Problems with p2pk • Solving the Problems with p2pkh • Scripts Can Be Arbitrarily Constructed • Conclusion
+  - [Chapter 8 - Pay-to-Script Hash](https://github.com/jimmysong/programmingbitcoin/blob/master/ch08.asciidoc) - Bare Multisig • Coding OP_CHECKMULTISIG • Problems with Bare Multisig • Pay-to-Script-Hash (p2sh) • Coding p2sh • Conclusion
+  - [Chapter 13 - Segregated Witness](https://github.com/jimmysong/programmingbitcoin/blob/master/ch13.asciidoc) - Pay-to-Witness-Pubkey-Hash (p2wpkh) • p2wpkh Transactions • p2sh-p2wpkh • Coding p2wpkh and p2sh-p2wpkh • Pay-to-Witness-Script-Hash (p2wsh) • p2sh-p2wsh • Coding p2wsh and p2sh-p2wsh • Other Improvements • Conclusion
+  
+
+[**Programming Bitcoin Script Transaction (Crypto) Contracts Step-by-Step ( Beta / Rough Draft )**](https://github.com/openblockchains/programming-bitcoin-script)
+by Gerald Bauer et al, 2019 - FREE (Online Version) --
+Let's start with building your own bitcoin stack machine from zero / scratch and let's run your own bitcoin ops (operations)...
 
 
 [**Programming Blockchains in Ruby from Scratch Step-by-Step Starting w/ Crypto Hashes... ( Beta / Rough Draft )**](https://github.com/yukimotopress/programming-blockchains-step-by-step)
@@ -553,6 +583,38 @@ Timestamping ++
 Mining, Mining, Mining - What's Your Hash Rate? ++
 Bitcoin, Bitcoin, Bitcoin ++
 (Crypto) Block with Transactions (Tx)_
+
+[**Mastering Ethereum - Building Contract Services and Decentralized Apps on the Blockchain**](https://github.com/ethereumbook/ethereumbook) -
+by Andreas M. Antonopoulos, Gavin Wood, 2018 - FREE (Online Source Version)
+_What is Ethereum ++
+Introduction ++
+Ethereum Clients ++
+Ethereum Testnets ++
+Keys and Addresses ++
+Wallets	++
+Transactions ++
+Contract Services ++
+Tokens ++
+Oracles ++
+Accounting & Gas ++
+EVM (Ethereum Virtual Machine) ++ 	
+Consensus ++		
+DevP2P (Peer-To-Peer) Protocol ++
+Dev Tools and Frameworks ++
+Decentralized Apps ++
+Ethereum Standards (EIPs/ERCs)_
+
+
+[**Building Decentralized Apps on the Ethereum Blockchain**](https://www.manning.com/books/building-ethereum-dapps) by Roberto Infante, 2018 - FREE chapter 1 --
+_Understanding decentralized applications ++
+The Ethereum blockchain ++
+Building contract services in (JavaScript-like) Solidity ++
+Running contract services on the Ethereum blockchain ++
+Developing Ethereum Decentralized apps with Truffle ++
+Best design and security practice_
+
+[**Programming Crypto Blockchain Contracts Step-by-Step Book / Guide ( Beta / Rough Draft )**](https://github.com/openblockchains/programming-cryptocontracts) by Gerald Bauer et al, 2019 - FREE (Online Version) --
+Let's Start with Ponzi & Pyramid Schemes. Run Your Own Lotteries, Gambling Casinos and more on the Blockchain World Computer...
 
 
 [**Programming Cryptocurrencies and Blockchains in Ruby ( Beta / Rough Draft )**](http://yukimotopress.github.io/blockchains)
@@ -604,37 +666,6 @@ Ten Steps to Your First Blockchain application_
 _Step 1: Sell hot air. How? ++
 Step 2: Pump up your tokens. How? ++
 Step 3: Revolutionize the World. How?_
-
-
-[**Mastering Ethereum - Building Contract Services and Decentralized Apps on the Blockchain**](https://github.com/ethereumbook/ethereumbook) -
-by Andreas M. Antonopoulos, Gavin Wood, 2018 - FREE (Online Source Version)
-_What is Ethereum ++
-Introduction ++
-Ethereum Clients ++
-Ethereum Testnets ++
-Keys and Addresses ++
-Wallets	++
-Transactions ++
-Contract Services ++
-Tokens ++
-Oracles ++
-Accounting & Gas ++
-EVM (Ethereum Virtual Machine) ++ 	
-Consensus ++		
-DevP2P (Peer-To-Peer) Protocol ++
-Dev Tools and Frameworks ++
-Decentralized Apps ++
-Ethereum Standards (EIPs/ERCs)_
-
-
-[**Building Decentralized Apps on the Ethereum Blockchain**](https://www.manning.com/books/building-ethereum-dapps) by Roberto Infante, 2018 - FREE chapter 1 --
-_Understanding decentralized applications ++
-The Ethereum blockchain ++
-Building contract services in (JavaScript-like) Solidity ++
-Running contract services on the Ethereum blockchain ++
-Developing Ethereum Decentralized apps with Truffle ++
-Best design and security practice_
-
 
 
 [**Best of Bitcoin Maximalist - Scammers, Morons, Clowns, Shills & BagHODLers - Inside The New New Crypto Ponzi Economics**](https://github.com/bitsblocks/bitcoin-maximalist), 2018 - FREE 
