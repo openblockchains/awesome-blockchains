@@ -317,9 +317,9 @@ Comments from the [reddit ruby posting](https://www.reddit.com/r/ruby/comments/7
 
 
 
-**What about Proof of Work?**
+**What about Proof of Work / Waste?**
 
-Let's add a proof of work to the blockchain. In the classic blockchain you have to compute a block hash that starts with leading zeros (`00`). The more leading zeros the harder (more difficult) to compute. Let's keep it easy to compute with two leading zeros (`00`), that is, 16^2 = 256 possibilites (^1,2). Three leading zeros (`000`) would be 16^3 = 4_096 possibilites and four zeros (`0000`) would be 16^4 = 65_536 and so on.
+Let's add a proof of work / waste to the blockchain. In the classic blockchain you have to compute a block hash that starts with leading zeros (`00`). The more leading zeros the harder (more difficult) to compute. Let's keep it easy to compute with two leading zeros (`00`), that is, 16^2 = 256 possibilites (^1,2). Three leading zeros (`000`) would be 16^3 = 4_096 possibilites and four zeros (`0000`) would be 16^4 = 65_536 and so on.
 
 (^1): 16 possibilties because it's a hex or hexadecimal or base 16 number, that is, `0` `1` `2` `3` `4` `6` `7` `8` `9` `a` (10) `b` (11) `c` (12) `d` (13) `e` (14) `f` (15).
 
@@ -526,24 +526,7 @@ Business bafflegab, but on the Blockchain ++
 Case study: Why you can’t put the music industry on a blockchain_
 
 
-**BEWARE: Bitcoin is a gigantic ponzi scheme¹.
-To the moon!? The new gold standard!? 
-Do NOT "invest" trying to get-rich-quick HODLing. 
-Why not? The bitcoin code is archaic and out-of-date.
-Burn, baby, burn! Proof-of-work / waste is a global
-energy environmental disaster
-using 300 kW/h per bitcoin transaction (!) that's about 179 kilograms of CO₂ emissions².
-Programmable money (or the internet of value) 
-for all future generations with (bitcoin) script
-without loops and jumps (gotos) and all "stateless"!? LOL.**
-
-¹:  ![](i/trolly-ponzi.png)
-
-(Source: [Best of Bitcoin Maximalist - Scammers, Morons, Clowns, Shills & BagHODLers - Inside The New New Crypto Ponzi Economics](https://bitsblocks.github.io/bitcoin-maximalist))
-
-²: Assuming let's say 0.596 kilograms of CO₂ per kW/h 
-(that's the energy efficiency in Germany) that's 
-about 179 kilograms of CO₂ per bitcoin transaction (300 kW/h × 0.596 kg). For more insights see the [Bitcoin Energy Consumption Index](https://digiconomist.net/bitcoin-energy-consumption).
+![](i/trolly-ponzi.png)
 
 
 [**Mastering Bitcoin - Programming the Open Blockchain**](https://github.com/bitcoinbook/bitcoinbook/blob/second_edition/ch09.asciidoc) 2nd Edition,
@@ -561,15 +544,34 @@ Mining and Consensus ++
 Bitcoin Security ++
 Blockchain Applications_
 
-- [**Programming Bitcoin from Scratch**](https://github.com/jimmysong/programmingbitcoin) by Jimmy Song, 2019 - FREE (Online Source Version)
-  - [Chapter 6 - Script](https://github.com/jimmysong/programmingbitcoin/blob/master/ch06.asciidoc) - How Script Works • Example Operations • Parsing the Script Fields • Combining the Script Fields • Standard Scripts • p2pk • Problems with p2pk • Solving the Problems with p2pkh • Scripts Can Be Arbitrarily Constructed • Conclusion
-  - [Chapter 8 - Pay-to-Script Hash](https://github.com/jimmysong/programmingbitcoin/blob/master/ch08.asciidoc) - Bare Multisig • Coding OP_CHECKMULTISIG • Problems with Bare Multisig • Pay-to-Script-Hash (p2sh) • Coding p2sh • Conclusion
-  - [Chapter 13 - Segregated Witness](https://github.com/jimmysong/programmingbitcoin/blob/master/ch13.asciidoc) - Pay-to-Witness-Pubkey-Hash (p2wpkh) • p2wpkh Transactions • p2sh-p2wpkh • Coding p2wpkh and p2sh-p2wpkh • Pay-to-Witness-Script-Hash (p2wsh) • p2sh-p2wsh • Coding p2wsh and p2sh-p2wsh • Other Improvements • Conclusion
+
+**BEWARE: Bitcoin is a gigantic ponzi scheme¹.
+To the moon!? The new gold standard!? 
+Do NOT "invest" trying to get-rich-quick HODLing. 
+Why not? The bitcoin code is archaic and out-of-date.
+Burn, baby, burn! Proof-of-work / waste is a global
+energy environmental disaster
+using 300 kW/h per bitcoin transaction (!) that's about 179 kilograms of CO₂ emissions².
+Programmable money (or the internet of value) 
+for all future generations with (bitcoin) script
+without loops and jumps (gotos) and all "stateless"!? LOL.**
+
+¹: (Source: [Best of Bitcoin Maximalist - Scammers, Morons, Clowns, Shills & BagHODLers - Inside The New New Crypto Ponzi Economics](https://bitsblocks.github.io/bitcoin-maximalist))
+
+²: Assuming let's say 0.596 kilograms of CO₂ per kW/h 
+(that's the energy efficiency in Germany) that's 
+about 179 kilograms of CO₂ per bitcoin transaction (300 kW/h × 0.596 kg). For more insights see the [Bitcoin Energy Consumption Index](https://digiconomist.net/bitcoin-energy-consumption).
+
+
+
+[**Programming Bitcoin from Scratch**](https://github.com/jimmysong/programmingbitcoin) by Jimmy Song, 2019 - FREE (Online Source Version) -- _[Chapter 6 - Script](https://github.com/jimmysong/programmingbitcoin/blob/master/ch06.asciidoc) - How Script Works • Example Operations • Parsing the Script Fields • Combining the Script Fields • Standard Scripts • p2pk • Problems with p2pk • Solving the Problems with p2pkh • Scripts Can Be Arbitrarily Constructed • Conclusion ++_
+_[Chapter 8 - Pay-to-Script Hash](https://github.com/jimmysong/programmingbitcoin/blob/master/ch08.asciidoc) - Bare Multisig • Coding OP_CHECKMULTISIG • Problems with Bare Multisig • Pay-to-Script-Hash (p2sh) • Coding p2sh • Conclusion ++_
+_[Chapter 13 - Segregated Witness](https://github.com/jimmysong/programmingbitcoin/blob/master/ch13.asciidoc) - Pay-to-Witness-Pubkey-Hash (p2wpkh) • p2wpkh Transactions • p2sh-p2wpkh • Coding p2wpkh and p2sh-p2wpkh • Pay-to-Witness-Script-Hash (p2wsh) • p2sh-p2wsh • Coding p2wsh and p2sh-p2wsh • Other Improvements • Conclusion_
   
 
 [**Programming Bitcoin Script Transaction (Crypto) Contracts Step-by-Step ( Beta / Rough Draft )**](https://github.com/openblockchains/programming-bitcoin-script)
 by Gerald Bauer et al, 2019 - FREE (Online Version) --
-Let's start with building your own bitcoin stack machine from zero / scratch and let's run your own bitcoin ops (operations)...
+_Let's start with building your own bitcoin stack machine from zero / scratch and let's run your own bitcoin ops (operations)..._
 
 
 [**Programming Blockchains in Ruby from Scratch Step-by-Step Starting w/ Crypto Hashes... ( Beta / Rough Draft )**](https://github.com/yukimotopress/programming-blockchains-step-by-step)
@@ -614,7 +616,7 @@ Developing Ethereum Decentralized apps with Truffle ++
 Best design and security practice_
 
 [**Programming Crypto Blockchain Contracts Step-by-Step Book / Guide ( Beta / Rough Draft )**](https://github.com/openblockchains/programming-cryptocontracts) by Gerald Bauer et al, 2019 - FREE (Online Version) --
-Let's Start with Ponzi & Pyramid Schemes. Run Your Own Lotteries, Gambling Casinos and more on the Blockchain World Computer...
+_Let's Start with Ponzi & Pyramid Schemes. Run Your Own Lotteries, Gambling Casinos and more on the Blockchain World Computer..._
 
 
 [**Programming Cryptocurrencies and Blockchains in Ruby ( Beta / Rough Draft )**](http://yukimotopress.github.io/blockchains)
