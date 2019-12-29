@@ -19,15 +19,6 @@ to run use:
     $ kotlinc-jvm -script ./blockchain-with-proof-of-work.kts
 
 
-**Transactions (Version)**
-
-to run use:
-
-    $ kotlinc-jvm -script ./blockchain-with-transactions.kts
-
-
-
-
 ## Questions? Comments?
 
 From the [reddit ruby posting](https://www.reddit.com/r/ruby/comments/70c30f/build_your_own_blockchain_in_20_lines_of_ruby/):
