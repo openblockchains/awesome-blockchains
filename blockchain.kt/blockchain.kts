@@ -26,7 +26,7 @@ class Block(
     }
 }
 
-/**
+/*
  * Will pretty print (without line wrapping) something like:
  * ```
  * [Block(data=Genesis,
@@ -51,6 +51,7 @@ class Block(
  *        timestamp=2019-12-29T16:17:21.839509Z)]
  * ```
  */
+
 val b0 = Block.first("Genesis")
 val b1 = b0.next("Transaction Data...")
 val b2 = b1.next("Transaction Data......")
