@@ -1,8 +1,6 @@
 # blockchain.kt - Build your own blockchain from scratch in 20 lines of Kotlin
 
-inspired by
-[Let's Build the Tiniest Blockchain In Less Than 50 Lines of Python](https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b)
-by Gerald Nash
+contributed by [B. K. Oxley (binkley)](https://github.com/binkley) 
 
 
 **Starter (Version)**
@@ -18,28 +16,3 @@ to run use:
 
     $ kotlinc-jvm -script ./blockchain-with-proof-of-work.kts
 
-
-## Questions? Comments?
-
-From the [reddit ruby posting](https://www.reddit.com/r/ruby/comments/70c30f/build_your_own_blockchain_in_20_lines_of_ruby/):
-
-> Wait, so a blockchain is just a linked list?
->
->> No. A linked list is only required to have a reference to the previous element, a block must
->> have an identifier depending on the previous block's identifier, meaning that you cannot
->> replace a block without recomputing every single block that comes after.
->> In this implementation that happens as the previous digest is input in the calc_hash method.
-
----
-
-> This is a "blockchain" in only the most literal sense of the word.
->
->> That's the best sense of the word.
->>
->>> No, this ruby class misses the whole point...
->>> a distributed data structure built by independent actors all putting in real work
->>> and receiving rewards for successfully solving the next block.
->>>
->>>> While you're on to the fact that blockchain is not quite as interesting without proof of
->>>> work, those are two totally independent concepts, and one is not needed to illustrate the
->>>> other.
