@@ -167,6 +167,11 @@ by Adil Moujahid, March 2018, [(Source)](https://github.com/adilmoujahid/blockch
 [**centralbank command line tool (and library) - Print Your Own Money / Cryptocurrency; Run Your Own Federated Central Bank Nodes on the Blockchain Peer-to-Peer over HTTP**](https://planetruby.github.io/calendar/advent2017/24-centralbank.html) by Gerald Bauer, Ruby Advent Calendar 2017 / Day 24, December 2017
 
 
+### Crystal
+
+[**Write your own blockchain and Proof-of-Work (PoW) algorithm using Crystal**](https://medium.com/@bradford_hamilton/write-your-own-blockchain-and-pow-algorithm-using-crystal-d53d5d9d0c52) by Bradford Lamson-Scribner, May 2018,
+[(Source)](https://github.com/bradford-hamilton/crystal-blockchain)
+
 
 ### JavaScript
 
@@ -178,11 +183,19 @@ by Xavier Decuyper, July 2017
 [**Build your own Blockchain in Javascript/Visualization of Blockchains**](https://github.com/nambrot/blockchain-in-js) by Nam Chu Hoai,  January 2018
 
 
+### TypeScript
+
+[**Naivecoin: a tutorial for building a cryptocurrency**](https://lhartikk.github.io) by Lauri Hartikka, [(Source)](https://github.com/lhartikk/naivecoin)
+
 
 ### Java
 
 [**Creating Your First Blockchain with Java, Part 1**](https://medium.com/programmers-blockchain/create-simple-blockchain-java-tutorial-from-scratch-6eeed3cb03fa) by Kass, December 2017, [(Source)](https://github.com/CryptoKass/NoobChain-Tutorial-Part-1)
 
+### Kotlin
+
+[**Let's implement a cryptocurrency in Kotlin**](https://medium.com/@vasilyf/lets-implement-a-cryptocurrency-in-kotlin-part-1-blockchain-8704069f8580) by Vasily Fomin, July 2018,
+[(Source)](https://github.com/VasilyFomin/kCoin)
 
 
 ### Go
@@ -206,6 +219,9 @@ Blockchain Series in Go by by Coral Health [(Source)](https://github.com/mycoral
 - [**Code your own blockchain mining algorithm in Go!**](https://medium.com/@mycoralhealth/code-your-own-blockchain-mining-algorithm-in-go-82c6a71aba1f) by Coral Health, March 2018
 
 
+### C#
+
+[**Programming The Blockchain in C#**](https://programmingblockchain.gitbooks.io/programmingblockchain/)
 
 
 
