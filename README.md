@@ -219,10 +219,12 @@ Blockchain Series in Go by by Coral Health [(Source)](https://github.com/mycoral
 - [**Code your own blockchain mining algorithm in Go!**](https://medium.com/@mycoralhealth/code-your-own-blockchain-mining-algorithm-in-go-82c6a71aba1f) by Coral Health, March 2018
 
 
+<!--
+  it's more about bitcoin (and not about blockchain really)
 ### C#
 
 [**Programming The Blockchain in C#**](https://programmingblockchain.gitbooks.io/programmingblockchain/)
-
+-->
 
 
 ### Talk Notes
