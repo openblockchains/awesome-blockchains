@@ -41,15 +41,16 @@ Let's start with building your own bitcoin stack machine from zero / scratch and
   - Example: `<pubKey> CHECKSIG` - unlock with `<sig>`
 - **P2PKH** (Pay To Pubkey Hash) 
   - Example: `DUP HASH160 <pubKeyHash> EQUALVERIFY CHECKSIG` - unlock with `<sig> <pubKey>`
+- **P2MS** (Pay To Multisig) - lets you to lock bitcoins to multiple public keys, and require signatures for some (or all) of those public keys to unlock it
+  - Example 1 out of 2 keys required: `1 <pubKey> <pubKey> 2 CHECKMULTISIG` - unlock with `<sig>` 
+- **NULL DATA** - lets you store data in bitcoin transactions
+  - Example: `RETURN <data>`
 
 **More**
 
-- **P2MS** (Pay To Multisig) - lets you to lock bitcoins to multiple public keys, and require signatures for some (or all) of those public keys to unlock it
-  - Example 1 out of 2 keys required: `1 <pubKey> <pubKey> 2 CHECKMULTISIG` - unlock with `<sig>` 
 - **P2SH** (Pay To Script Hash) - lets you create your own custom "redeem scripts", but still be able to share them easily with other people
   - Example: `HASH160 <scriptHash> EQUAL` - unlock with inputs required by the script (e.g. sig etc.) and the "redeem script" itself
-- **NULL DATA** - lets you store data in bitcoin transactions
-  - Example: `RETURN <data>`
+
 
 
 
