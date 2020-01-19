@@ -107,3 +107,54 @@ Congrats! You just purchased $50 worth of Bitcoin - without fucking the planet!
 
 Note: To calculate your own estimate start with the bitcoin network mining hashrate (at an all-time-high in 2019!) ...
 
+You can calulate the minimum estimated energy consumption from the total network hashrate, 
+assuming the only machine used in the network is Bitmain's Antminer S9 (drawing 1,500 watts each). On February 13, 2019, the minimum benchmark was changed to Bitmain's Antminer S15 (with a rolling average of 180 days), 
+followed by Bitmain's Antminer S17e per November 7, 2019.
+
+
+Q: How much electricity (kWh) does an Antminer S9 consume in a day?
+
+A: 
+
+Shalom Komornik writes:
+
+Find it's rated power and calculate. It is not difficult.
+
+
+José Gregório De Figueiredo Rosa writes:
+
+It depends on the "power" of each S9 Antminer. For example, 
+the "Antminer Bitcoin S9 B3" has a "power" of 1600W. 
+If the Antminer Bitcoin S9 B3 "remain connected 10 hours in a day, 
+the daily consumption of electricity will be: 1600W x 10h = 16000Wh = 16kWh
+
+
+Eliot Pearson writes:
+
+The Antminer S9 draws 1.6 kW. 
+If you ran the S9 for 24 hours that would be 38.4 kWh a day.
+
+Russ Weiss writes:
+
+We run a data center where customers host Antminer S9 units and other miners.
+
+[Bitmain's official specifications](https://shop.bitmain.com/antminer_s9_asic_bitcoin_miner.htm?flag=specifications) state that the units consume 1300 - 1340 watts 
+at the wall with Bitmain's APW3 power supply. 
+They mention an expected discrepancy of +10%, but it is not clear 
+if that discrepancy relates to power consumption, efficiency percentage, hash rate, etc..
+
+Based upon our experiences, on average, Antminer S9s actually draw about 1,500 watts.
+
+Most miners run these systems 24 hours per day - so the equation is simple:
+
+1,500 x 24 = 36,000 watt hours, or 36kWh.
+
+In a 30-day month, these systems will draw about 1,080 kWh.
+
+If your power cost is $.12/kWh, it will cost you $129.60 to run a single S9 unit. 
+There is one thing that most of our customers do not account for when they are comparing the cost of hosting their 
+Antminer at our data center to what it costs them at home. 
+They don't think about the added cost of cooling the system.
+
+(Source: [Quora](https://www.quora.com/How-much-electricity-kWh-does-an-Antminer-S9-consume-in-a-day))
+
