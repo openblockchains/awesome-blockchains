@@ -198,6 +198,12 @@ by Xavier Decuyper, July 2017
 [(Source)](https://github.com/VasilyFomin/kCoin)
 
 
+### SQL
+
+[**Blockchain by Example in SQL Server**](https://medium.com/@benjaminsky/blockchain-by-example-in-sql-server-8376b410128), [(Source)](https://github.com/benjaminsky/BlockchainMessenger) by Benjamin Campbell, 
+December 2017
+
+
 ### Rust
 
 **Building Blockchain in Rust Series** by Jacob Lindahl, GeekLaunch, [(Source)](https://github.com/GeekLaunch/blockchain-rust), [(Slide Decks in PDF)](https://github.com/GeekLaunch/slides)
