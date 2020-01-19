@@ -1,4 +1,4 @@
-`DUP HASH160 6fad...ab90 EQUALVERIFY CHECKSIG`
+`DUP HASH160 93ce48570b55c42c2af816aeaba06cfee1224fae EQUALVERIFY CHECKSIG`
 
 
 # Bitcoin Script
@@ -16,7 +16,7 @@ The programming language is called simply (bitcoin) script.
 > The script is actually a predicate. It's just an equation that evaluates to true or false. 
 > Predicate is a long and unfamiliar word so I called it script. 
 >
-> – [Satoshi Nakamoto](https://bitcointalk.org/index.php?topic=195.msg1611#msg1611), June 2010
+> – Satoshi Nakamoto, [June 2010 @ Bitcoin Talk](https://bitcointalk.org/index.php?topic=195.msg1611#msg1611)
 
 
 
@@ -38,18 +38,18 @@ Let's start with building your own bitcoin stack machine from zero / scratch and
 ## Standard (Lock) Scripts / Contracts
 
 - **P2PK** (Pay To Pubkey)
-  - Example: `<pubKey> OP_CHECKSIG` - unlock with `<sig>`
+  - Example: `<pubKey> CHECKSIG` - unlock with `<sig>`
 - **P2PKH** (Pay To Pubkey Hash) 
-  - Example: `OP_DUP OP_HASH160 <pubKeyHash> OP_EQUALVERIFY OP_CHECKSIG` - unlock with `<sig> <pubKey>`
+  - Example: `DUP HASH160 <pubKeyHash> EQUALVERIFY CHECKSIG` - unlock with `<sig> <pubKey>`
 
 **More**
 
 - **P2MS** (Pay To Multisig) - lets you to lock bitcoins to multiple public keys, and require signatures for some (or all) of those public keys to unlock it
-  - Example 1 out of 2 keys required: `OP_1 <pubKey> <pubKey> OP_2 OP_CHECKMULTISIG` - unlock with `<sig>` 
+  - Example 1 out of 2 keys required: `1 <pubKey> <pubKey> 2 CHECKMULTISIG` - unlock with `<sig>` 
 - **P2SH** (Pay To Script Hash) - lets you create your own custom "redeem scripts", but still be able to share them easily with other people
-  - Example: `OP_HASH160 <scriptHash> OP_EQUAL` - unlock with inputs required by the script (e.g. sig etc.) and the "redeem script" itself
+  - Example: `HASH160 <scriptHash> EQUAL` - unlock with inputs required by the script (e.g. sig etc.) and the "redeem script" itself
 - **NULL DATA** - lets you store data in bitcoin transactions
-  - Example: `OP_RETURN <data>`
+  - Example: `RETURN <data>`
 
 
 
