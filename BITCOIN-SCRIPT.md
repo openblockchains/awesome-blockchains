@@ -16,7 +16,7 @@ The programming language is called simply (bitcoin) script.
 > The script is actually a predicate. It's just an equation that evaluates to true or false. 
 > Predicate is a long and unfamiliar word so I called it script. 
 >
-> – Satoshi Nakamoto, [June 2010 @ Bitcoin Talk](https://bitcointalk.org/index.php?topic=195.msg1611#msg1611)
+> -- [Satoshi Nakamoto, June 2010 @ Bitcoin Talk](https://bitcointalk.org/index.php?topic=195.msg1611#msg1611)
 
 
 
