@@ -12,11 +12,21 @@ about 179 kilograms of CO₂ per bitcoin transaction (300 kW/h × 0.596 kg). For
 
 
 
-
 Why? Why? Why?
 
 Did you know? The only purpose for burning millions of $$$ in energy every day (or billions every year)
 for the proof-of-work / waste hashing is... running a lottery that picks one (!) random winner every 10-minute, that's all.
+
+> Bitcoin's hash rate experienced an explosive increase over 2019, jumping from 42 exahashes per second (EH/s) (or,
+> 42,000,000,000,000,000,000 hashes per second) to 112 EH/s.
+>
+> Mining difficulty more than doubled from the beginning to the end of 2019, rising from 6 T to 13 T.
+>
+> (Source: [Happy Birthday Bitcoin! Here's a Look at Bitcoin's 11th Year by the Numbers](https://bitcoinmagazine.com/articles/happy-birthday-bitcoin-heres-a-look-at-bitcoins-11th-year-by-the-numbers))
+
+Note: No matter how many more tickets you "buy" by hashing more - the difficulty will rise and the lottery keeps on picking one (!) random winner every 10-minute.   
+
+
 
 [**How Bitcoin Mining Works**]( https://twitter.com/Tr0llyTr0llFace/status/1119657122126602240) by Trolly McTrollface
 
