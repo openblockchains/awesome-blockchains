@@ -24,7 +24,9 @@ for the proof-of-work / waste hashing is... running a lottery that picks one (!)
 >
 > (Source: [Happy Birthday Bitcoin! Here's a Look at Bitcoin's 11th Year by the Numbers](https://bitcoinmagazine.com/articles/happy-birthday-bitcoin-heres-a-look-at-bitcoins-11th-year-by-the-numbers))
 
-Note: No matter how many more tickets you "buy" by hashing more - the difficulty will rise and the lottery keeps on picking one (!) random winner every 10-minute.   
+Note: No matter how many more tickets you "buy" by hashing more (e.g. from 42,000,000,000,000,000,000/s to 112,000,000,000,000,000,000/s) - the difficulty will rise (e.g. from 6 to 13) 
+and the lottery keeps on picking one (!) random winner every 10-minute.   
+
 
 
 
