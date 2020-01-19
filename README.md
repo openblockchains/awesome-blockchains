@@ -198,6 +198,17 @@ by Xavier Decuyper, July 2017
 [(Source)](https://github.com/VasilyFomin/kCoin)
 
 
+### Rust
+
+**Building Blockchain in Rust Series** by GeekLaunch, [(Source)](https://github.com/GeekLaunch/blockchain-rust)
+
+- [**Part 1: Blocks and Hashing**](https://www.youtube.com/watch?v=vJdT05zl6jk), January 2019
+- [**Part 2: Mining**](https://www.youtube.com/watch?v=PZGlYa-6U5U), January 2019
+- [**Part 3: Chains and Checks**](https://www.youtube.com/watch?v=buYvuIPdwHU), January 2019
+- [**Part 4: Transactions 1**](https://www.youtube.com/watch?v=-k1Yk9D_lU4), February 2019
+- [**Part 5: Transactions 2**](https://www.youtube.com/watch?v=1t4TXnB4Qj4), February 2019
+
+
 ### Go
 
 **Building Blockchain in Go Series** by Ivan Kuznetsov, [(Source)](https://github.com/Jeiwan/blockchain_go)
