@@ -24,7 +24,7 @@ for the proof-of-work / waste hashing is... running a lottery that picks one (!)
 >
 > (Source: [Happy Birthday Bitcoin! Here's a Look at Bitcoin's 11th Year by the Numbers](https://bitcoinmagazine.com/articles/happy-birthday-bitcoin-heres-a-look-at-bitcoins-11th-year-by-the-numbers))
 
-Note: No matter how many more tickets you "buy" by hashing more (e.g. from 42,000,000,000,000,000,000/s to 112,000,000,000,000,000,000/s) - the difficulty will rise (e.g. from 6 to 13) 
+Note: No matter how many more tickets (e.g. from 42,000,000,000,000,000,000/s to 112,000,000,000,000,000,000/s) you "buy" by hashing more - the difficulty will rise (e.g. from 6 to 13)
 and the lottery keeps on picking one (!) random winner every 10-minute.   
 
 
@@ -74,6 +74,14 @@ That's the absurd logic from the Bitcoin is the new "Gold Standard" prophet.
 > Thus, Bitcoin's energy efficiency only gets worse with time - which is what we see.
 
 
+[**There Is Nothing Virtual About Bitcoin’s Energy Appetite**](https://www.nytimes.com/2018/01/21/technology/bitcoin-mining-energy-consumption.html) by Nathaniel Popper, New York Times, January, 2018
+
+> Creating a new Bitcoin requires electricity. A lot of it.
+> In the virtual currency world this creation process is called "mining." There is no physical digging,
+> since Bitcoins are purely digital. But the computer power needed to create each digital token consumes at least as much electricity
+> as the average American household burns through in two years...
+
+
 [**How to Buy Bitcoin (The CO₂-Friendly Way)**](https://twitter.com/Tr0llyTr0llFace/status/1130390061499990016) by Trolly McTrollface
 
 1. Take one $50 bill, five $10 bills, or ten $5 bills (I wouldn’t recommend change - stay with paper fiat).
@@ -85,15 +93,13 @@ That's the absurd logic from the Bitcoin is the new "Gold Standard" prophet.
 Congrats! You just purchased $50 worth of Bitcoin - without fucking the planet!  
 
 
-
-
-## Bitcoin Energiy Consumption Index
+## Bitcoin Energy Consumption Index
 
 [Bitcoin Energy Consumption Index (in Estimated TWh per Year)](https://digiconomist.net/bitcoin-energy-consumption) by Alex de Vries, Digiconomist
 
-Annualized Total (Estimated) Footprints
-- Carbon footprint: 34.75 Mt CO₂ - Comparable to the carbon footprint of Denmark
-- Electrical Energy: 73.15 TWh - Comparable to the power consumption of Austria
+> Annualized Total (Estimated) Footprints
+> - Carbon footprint: 34.75 Mt CO₂ - Comparable to the carbon footprint of Denmark
+> - Electrical Energy: 73.15 TWh - Comparable to the power consumption of Austria
 
 
 
