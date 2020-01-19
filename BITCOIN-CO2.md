@@ -112,7 +112,17 @@ assuming the only machine used in the network is Bitmain's Antminer S9 (drawing 
 followed by Bitmain's Antminer S17e per November 7, 2019.
 
 
-Q: How much electricity (kWh) does an Antminer S9 consume in a day?
+> Bitmain is focused on computing chips with a vision of realizing a even more beautiful digital world. 
+> It has design capabilities for different chip processes, including the state-of-the-art 5 nanometer process. 
+> In the blockchain mining area, Bitmain has shipped
+> billions of ASICs, accounting for 75% of the global market.
+>
+> -- [Bitmain › About Us](https://www.bitmain.com/about)
+
+
+
+
+**Q: How much electricity (kWh) does an Antminer S9 consume in a day?**
 
 A: 
 
