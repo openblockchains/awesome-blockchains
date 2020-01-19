@@ -200,7 +200,7 @@ by Xavier Decuyper, July 2017
 
 ### Rust
 
-**Building Blockchain in Rust Series** by GeekLaunch, [(Source)](https://github.com/GeekLaunch/blockchain-rust), [(Slide Decks in PDF)](https://github.com/GeekLaunch/slides)
+**Building Blockchain in Rust Series** by Jacob Lindahl, GeekLaunch, [(Source)](https://github.com/GeekLaunch/blockchain-rust), [(Slide Decks in PDF)](https://github.com/GeekLaunch/slides)
 
 
 
