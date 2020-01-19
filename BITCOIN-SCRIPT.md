@@ -14,6 +14,21 @@ _A mini blockchain contract programming language for locking (and unlocking) bit
 
 
 
+## Guides / Booklets
+
+[**Programming Bitcoin Script Transaction (Crypto) Contracts Step-by-Step**](https://github.com/openblockchains/programming-bitcoin-script) - 
+Let's start with building your own bitcoin stack machine from zero / scratch and let's run your own bitcoin ops (operations)...
+
+
+## More Resources
+
+- [**Script - A mini programming language @ Learn Me A Bitcoin**](https://learnmeabitcoin.com/guide/script) by Greg Walker
+- [**Script @ Bitcoin Wiki**](https://en.bitcoin.it/wiki/Script)
+- [**The Bitcoin Script Language**](http://davidederosa.com/basic-blockchain-programming/bitcoin-script-language-part-one/) by Davide De Rosa
+ 
+
+
+
 
 ## Standard (Lock) Scripts / Contracts
 
@@ -43,17 +58,4 @@ _A mini blockchain contract programming language for locking (and unlocking) bit
 
 - Simplicity by Blockstream
 
-
-## Guides / Booklets
-
-[**Programming Bitcoin Script Transaction (Crypto) Contracts Step-by-Step**](https://github.com/openblockchains/programming-bitcoin-script) - 
-Let's start with building your own bitcoin stack machine from zero / scratch and let's run your own bitcoin ops (operations)...
-
-
-## More Resources
-
-- [**Script - A mini programming language @ Learn Me A Bitcoin**](https://learnmeabitcoin.com/guide/script) by Greg Walker
-- [**Script @ Bitcoin Wiki**](https://en.bitcoin.it/wiki/Script)
-- [**The Bitcoin Script Language**](http://davidederosa.com/basic-blockchain-programming/bitcoin-script-language-part-one/) by Davide De Rosa
- 
  
