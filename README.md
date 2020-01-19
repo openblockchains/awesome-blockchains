@@ -200,8 +200,7 @@ by Xavier Decuyper, July 2017
 
 ### SQL
 
-[**Blockchain by Example in SQL Server**](https://medium.com/@benjaminsky/blockchain-by-example-in-sql-server-8376b410128), [(Source)](https://github.com/benjaminsky/BlockchainMessenger) by Benjamin Campbell, 
-December 2017
+[**Blockchain by Example in SQL Server**](https://medium.com/@benjaminsky/blockchain-by-example-in-sql-server-8376b410128) by Benjamin Campbell, December 2017, [(Source)](https://github.com/benjaminsky/BlockchainMessenger)
 
 
 ### Rust
