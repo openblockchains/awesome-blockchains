@@ -6,11 +6,17 @@
 _A mini blockchain contract programming language for locking (and unlocking) bitcoins (that is, unspent transaction outputs)_.
 
 
+## Intro
+
+Did you know? Every (yes, every) bitcoin transaction (payment) runs
+a contract script (one half coming from the "output" or "lock" transaction and the
+other half coming from the "input" or "unlock" transaction).
+The programming language is called simply (bitcoin) script.
+
 > The script is actually a predicate. It's just an equation that evaluates to true or false. 
 > Predicate is a long and unfamiliar word so I called it script. 
 >
 > – [Satoshi Nakamoto](https://bitcointalk.org/index.php?topic=195.msg1611#msg1611), June 2010
-
 
 
 
@@ -22,11 +28,10 @@ Let's start with building your own bitcoin stack machine from zero / scratch and
 
 ## More Resources
 
-- [**Script - A mini programming language @ Learn Me A Bitcoin**](https://learnmeabitcoin.com/guide/script) by Greg Walker
-- [**Script @ Bitcoin Wiki**](https://en.bitcoin.it/wiki/Script)
-- [**The Bitcoin Script Language**](http://davidederosa.com/basic-blockchain-programming/bitcoin-script-language-part-one/) by Davide De Rosa
+- [**Script - A mini programming language @ Learn Me A Bitcoin**](https://learnmeabitcoin.com/guide/script) by Greg Walker - The complete script is run from left-to-right. As it runs, it makes use of a data structure called a "stack". Data is always pushed on to the stack...
+- [**Script @ Bitcoin Wiki**](https://en.bitcoin.it/wiki/Script) Bitcoin uses a scripting system for transactions. Forth-like, Script is simple, stack-based, and processed from left to right. It is intentionally not Turing-complete, with no loops...
+- [**The Bitcoin Script Language**](http://davidederosa.com/basic-blockchain-programming/bitcoin-script-language-part-one/) by Davide De Rosa - Script is a simple scripting language, as well as the core of Bitcoin transaction processing. If you ever wrote assembly code you'll find this article very easy to understand - probably entertaining -, otherwise it might well be one of the most challenging. Keep focused! Meet machine code...
  
-
 
 
 
@@ -60,24 +65,23 @@ Let's start with building your own bitcoin stack machine from zero / scratch and
 
  
  
- ## Script Grammar
+## Language Grammar
  
-Script in the BNF (Backus-Naur form) grammar:
+Bitcoin Script in the BNF (Backus-Naur form) grammar:
 
 ```
-<script> ::= <unlocking-script> <locking-script>
+<script>           ::= <unlocking-script> <locking-script>
 <unlocking-script> ::= <constants> | <empty>
-<locking-script> ::= <script-block> ["OP_RETURN" <non-script-data>]
-<script-block> ::= <function> [<script-block>] | 
-        <push-data> [<script-block>] |
-        <branch> [<script-block>] |
-        "OP_RETURN" [<script-block>] |
-        <empty>
-<branch> ::= <op-if> <script-block> ["OP_ELSE" <script-block>]
- 			"OP_ENDIF"
-<op-if> ::= "OP_IF" | "OP_NOTIF"
-<constants> ::= <constant> [<constants>]
-<constant> ::= "OP_PUSHDATA1" <count-1> "bytes" |
+<locking-script>   ::= <script-block> ["OP_RETURN" <non-script-data>]
+<script-block>     ::= <function> [<script-block>] | 
+                       <push-data> [<script-block>] |
+                       <branch> [<script-block>] |
+                       "OP_RETURN" [<script-block>] |
+                       <empty>
+<branch>            ::= <op-if> <script-block> ["OP_ELSE" <script-block>] "OP_ENDIF"
+<op-if>             ::= "OP_IF" | "OP_NOTIF"
+<constants>         ::= <constant> [<constants>]
+<constant>          ::= "OP_PUSHDATA1" <count-1> "bytes" |
 				"OP_PUSHDATA2" <count-2> "bytes" |
             "OP_PUSHDATA4" <count-4> "bytes" |
             <op-push-xx> "bytes" | <op-false> | 
@@ -85,13 +89,13 @@ Script in the BNF (Backus-Naur form) grammar:
             "OP_5" | "OP_6" | "OP_7" | "OP_8" | "OP_9" | 
             "OP_10" | "OP_11" | "OP_12" | "OP_13" | 
             "OP_14" | "OP_15" | "OP_16"
-<count-1> ::= a one byte unsigned integer (0-255)
-<count-2> ::= a two byte unsigned integer (0-65535)
-<count-4> ::= a four byte unsigned integer (0-4294967295)
-<op-push-xx> ::= hex codes 0x01 to 0x4b
-<op-false> ::= "OP_0" | "OP_FALSE"
-<op-true> ::= "OP_1" | "OP_TRUE"
-<function> ::= "OP_NOP" | "OP_VERIFY" | 
+<count-1>           ::= a one byte unsigned integer (0-255)
+<count-2>           ::= a two byte unsigned integer (0-65535)
+<count-4>           ::= a four byte unsigned integer (0-4294967295)
+<op-push-xx>        ::= hex codes 0x01 to 0x4b
+<op-false>          ::= "OP_0" | "OP_FALSE"
+<op-true>           ::= "OP_1" | "OP_TRUE"
+<function>          ::= "OP_NOP" | "OP_VERIFY" | 
     "OP_TOALTSTACK" | "OP_FROMALTSTACK" | "OF_IFDUP" | 
     "OP_DEPTH" | "OP_DROP" | "OP_DUP" | "OP_NIP" | "OP_OVER" |
     "OP_PICK" | "OP_ROLL" | "OP_ROT" | "OP_SWAP" | "OP_TUCK" |
@@ -113,7 +117,7 @@ Script in the BNF (Backus-Naur form) grammar:
     "OP_NOP7" | "OP_NOP8" | "OP_NOP9" | "OP_NOP10" |
     "OP_MUL" | "OP_LSHIFT" | "OP_RSHIFT" | "OP_INVERT" | 
     "OP_2MUL" | "OP_2DIV" | "OP_VERIF" | "OP_VERNOTIF"
-<non-script-data> ::= any sequence of bytes
+<non-script-data>   ::= any sequence of bytes
 ```
 
 It's worth highlighting the following features of this formal grammar:
@@ -121,12 +125,11 @@ It's worth highlighting the following features of this formal grammar:
 -   The complete script consists of two sections, the unlocking script and the locking script. The locking script is 
     included in the transaction output that is being spent, the unlocking script is included in the transaction input 
     that is spending the output.
--   The unlocking script can only contain constants. This requirement is part of Validity of Script Consensus Rule, 
-    defined later.
+-   The unlocking script can only contain constants.
 -   A branching operator (OP_IF or OP_NOTIF) must have a matching OP_ENDIF.
 -   An OP_ELSE can only be included between a branching operator and OP_ENDIF pair. There can only be at most one 
     OP_ELSE between a branching operator and an OP_ENDIF.
 -   OP_RETURN may appear at any location in a valid script.
 
-(Source: [Bitcoin SV Specs](https://github.com/bitcoin-sv-specs/protocol/blob/master/updates/genesis-spec.md#formal-grammar-for-bitcoin-script))
+(Source: [Bitcoin Specs @ Satoshi Vision](https://github.com/bitcoin-sv-specs/protocol/blob/master/updates/genesis-spec.md#formal-grammar-for-bitcoin-script))
 
