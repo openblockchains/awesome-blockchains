@@ -53,7 +53,14 @@ Other aspects are noted below: how multiple tokens can interact (e.g., can they 
 |--------|-------------------------|---------------|---------|
 | Omni   | Normally segregated     | Many          | DEX, bets, ... |
 | Counterparty  |  Normally segregated  |  Many    |  DEX, bets, ... |
-
+| EPOBC (Enhanced padded order-based coloring)  | In same tx   | None |  - |
+| Coinspark  |  In same tx or same UTXO  |  Some   | Legal contracts, token conservation  |
+| Colu       | In same tx or same UTXO  | Some   |  Rule engine  |
+| Open Assets | In same tx |      None   |
+| Tokeda      | Segregated |  Few    | Issuer permission required for transactions |
+| SITO        | Segregated | None    |
+| GROUP       | Segregated | Few     | Yes, if even more opcodes
+| SLP         | Segregated | Few     | 
 
 
 
