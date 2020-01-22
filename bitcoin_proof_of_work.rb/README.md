@@ -71,9 +71,9 @@ end
 
 sha256( "Hello, world!0" )   
 #=> "1312af178c253f84028d480a6adc1e25e81caa44c749ec81976192e2ec934c64"
-sha256( "Hello, world!2" )   
-#=> "e9afc424b79e4f6ab42d99c81156d3a17228d6e1eef4139be78e948a9332a7d8"
 sha256( "Hello, world!1" )   
+#=> "e9afc424b79e4f6ab42d99c81156d3a17228d6e1eef4139be78e948a9332a7d8"
+sha256( "Hello, world!2" )   
 #=> "ae37343a357a8297591625e7134cbea22f5928be8ca2a32aa475cf05fd4266b7"
 
 # ...
