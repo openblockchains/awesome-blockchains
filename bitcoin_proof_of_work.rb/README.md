@@ -293,7 +293,7 @@ puts "%0256b" % num
 ```
 
 If you count the binary number for the `"Hello, world!4250"`
-hash, has 16 leading zeros (that is, `0000000000000000`)
+hash, it has 16 leading zeros (that is, `0000000000000000`)
 in the 256-bit number.
 
 **Remember: The more leading zeros (in fixed binary or hexadecimal format) the smaller the number
