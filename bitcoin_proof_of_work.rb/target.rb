@@ -20,8 +20,6 @@ p num = hash.to_i( 16 )  ## convert hex(adecimal) hash to (integer) number
 p log2 = Math.log2( num )
 #=> 252.2534586827243
 
-puts "2^#{log2}"
-#=> 2^252.2534586827243
 
 
 #########
@@ -60,7 +58,4 @@ p num = max.to_i( 16 )
 
 p log2 = Math.log2( num )
 #=> 256
-puts "2^#{log2}"
-#=> 2^256
-
 
