@@ -121,7 +121,8 @@ What's your hash rate per second? Let's calculate 10 million (or 10,000,000) has
 t1 = Time.now
 10_000_000.times do |i|
   sha256( "Hello, world!#{i}")
-  print "."    if i % 100_000 == 0      # print a dot (.) for progress for every one hundred thousand hashes calculated
+  # bonus: print a dot (.) for progress for every one hundred thousand hashes calculated
+  print "."    if i % 100_000 == 0      
 end
 puts ""
 t2 = Time.now
