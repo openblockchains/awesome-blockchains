@@ -208,9 +208,6 @@ Let's try:
 ``` ruby
 log2 = Math.log2( num )
 #=> 252.2534586827243
-
-puts "2^#{log2}"
-#=> 2^252.2534586827243
 ```
 
 Bingo! `2^252.2534586827243` is an even more accurate calculation
@@ -261,7 +258,7 @@ num = max.to_i( 16 )
 #=> 115792089237316195423570985008687907853269984665640564039457584007913129639935
 
 log2 = Math.log2( num )
-#=> 256
+#=> 256.0
 ```
 
 Trivia Quiz: How many leading zeros has a `0000` hash in hexa(decimal)
