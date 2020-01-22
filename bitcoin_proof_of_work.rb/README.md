@@ -16,7 +16,13 @@ Bitcoiners: We'll give you $200 for it.
 
 ## Intro
 
-Did you know? 
+Did you know? The Proof-of-work / waste mining in bitcoin is a global energy environmental disaster.
+The estimate for bitcoin classic transactions is 300 kW-h per bitcoin transaction (!) 
+that's about 179 kilograms of CO₂ emissions¹.
+
+¹: Assuming let's say 0.596 kilograms of CO₂ per kW-h 
+(that's the energy efficiency in Germany) that's 
+about 179 kilograms of CO₂ per bitcoin transaction (300 kW-h × 0.596 kg). For more insights see [Bitcoin CO₂ - The Proof-of-Work / Waste Environmental Mining Disaster](https://github.com/openblockchains/awesome-blockchains/blob/master/BITCOIN-CO2.md).
 
 
 
@@ -283,3 +289,96 @@ and the more difficult the proof-of-work mining.**
 
 
 
+
+
+### All together now - Compute Hash with Proof-of-Work for Difficulty Target
+
+
+Let's put everything together in a `compute_hash_with_proof_of_work`
+method:
+
+
+``` ruby
+def compute_hash_with_proof_of_work( msg, difficulty: 2**240 )
+  nonce = 0
+  loop do
+    hash = sha256( "#{msg}#{nonce}" )
+
+    if hash.to_i(16) < difficulty
+      ## bingo! proof of work if hash is smaller than the difficulty target number
+      return [nonce,hash]
+    else
+      ## keep trying (and trying and trying)
+      nonce += 1
+    end
+  end # loop
+end
+```
+
+And let's try the
+Proof-of-Work example from the Bitcoin Wiki.
+
+Note: The difficulty target `2^240` translates to
+`2**240`
+and, yes, `2**240` is a big (integer) number.
+Try:
+
+``` ruby
+2**240    # 2^240
+#=> 1766847064778384329583297500742918515827483896875618958121606201292619776
+```
+
+
+And let's use `"Hello, world!"`:
+
+```ruby
+nonce, hash = compute_hash_with_proof_of_work( "Hello, world!", difficulty: 2**240)
+#=> 4250, "0000c3af42fc31103f1fdc0151fa747ff87349a4714df7cc52ea464e12dcd4e9"
+```
+
+Bingo! The lucky number used once (nonce) is as expected 4250
+and the hash `0000c3af42fc31103f1fdc0151fa747ff87349a4714df7cc52ea464e12dcd4e9`.
+
+
+Note: You can always verify (and double-check) if the hash
+is smaller than the target difficulty and, thus, valid.
+
+``` ruby
+nonce = 4250
+msg   = "Hello, world!"
+
+difficulty = 2**240
+hash = sha256( "#{msg}#{nonce}" )
+num  =
+
+num < difficulty
+#=> true
+```
+
+Try to change the nonce to 4251 or 0, 1, 2, etc. and
+you will always get `false` because the resulting hash is bigger
+(and NOT smaller) than the target difficulty and, thus, NOT valid.
+
+
+
+
+That's all the magic of proof-of-work / waste mining.
+The environmental disaster in Bitcoin is the gigantic industrial scale.
+In 2019 the hash rate/second hit an all-time-high.
+
+
+And the only purpose for burning millions of $$$ in energy every day (or billions every year)
+for the proof-of-work / waste hashing is... running a lottery that picks one (!) random winner every 10-minute, that's all.
+
+> Bitcoin's hash rate experienced an explosive increase over 2019, jumping from 42 exahashes per second (EH/s) (or,
+> 42,000,000,000,000,000,000 hashes per second) to 112 EH/s.
+>
+> Mining difficulty more than doubled from the beginning to the end of 2019, rising from 6 T to 13 T.
+>
+> (Source: [Happy Birthday Bitcoin! Here's a Look at Bitcoin's 11th Year by the Numbers](https://bitcoinmagazine.com/articles/happy-birthday-bitcoin-heres-a-look-at-bitcoins-11th-year-by-the-numbers))
+
+Note: No matter how many more tickets (e.g. from 42,000,000,000,000,000,000/s
+to 112,000,000,000,000,000,000/s) you "buy" by hashing more - the difficulty will rise
+(e.g. from 6 to 13) and the lottery keeps on picking one (!) random winner every 10-minute.
+
+Burn, baby, burn! The Planet cannot win. Is there a Planet B?
