@@ -358,9 +358,13 @@ is smaller than the target difficulty and, thus, valid.
 nonce = 4250
 msg   = "Hello, world!"
 
-difficulty = 2**240
 hash = sha256( "#{msg}#{nonce}" )
-num  = hash.to_i(16)
+#=> "0000c3af42fc31103f1fdc0151fa747ff87349a4714df7cc52ea464e12dcd4e9"
+
+difficulty = 2**240
+#=> 1766847064778384329583297500742918515827483896875618958121606201292619776
+num        = hash.to_i(16)
+#=> 1350565582647790482127632554504241516291697500941742491868079705537959145
 
 num < difficulty
 #=> true
