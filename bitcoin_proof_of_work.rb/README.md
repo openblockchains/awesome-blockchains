@@ -363,7 +363,7 @@ msg   = "Hello, world!"
 
 difficulty = 2**240
 hash = sha256( "#{msg}#{nonce}" )
-num  =
+num  = hash.to_i(16)
 
 num < difficulty
 #=> true
