@@ -1,5 +1,6 @@
 # Inside Bitcoin's Proof-of-Work / Waste
 
+
 ## TL;DR 
 
 _Too Long; Didn't Read Management Executive Summary_
@@ -19,15 +20,18 @@ Did you know?
 
 
 
-Let's look how Bitcoin's Proof-of-Work / Waste Mining work 
+Let's look how Bitcoin's Proof-of-Work / Waste Mining works
 and what's the lucky number used one (nonce) that wins the mining lottery 
 and what's the difficulty target to make it easier or harder to find the nonce?
 
 
 
-## Proof-of-Work By Example - Step by Step Guide
+## Proof-of-Work By Example 
 
 _The Ruby Version_
+
+
+### Let's calculate the SHA-256 hash
 
 Let's say the base string that we are going to do work on is `"Hello, world!"`. 
 Our target is to find a variation of it that SHA-256 hashes to a value smaller than `2^240`. 
@@ -90,6 +94,9 @@ of the United States of America (USA).
 Find out more @ [Secure Hash Algorithms (SHA) @ Wikipedia](https://en.wikipedia.org/wiki/Secure_Hash_Algorithms).
 
 
+
+### What's your hash rate per second? Let's calculate 10 million (or 10,000,000) hashes and check...
+
 Let's get back to:
 
 4 251 hashes on a modern computer is not very much work - most computers can achieve 
@@ -100,7 +107,7 @@ at least 4 million (or 4,000,000) hashes per second.
 >
 > (Source: [Happy Birthday Bitcoin! Here's a Look at Bitcoin's 11th Year by the Numbers](https://bitcoinmagazine.com/articles/happy-birthday-bitcoin-heres-a-look-at-bitcoins-11th-year-by-the-numbers))
 
-What's your hash rate per second? Let's calculate 10 million (or 10,000,000) hashes and wait...
+What's your hash rate per second? Let's calculate 10 million (or 10,000,000) hashes and check...
 
 ``` ruby
 #################
@@ -138,7 +145,7 @@ Hash Rate: 373518 hashes/second
 Try the script at your computer. What's your hash rate?
 
 
-### Hitting the target - Find the lucky number used once (nonce)
+### Hitting the difficulty target - Find the lucky number used once (nonce)
 
 Let's get back to:
 
@@ -271,9 +278,6 @@ in the 256-bit number.
 
 **Remember: The more leading (binary) zeros the smaller the number
 and the more difficult the proof-of-work mining.**
-
-
-
 
 
 
