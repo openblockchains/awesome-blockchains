@@ -257,13 +257,11 @@ Let's double check and calculate:
 max = "f"*64
 #=> "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
 
-num = hash.to_i( 16 )
+num = max.to_i( 16 )
 #=> 115792089237316195423570985008687907853269984665640564039457584007913129639935
 
 log2 = Math.log2( num )
 #=> 256
-puts "2^#{log2}"
-#=> 2^256
 ```
 
 Trivia Quiz: How many leading zeros has a `0000` hash in hexa(decimal)
