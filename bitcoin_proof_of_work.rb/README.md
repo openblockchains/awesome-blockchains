@@ -373,6 +373,9 @@ num < difficulty
 #=> true
 ```
 
+(Source: [`verify.rb`](verify.rb))
+
+
 Try to change the nonce to 4251 or 0, 1, 2, etc. and
 you will always get `false` because the resulting hash is bigger
 (and NOT smaller) than the target difficulty and, thus, NOT valid.
