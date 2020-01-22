@@ -1,9 +1,7 @@
-# Inside Bitcoin's Proof-of-Work / Waste
+# Inside Bitcoin's Proof-of-Work / Waste 10-Minute Mining Lottery
 
 
-## TL;DR 
-
-_Too Long; Didn't Read Management Executive Summary_
+## TL;DR (Too Long; Didn't Read) - Management Executive Summary
 
 [**How Bitcoin Mining Works**]( https://twitter.com/Tr0llyTr0llFace/status/1119657122126602240) by Trolly McTrollface
 
@@ -28,13 +26,11 @@ about 179 kilograms of CO₂ per bitcoin transaction (300 kW-h × 0.596 kg). For
 
 Let's look how Bitcoin's Proof-of-Work / Waste Mining works
 and what's the lucky number used one (nonce) that wins the mining lottery 
-and what's the difficulty target to make it easier or harder to find the nonce?
+and what's the difficulty target to make it easier or harder to find the nonce.
 
 
 
-## Proof-of-Work By Example 
-
-_The Ruby Version_
+## Proof-of-Work By Example - The Ruby Edition
 
 
 ### Let's calculate the SHA-256 hash
@@ -58,11 +54,11 @@ _The Ruby Version_
 >
 > 4 251 hashes on a modern computer is not very much work (most computers can achieve at least 4 million hashes per second). 
 > Bitcoin automatically varies the target (and thus the amount of work required to generate a block) 
-> to keep a roughly constant rate of block generation [,that is, about every 10 minutes].
+> to keep a roughly constant rate of block generation [,that is, about every 10 minutes for the mining lottery].
 >
 > (Source: [Proof of work @ Bitcoin Wiki](https://en.bitcoin.it/wiki/Proof_of_work))
 
-Let's break down the "magic" proof-of-work / waste machinery step-by-step 
+Let's break down the "magic" proof-of-work / waste lottery step-by-step 
 and let's start with calculating the SHA-256 hash:
 
 
@@ -75,15 +71,26 @@ end
 
 sha256( "Hello, world!0" )   
 #=> "1312af178c253f84028d480a6adc1e25e81caa44c749ec81976192e2ec934c64"
-sha256( "Hello, world!1" )   
+sha256( "Hello, world!2" )   
 #=> "e9afc424b79e4f6ab42d99c81156d3a17228d6e1eef4139be78e948a9332a7d8"
 sha256( "Hello, world!1" )   
 #=> "ae37343a357a8297591625e7134cbea22f5928be8ca2a32aa475cf05fd4266b7"
 
 # ...
+
+sha256( "Hello, world!4248" )
+#=> "6e110d98b388e77e9c6f042ac6b497cec46660deef75a55ebc7cfdf65cc0b965"
+sha256( "Hello, world!4249" ) 
+#=> "c004190b822f1669cac8dc37e761cb73652e7832fb814565702245cf26ebb9e6"
+sha256( "Hello, world!4250" )
+#=> "0000c3af42fc31103f1fdc0151fa747ff87349a4714df7cc52ea464e12dcd4e9"
 ```
 
-Note: The resulting hash is always a fixed 256-bit in size or 64 hex(adecimal) chars (0-9,a-f) 
+(Source: [`hashes.rb`](hashes.rb))
+
+
+
+Note: The resulting hash is always a fixed 256-bit in size or 64 hex(adecimal) characters (0-9,a-f) 
 in length even if the input is less than 256-bit or much bigger than 256-bit.
 
 Trivia Quiz: What's SHA256?
@@ -110,7 +117,8 @@ Let's get back to:
 at least 4 million (or 4,000,000) hashes per second.
 
 > Bitcoin's hash rate experienced an explosive increase over 2019, jumping from 42 exahashes per second (EH/s) (or,
-> 42,000,000,000,000,000,000 hashes per second) to 112 EH/s.
+> 42,000,000,000,000,000,000 hashes per second) to 112 EH/s
+> (or, 112,000,000,000,000,000,000 hashes per second).
 >
 > (Source: [Happy Birthday Bitcoin! Here's a Look at Bitcoin's 11th Year by the Numbers](https://bitcoinmagazine.com/articles/happy-birthday-bitcoin-heres-a-look-at-bitcoins-11th-year-by-the-numbers))
 
@@ -128,21 +136,24 @@ What's your hash rate per second? Let's calculate 10 million (or 10,000,000) has
 t1 = Time.now
 10_000_000.times do |i|
   sha256( "Hello, world!#{i}")
+
   # bonus: print a dot (.) for progress for every one hundred thousand hashes calculated
   print "."    if i % 100_000 == 0      
 end
-puts ""
 t2 = Time.now
 
 delta = t2 - t1
-pp delta
+puts ""
 puts "Elapsed Time: %.4f seconds" % delta
 
 hashrate = Float( 10_000_000 / delta )
 puts "Hash Rate: %d hashes/second" % hashrate
 ```
 
-Resulting in (using a plain-vanilla personal computer):
+(Source: [`hashrate.rb`](hashrate.rb))
+
+
+Resulting in (using a plain-vanilla personal computer in 2020):
 
 ```
 ....................................................................................................
@@ -150,10 +161,10 @@ Elapsed Time: 26.7724 seconds
 Hash Rate: 373518 hashes/second
 ```
 
-Try the script at your computer. What's your hash rate?
+Try the script at your computer. What's your hash rate today?
 
 
-### Hitting the difficulty target - Find the lucky number used once (nonce)
+### Hitting the difficulty target - Find the lucky number used once (nonce) - Find the winning mining lottery ticket
 
 Let's get back to:
 
@@ -177,6 +188,10 @@ puts hash
 num = hash.to_i( 16 )  ## convert hex(adecimal) hash to (integer) number
 #=> 8626955810696577806643191367156697543225924734479747394789354329720975740004
 ```
+
+(Source: [`target.rb`](target.rb))
+
+
 
 Q: What's the binary base 2 logarithm  (`log2`)?
 
@@ -272,7 +287,6 @@ hash = sha256( "Hello, world!4250" )
 num = hash.to_i( 16 )
 #=> 1350565582647790482127632554504241516291697500941742491868079705537959145
 
-num = hash.to_i( 16 )
 puts "%0256b" % num
 #=> 0000000000000000110000111010111101000010111111000011000100010000
 #   0011111100011111110111000000000101010001111110100111010001111111
@@ -284,15 +298,13 @@ If you count the binary number for the `"Hello, world!4250"`
 hash, has 16 leading zeros (that is, `0000000000000000`)
 in the 256-bit number.
 
-**Remember: The more leading (binary) zeros the smaller the number
-and the more difficult the proof-of-work mining.**
+**Remember: The more leading zeros (in fixed binary or hexadecimal format) the smaller the number
+and the more difficult the proof-of-work mining lottery.**
 
 
 
 
-
-
-### All together now - Compute Hash with Proof-of-Work for Difficulty Target
+### All together now - Compute hash with proof-of-work for difficulty target
 
 
 Let's put everything together in a `compute_hash_with_proof_of_work`
@@ -316,6 +328,9 @@ def compute_hash_with_proof_of_work( msg, difficulty: 2**240 )
 end
 ```
 
+(Source: [`proof_of_work.rb`](proof_of_work.rb))
+
+
 And let's try the
 Proof-of-Work example from the Bitcoin Wiki.
 
@@ -330,7 +345,7 @@ Try:
 ```
 
 
-And let's use `"Hello, world!"`:
+And let's use `"Hello, world!"` for the hash:
 
 ```ruby
 nonce, hash = compute_hash_with_proof_of_work( "Hello, world!", difficulty: 2**240)
@@ -338,7 +353,9 @@ nonce, hash = compute_hash_with_proof_of_work( "Hello, world!", difficulty: 2**2
 ```
 
 Bingo! The lucky number used once (nonce) is as expected 4250
-and the hash `0000c3af42fc31103f1fdc0151fa747ff87349a4714df7cc52ea464e12dcd4e9`.
+and the hash `0000c3af42fc31103f1fdc0151fa747ff87349a4714df7cc52ea464e12dcd4e9`
+and the only way to find the lucky winning nonce in the lottery is brute force, that is,
+trying and trying and trying.
 
 
 Note: You can always verify (and double-check) if the hash
@@ -363,7 +380,7 @@ you will always get `false` because the resulting hash is bigger
 
 
 
-That's all the magic of proof-of-work / waste mining.
+That's all the magic of the proof-of-work / waste mining lottery.
 The environmental disaster in Bitcoin is the gigantic industrial scale.
 In 2019 the hash rate/second hit an all-time-high.
 
@@ -378,8 +395,21 @@ for the proof-of-work / waste hashing is... running a lottery that picks one (!)
 >
 > (Source: [Happy Birthday Bitcoin! Here's a Look at Bitcoin's 11th Year by the Numbers](https://bitcoinmagazine.com/articles/happy-birthday-bitcoin-heres-a-look-at-bitcoins-11th-year-by-the-numbers))
 
-Note: No matter how many more tickets (e.g. from 42,000,000,000,000,000,000/s
-to 112,000,000,000,000,000,000/s) you "buy" by hashing more - the difficulty will rise
+Note: No matter how many more lottery tickets (e.g. from 42,000,000,000,000,000,000/s
+to 112,000,000,000,000,000,000/s) you "buy" by hashing more and burning more energy - the difficulty will rise
 (e.g. from 6 to 13) and the lottery keeps on picking one (!) random winner every 10-minute.
 
 Burn, baby, burn! The Planet cannot win. Is there a Planet B?
+
+
+[**How to Buy Bitcoin (The CO₂-Friendly Way)**](https://twitter.com/Tr0llyTr0llFace/status/1130390061499990016) by Trolly McTrollface
+
+1. Take one $50 bill, five $10 bills, or ten $5 bills (I wouldn’t recommend change - stay with paper fiat).
+2. Go to the bathroom.
+3. Lift the lid of the loo.
+4. Throw money in.
+5. Flush down water.
+
+Congrats! You just purchased $50 worth of Bitcoin - without fucking the planet!  
+
+
