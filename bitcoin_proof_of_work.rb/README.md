@@ -182,7 +182,6 @@ e.g. `2^252.253458683`.
 
 ``` ruby
 hash = sha256( "Hello, world!0" )
-puts hash
 #=> "1312af178c253f84028d480a6adc1e25e81caa44c749ec81976192e2ec934c64"
 
 num = hash.to_i( 16 )  ## convert hex(adecimal) hash to (integer) number
@@ -259,7 +258,6 @@ max = "f"*64
 #=> "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
 
 num = hash.to_i( 16 )
-puts num
 #=> 115792089237316195423570985008687907853269984665640564039457584007913129639935
 
 log2 = Math.log2( num )
