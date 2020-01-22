@@ -389,7 +389,7 @@ And the only purpose for burning millions of $$$ in energy every day (or billion
 for the proof-of-work / waste hashing is... running a lottery that picks one (!) random winner every 10-minute, that's all.
 
 > Bitcoin's hash rate experienced an explosive increase over 2019, jumping from 42 exahashes per second (EH/s) (or,
-> 42,000,000,000,000,000,000 hashes per second) to 112 EH/s.
+> 42,000,000,000,000,000,000 hashes per second) to 112 EH/s (or, 112,000,000,000,000,000,000 hashes per second).
 >
 > Mining difficulty more than doubled from the beginning to the end of 2019, rising from 6 T to 13 T.
 >
