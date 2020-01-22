@@ -76,7 +76,7 @@ sha256( "Hello, world!1" )
 # ...
 ```
 
-Note: The resulting hash is always 256-bit in size or 64 hex(adecimal) chars (0-9,a-f) 
+Note: The resulting hash is always a fixed 256-bit in size or 64 hex(adecimal) chars (0-9,a-f) 
 in length even if the input is less than 256-bit or much bigger than 256-bit.
 
 Trivia Quiz: What's SHA256?
