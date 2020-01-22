@@ -14,7 +14,7 @@ Bitcoiners: We'll give you $200 for it.
 
 ## Intro
 
-Did you know? The Proof-of-work / waste mining in bitcoin is a global energy environmental disaster.
+Did you know? The Proof-of-work / waste mining lottery in bitcoin is a global energy environmental disaster.
 The estimate for bitcoin classic transactions is 300 kW-h per bitcoin transaction (!) 
 that's about 179 kilograms of CO₂ emissions¹.
 
@@ -24,7 +24,7 @@ about 179 kilograms of CO₂ per bitcoin transaction (300 kW-h × 0.596 kg). For
 
 
 
-Let's look how Bitcoin's Proof-of-Work / Waste Mining works
+Let's look how Bitcoin's Proof-of-Work / Waste 10-Minute Mining Lottery works
 and what's the lucky number used one (nonce) that wins the mining lottery 
 and what's the difficulty target to make it easier or harder to find the nonce.
 
