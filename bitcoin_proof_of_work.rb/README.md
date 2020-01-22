@@ -25,7 +25,7 @@ about 179 kilograms of CO₂ per bitcoin transaction (300 kW-h × 0.596 kg). For
 
 
 Let's look how Bitcoin's Proof-of-Work / Waste 10-Minute Mining Lottery works
-and what's the lucky number used one (nonce) that wins the mining lottery 
+and what's the lucky number used once (nonce) that wins the mining lottery 
 and what's the difficulty target to make it easier or harder to find the nonce.
 
 
