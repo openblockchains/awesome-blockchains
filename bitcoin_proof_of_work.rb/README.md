@@ -228,6 +228,7 @@ hash = sha256( "Hello, world!4250" )
 
 Note: The "lucky number" hash has four leading zeros in hex(adecimal), that is, `0000`.
 
+
 ``` ruby
 num = hash.to_i( 16 )
 #=> 1350565582647790482127632554504241516291697500941742491868079705537959145
@@ -261,14 +262,6 @@ log2 = Math.log2( num )
 #=> 256.0
 ```
 
-Trivia Quiz: How many leading zeros has a `0000` hash in hexa(decimal)
-with four zeros in binary?
-
-- (A)  4
-- (B)  8   - 2 times (e.g. 4×2)
-- (C)  12  - 3 times (e.g. 4×3)
-- (D)  16  - 4 times (e.g. 4×4)
-
 Hashes get printed in hexa(decimal) and NOT binary - the computer's native `0` and `1`
 format - because hexa(decimal) is 4 times more compact.
 Let's try:
@@ -294,6 +287,10 @@ in the 256-bit number.
 **Remember: The more leading zeros (in fixed binary or hexadecimal format) the smaller the number
 and the more difficult the proof-of-work mining lottery.**
 
+> The proof-of-work involves scanning for a value that when hashed, such as with
+> SHA-256, the hash begins with a number of zero bits.
+>
+> -– [Satoshi Nakamoto @ Bitcoin Whitepaper](https://bitsblocks.github.io/bitcoin-whitepaper)
 
 
 
@@ -305,12 +302,12 @@ method:
 
 
 ``` ruby
-def compute_hash_with_proof_of_work( msg, difficulty: 2**240 )
+def compute_hash_with_proof_of_work( msg, target: 2**240 )
   nonce = 0
   loop do
     hash = sha256( "#{msg}#{nonce}" )
 
-    if hash.to_i(16) < difficulty
+    if hash.to_i(16) < target
       ## bingo! proof of work if hash is smaller than the difficulty target number
       return [nonce,hash]
     else
@@ -341,7 +338,7 @@ Try:
 And let's use `"Hello, world!"` for the hash:
 
 ```ruby
-nonce, hash = compute_hash_with_proof_of_work( "Hello, world!", difficulty: 2**240)
+nonce, hash = compute_hash_with_proof_of_work( "Hello, world!", target: 2**240)
 #=> 4250, "0000c3af42fc31103f1fdc0151fa747ff87349a4714df7cc52ea464e12dcd4e9"
 ```
 
@@ -361,12 +358,12 @@ msg   = "Hello, world!"
 hash = sha256( "#{msg}#{nonce}" )
 #=> "0000c3af42fc31103f1fdc0151fa747ff87349a4714df7cc52ea464e12dcd4e9"
 
-difficulty = 2**240
+target = 2**240
 #=> 1766847064778384329583297500742918515827483896875618958121606201292619776
-num        = hash.to_i(16)
+num    = hash.to_i(16)
 #=> 1350565582647790482127632554504241516291697500941742491868079705537959145
 
-num < difficulty
+num < target
 #=> true
 ```
 
@@ -378,7 +375,143 @@ you will always get `false` because the resulting hash is bigger
 (and NOT smaller) than the target difficulty and, thus, NOT valid.
 
 
+## Target and Difficulty
 
+
+> Target - The number you need to get below to mine a block.
+>
+> Difficulty - The difficulty is a number that regulates how long it takes for miners
+> to add new blocks of transactions to the blockchain.
+> This difficulty value updates every 2016 blocks (on average every 2 weeks)
+> to ensure that it takes 10 minutes (on average)
+> to add a new block to the blockchain.
+>
+> -- [Learn Me A Bitcoin](https://learnmeabitcoin.com/beginners/difficulty)
+
+In the genesis block on Jan/3, 2009 the bitcoin classic network
+started with a hard-coded maximum target (`targetmax`) of:
+
+    0x00000000ffff0000000000000000000000000000000000000000000000000000
+
+and the maximum (highest-ever possible) target sets
+by definition the (lowest-ever possible) difficulty to 1.
+
+If the difficulty goes up, the target number will go down.
+
+
+
+###  Calculating the target using the difficulty
+
+If you have only the difficulty you can
+calculate the target number from the difficulty with
+the equation:
+
+    target = targetmax / difficulty
+
+
+Let's use the difficulty of block 100,000 (mined on Dec/29, 2010), that is,
+`14,484.162361`. Yes, that's more than 14 thousand times more difficult since genesis.
+
+``` ruby
+targetmax  = 0x00000000ffff0000000000000000000000000000000000000000000000000000
+#=> 26959535291011309493156476344723991336010898738574164086137773096960
+difficulty = 14484.162361
+
+target = targetmax / difficulty
+#=> 1861311315012765306929610463010191006516769515973403833769533170
+```
+
+(Source: [`difficulty.rb`](difficulty.rb))
+
+
+Let's try another one and let's use the difficulty seven years later
+of block 500,000 (mined on Dec/1, 2017), that is, `1,873,105,475,221.6`.
+Yes, that's more than about 2 thousand billion (!) times more difficult since genesis.
+
+Note: As the difficulty goes up, the target goes down.
+
+``` ruby
+difficulty = 1873105475221.6
+
+target = targetmax / difficulty
+#=> 14392961660539606926930209015440658523615307253181250777
+```
+
+
+Aside:  Floating Point Precision in Calculations with Big Integer Numbers
+
+If you use floating point numbers in your calculations e.g. `14484.162361`
+with big integer numbers
+you will get imprecise results. One alternate way is to
+convert everything to integer using a scale factor
+(that is, for six digits after the comma multiple by 10**6 equal to 1000000).
+Example:
+
+``` ruby
+difficulty = 14484.162361
+#=> 14484.162361
+difficulty = (14484.162361*1000000).to_i
+#=> 14484162361
+
+target = (targetmax*1000000) / difficulty
+#=> 1861311315012765306929610463010191006516769515973403833769533170
+```
+
+And let's pack up the code in a `difficulty_to_target` method
+for easy (re)use:
+
+``` ruby
+def difficulty_to_target( difficulty, scale: )
+   targetmax = 0x00000000ffff0000000000000000000000000000000000000000000000000000
+   factor    = 10**scale
+
+   targetmax*factor / (difficulty*factor).to_i
+end
+
+difficulty_to_target( 14484.162361, scale: 6 )
+#=> 1861311315012765306929610463010191006516769515973403833769533170
+difficulty_to_target( 1873105475221.6, scale: 1 )
+#=> 14392961660539606926930209015440658523615307253181250777
+```
+
+
+If you print the target in hex(adecimal) you count the leading zeros:
+
+|  Block         | Date | Difficulty |    Target   | Log2 |
+|----------------|------|------------|-------------|------|
+|    0 (Genesis) | Jan/3, 2009  |  1 | `00000000FFFF0000000000000000000000000000000000000000000000000000` | 2^224 |
+| 100,000   | Dec/29, 2010  | 14,484.162361 | `000000000004864c00004d6ac7cd33f734b8eb28b24729fe151953ec57a21ef2`   | 2^210  |
+| 500,000   | Dec/1, 2017   |  1,873,105,475,221.6  | `000000000000000000964500000000fc2cc6932cfb3a8ff7cbbf47bd8e22fcd9`  | 2^183  |
+| 614,190   | Jan/23, 2020  |  14,776,367,535,688.64  | `000000000000000000130c77ffffffffccc21951757a6bc6d24a653f04e4c7a9` | 2^180  |
+
+
+
+What's today's bitcoin network difficulty?
+
+You can use the `getdifficulty` Bitcoin API service.
+The documentation reads:
+
+```
+getdifficulty
+
+Returns the proof-of-work difficulty as a multiple of the minimum difficulty.
+```
+
+For example, on Jan/23, 2020 you will get:
+
+``` json
+{
+  "result": 14776367535688.64
+}
+```
+
+Or lookup the difficulty in a chart:
+
+- [Difficulty Chart @ Blockchain.com](https://www.blockchain.com/charts/difficulty?timespan=all)
+
+
+
+## Conclusion
 
 That's all the magic of the proof-of-work / waste mining lottery.
 The environmental disaster in Bitcoin is the gigantic industrial scale.
