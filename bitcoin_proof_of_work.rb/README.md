@@ -158,10 +158,26 @@ Resulting in (using a plain-vanilla personal computer in 2020):
 ```
 ....................................................................................................
 Elapsed Time: 26.7724 seconds
-Hash Rate: 373518 hashes/second
+Hash Rate: 373,518 hashes/second
 ```
 
 Try the script at your computer. What's your hash rate today?
+
+
+Trivia Quiz: What's the (advertised) hash rate/s for an ASIC (Application-specific integrated circuit)
+AntMiner S9 sold by Bitmain for US$ 2,400?
+
+- (A) 14,000,000 hashes/second
+- (B) 14,000,000,000 hashes/second
+- (C) 14,000,000,000,000 hashes/second
+- (D) 14,000,000,000,000,000 hashes/second
+
+
+C: 14,000,000,000,000 hashes/second (or 14,000,000 million hashes/s)
+
+Find out more @ [Mining hardware comparison @ Bitcoin Wiki](https://en.bitcoin.it/wiki/Mining_hardware_comparison)
+
+
 
 
 ### Hitting the difficulty target - Find the lucky number used once (nonce) - Find the winning mining lottery ticket
