@@ -10,7 +10,7 @@ end
 
 
 
-def compute_hash_with_proof_of_work( msg, target: 2**240 )
+def mine_hash_with_proof_of_work( msg, target: 2**240 )
   nonce = 0
   loop do
     hash = sha256( "#{msg}#{nonce}" )
@@ -29,7 +29,7 @@ end
 p 2**240    # 2^240
 #=> 1766847064778384329583297500742918515827483896875618958121606201292619776
 
-nonce, hash = compute_hash_with_proof_of_work( "Hello, world!", target: 2**240)
+nonce, hash = mine_hash_with_proof_of_work( "Hello, world!", target: 2**240)
 p nonce
 #=> 4250
 p hash
