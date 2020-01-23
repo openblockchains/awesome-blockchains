@@ -287,23 +287,17 @@ in the 256-bit number.
 **Remember: The more leading zeros (in fixed binary or hexadecimal format) the smaller the number
 and the more difficult the proof-of-work mining lottery.**
 
-> The proof-of-work involves scanning for a value that when hashed, such as with
-> SHA-256, the hash begins with a number of zero bits. The average work required is exponential in the number of zero bits required
-> and can be verified by executing a single hash.
->
-> -– [Satoshi Nakamoto @ Bitcoin Whitepaper](https://bitsblocks.github.io/bitcoin-whitepaper)
 
 
+### All together now - Mine hash with proof-of-work for difficulty target
 
-### All together now - Compute hash with proof-of-work for difficulty target
 
-
-Let's put everything together in a `compute_hash_with_proof_of_work`
+Let's put everything together in a `mine_hash_with_proof_of_work`
 method:
 
 
 ``` ruby
-def compute_hash_with_proof_of_work( msg, target: 2**240 )
+def mine_hash_with_proof_of_work( msg, target: 2**240 )
   nonce = 0
   loop do
     hash = sha256( "#{msg}#{nonce}" )
@@ -339,7 +333,7 @@ Try:
 And let's use `"Hello, world!"` for the hash:
 
 ```ruby
-nonce, hash = compute_hash_with_proof_of_work( "Hello, world!", target: 2**240)
+nonce, hash = mine_hash_with_proof_of_work( "Hello, world!", target: 2**240)
 #=> 4250, "0000c3af42fc31103f1fdc0151fa747ff87349a4714df7cc52ea464e12dcd4e9"
 ```
 
@@ -347,6 +341,13 @@ Bingo! The lucky number used once (nonce) is as expected 4250
 and the hash `0000c3af42fc31103f1fdc0151fa747ff87349a4714df7cc52ea464e12dcd4e9`
 and the only way to find the lucky winning nonce in the lottery is brute force, that is,
 trying and trying and trying.
+
+
+> The proof-of-work involves scanning for a value that when hashed, such as with
+> SHA-256, the hash begins with a number of zero bits. The average work required is exponential in the number of zero bits required
+> and can be verified by executing a single hash.
+>
+> -– [Satoshi Nakamoto @ Bitcoin Whitepaper](https://bitsblocks.github.io/bitcoin-whitepaper)
 
 
 Note: You can always verify (and double-check) if the hash
@@ -397,7 +398,7 @@ started with a hard-coded maximum target (`targetmax`) of:
 and the maximum (highest-ever possible) target sets
 by definition the (lowest-ever possible) difficulty to 1.
 
-If the difficulty goes up, the target number will go down.
+If the difficulty goes up (by two, for example), the target number will go down (by half).
 
 
 
