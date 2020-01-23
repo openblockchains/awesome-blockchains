@@ -526,13 +526,13 @@ for the proof-of-work / waste hashing is... running a lottery that picks one (!)
 > Bitcoin's hash rate experienced an explosive increase over 2019, jumping from 42 exahashes per second (EH/s) (or,
 > 42,000,000,000,000,000,000 hashes per second) to 112 EH/s (or, 112,000,000,000,000,000,000 hashes per second).
 >
-> Mining difficulty more than doubled from the beginning to the end of 2019, rising from 6 T to 13 T.
+> Mining difficulty more than doubled from the beginning to the end of 2019, rising from 6 Trillion to 13 Trillion.
 >
 > (Source: [Happy Birthday Bitcoin! Here's a Look at Bitcoin's 11th Year by the Numbers](https://bitcoinmagazine.com/articles/happy-birthday-bitcoin-heres-a-look-at-bitcoins-11th-year-by-the-numbers))
 
 Note: No matter how many more lottery tickets (e.g. from 42,000,000,000,000,000,000/s
 to 112,000,000,000,000,000,000/s) you "buy" by hashing more and burning more energy - the difficulty will rise
-(e.g. from 6 to 13) and the lottery keeps on picking one (!) random winner every 10-minute.
+(e.g. from 6 T to 13 T) and the lottery keeps on picking one (!) random winner every 10-minute.
 
 Burn, baby, burn! The Planet cannot win. Is there a Planet B?
 
