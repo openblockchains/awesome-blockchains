@@ -288,7 +288,8 @@ in the 256-bit number.
 and the more difficult the proof-of-work mining lottery.**
 
 > The proof-of-work involves scanning for a value that when hashed, such as with
-> SHA-256, the hash begins with a number of zero bits.
+> SHA-256, the hash begins with a number of zero bits. The average work required is exponential in the number of zero bits required
+> and can be verified by executing a single hash.
 >
 > -– [Satoshi Nakamoto @ Bitcoin Whitepaper](https://bitsblocks.github.io/bitcoin-whitepaper)
 
