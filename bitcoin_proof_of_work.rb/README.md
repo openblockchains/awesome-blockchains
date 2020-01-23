@@ -164,7 +164,7 @@ Hash Rate: 373,518 hashes/second
 Try the script at your computer. What's your hash rate today?
 
 
-Trivia Quiz: What's the (advertised) hash rate/s for an ASIC (Application-specific integrated circuit)
+Trivia Quiz: What's the (advertised) hash rate/s for the ASIC (Application-specific integrated circuit)
 AntMiner S9 sold by Bitmain for US$ 2,400?
 
 - (A) 14,000,000 hashes/second
