@@ -9,20 +9,23 @@ contributed by [Siddhant Rao](https://github.com/siddhantrao23)
 
 Structure definition:
 
-    pub struct Block {
-        pub index: u32,
-        pub timestamp: u128,
-        pub hash: Hash,
-        pub prev_block_hash: Hash,
-        pub nonce: u64, 
-        pub transactions: Vec<Transaction>, 
-        pub difficulty: u128,
-    }
+``` rs
+pub struct Block {
+    pub index: u32,
+    pub timestamp: u128,
+    pub hash: Hash,
+    pub prev_block_hash: Hash,
+    pub nonce: u64, 
+    pub transactions: Vec<Transaction>, 
+    pub difficulty: u128,
+}
+```
 
 
 To run use:
 
     $ cargo run 
+
 
 
 
