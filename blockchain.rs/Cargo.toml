@@ -1,0 +1,19 @@
+[package]
+name = "too_chainz"
+version = "0.1.0"
+authors = ["Siddhant <raosiddhant99@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "blockchainlib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[dependencies]
+hex = "0.3.2" 
+crypto-hash = "0.3.3"
