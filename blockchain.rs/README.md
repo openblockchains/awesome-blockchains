@@ -3,7 +3,7 @@
 inspired by [Build a cryptocurrency! - Blockchain in Rust](https://github.com/GeekLaunch/blockchain-rust) by Jacob Lindahl, GeekLaunch
 
 
-contributed by [Siddhant Rao (siddhantrao23)](https://github.com/siddhantrao23) 
+contributed by [Siddhant Rao](https://github.com/siddhantrao23) 
 
 
 
@@ -28,4 +28,4 @@ To run use:
 
 ## Sources
 
-See <https://github.com/siddhantrao23/too_chainz>
+See [`too_chainz`](https://github.com/siddhantrao23/too_chainz).
