@@ -9,7 +9,7 @@ contributed by [Siddhant Rao](https://github.com/siddhantrao23)
 
 Structure definition:
 
-``` rs
+``` rust
 pub struct Block {
     pub index: u32,
     pub timestamp: u128,
