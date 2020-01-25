@@ -1,5 +1,11 @@
-# Blockchain made in rust
+# blockchain.rs - Build your own blockchain from scratch in Rust
+
 inspired by [Build a cryptocurrency! - Blockchain in Rust](https://github.com/GeekLaunch/blockchain-rust) by Jacob Lindahl, GeekLaunch
+
+
+contributed by [Siddhant Rao (siddhantrao23)](https://github.com/siddhantrao23) 
+
+
 
 Structure definition:
 
@@ -17,3 +23,9 @@ Structure definition:
 To run use:
 
     $ cargo run 
+
+
+
+## Sources
+
+See <https://github.com/siddhantrao23/too_chainz>
