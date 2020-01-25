@@ -7,3 +7,4 @@ pub trait Hashable {
         crypto_hash::digest(crypto_hash::Algorithm::SHA256, &self.bytes())
     }
 }
+

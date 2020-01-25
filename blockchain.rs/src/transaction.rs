@@ -78,3 +78,4 @@ impl Hashable for Transaction {
         bytes
     }
 }
+
