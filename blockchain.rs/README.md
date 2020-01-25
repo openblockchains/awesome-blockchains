@@ -14,6 +14,6 @@ Structure definition:
     }
 
 
-to run use:
+To run use:
 
     $ cargo run 
