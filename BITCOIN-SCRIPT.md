@@ -64,6 +64,7 @@ Let's start with building your own bitcoin stack machine from zero / scratch and
 
 - Ivy
 - Miniscript by Blockstream
+  - [Miniscript @ Bitcoin Optech](https://bitcoinops.org/en/topics/miniscript/)
 
 
 ## Alternative Languages
@@ -154,6 +155,10 @@ _A new SegWit version 1 output type, with spending rules based on Taproot, Schno
 - [Bitcoin Optech Newsletter #46](https://bitcoinops.org/en/newsletters/2019/05/14/#overview-of-the-taproot--tapscript-proposed-bips), May 14, 2019 - This week's newsletter includes a special section about the Taproot proposal...
 - [Taproot: Bitcoin's Next Big Actions](https://medium.com/coinmonks/taproot-bitcoins-next-big-actions-9c58bb2e111f) by Kento Uchida, May 16, 2019 
 
+<!-- break -->
+
+- [Taproot @ Bitcoin Optech](https://bitcoinops.org/en/topics/taproot/)
+- [Tapscript @ Bitcoin Optech](https://bitcoinops.org/en/topics/tapscript/)
 
 
 ### Merklized Abstract Syntax Tree (MAST)
@@ -162,3 +167,5 @@ _MAST is an extending design for Bitcoin, which can be understood as adding a sm
 
 - [What is a Bitcoin Merklized Abstract Syntax Tree (MAST)?](https://bitcointechtalk.com/what-is-a-bitcoin-merklized-abstract-syntax-tree-mast-33fdf2da5e2f) by David A. Harding, Oct 12, 2017
 
+<!-- break -->
+- [MAST @ Bitcoin Optech](https://bitcoinops.org/en/topics/mast/)
