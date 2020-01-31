@@ -143,7 +143,7 @@ A number of related ideas for improving Bitcoin's scripting capabilities have be
 
 ### Taproot & Tapscript
 
-_ A new SegWit version 1 output type, with spending rules based on Taproot, Schnorr signatures, and Merkle branches._
+_A new SegWit version 1 output type, with spending rules based on Taproot, Schnorr signatures, and Merkle branches._
 
 - [Bitcoin Optech Newsletter #46](https://bitcoinops.org/en/newsletters/2019/05/14/#overview-of-the-taproot--tapscript-proposed-bips), May 14, 2019 - This week's newsletter includes a special section about the Taproot proposal...
 - [Taproot: Bitcoin's Next Big Actions](https://medium.com/coinmonks/taproot-bitcoins-next-big-actions-9c58bb2e111f) by Kento Uchida, May 16, 2019 
