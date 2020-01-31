@@ -138,11 +138,21 @@ It's worth highlighting the following features of this formal grammar:
 
 ## Future Bitcoin Script Notes / Updates / Upgrades
 
+A number of related ideas for improving Bitcoin's scripting capabilities have been previously proposed: Schnorr signatures (bip-schnorr), Merkle branches ("MAST", [BIP114](https://github.com/bitcoin/bips/blob/master/bip-0114.mediawiki)), ([BIP117](https://github.com/bitcoin/bips/blob/master/bip-0117.mediawiki)), new sighash modes ([BIP118](https://github.com/bitcoin/bips/blob/master/bip-0118.mediawiki)), new opcodes like CHECKSIGFROMSTACK, [Taproot](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-January/015614.html), [Graftroot](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-February/015700.html), [G'root](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-July/016249.html), and [cross-input aggregation](https://bitcointalk.org/index.php?topic=1377298.0).
+
+
 ### Taproot & Tapscript
 
-- [Bitcoin Optech Newsletter #46](https://bitcoinops.org/en/newsletters/2019/05/14/#overview-of-the-taproot--tapscript-proposed-bips), May 14, 2019 - This week's newsletter includes a special section about the recent Taproot proposal...
+_ A new SegWit version 1 output type, with spending rules based on Taproot, Schnorr signatures, and Merkle branches._
+
+- [Bitcoin Optech Newsletter #46](https://bitcoinops.org/en/newsletters/2019/05/14/#overview-of-the-taproot--tapscript-proposed-bips), May 14, 2019 - This week's newsletter includes a special section about the Taproot proposal...
+- [Taproot: Bitcoin's Next Big Actions](https://medium.com/coinmonks/taproot-bitcoins-next-big-actions-9c58bb2e111f) by Kento Uchida, May 16, 2019 
+
+
 
 ### Merklized Abstract Syntax Tree (MAST)
+
+_MAST is an extending design for Bitcoin, which can be understood as adding a smart contract-like function to the existing system. The basic idea of MAST is to combine the original condition script Pay-to-ScriptHash (P2SH) with the Merkle Tree structure, so that logically more complex and flexible transaction scripts can be implemented in Bitcoin. What is more, MAST makes the transaction volume regarding various scripts to further shrink with privacy steadily enhanced, totally a comprehensive upgrade based on P2SH, period._ 
 
 - [What is a Bitcoin Merklized Abstract Syntax Tree (MAST)?](https://bitcointechtalk.com/what-is-a-bitcoin-merklized-abstract-syntax-tree-mast-33fdf2da5e2f) by David A. Harding, Oct 12, 2017
 
