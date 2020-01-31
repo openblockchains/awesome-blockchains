@@ -138,7 +138,7 @@ It's worth highlighting the following features of this formal grammar:
 
 ## Future Bitcoin Script Notes / Updates / Upgrades
 
-A number of related ideas for improving Bitcoin's scripting capabilities have been previously proposed: Schnorr signatures (bip-schnorr), Merkle branches ("MAST", [BIP114](https://github.com/bitcoin/bips/blob/master/bip-0114.mediawiki)), ([BIP117](https://github.com/bitcoin/bips/blob/master/bip-0117.mediawiki)), new sighash modes ([BIP118](https://github.com/bitcoin/bips/blob/master/bip-0118.mediawiki)), new opcodes like CHECKSIGFROMSTACK, [Taproot](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-January/015614.html), [Graftroot](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-February/015700.html), [G'root](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-July/016249.html), and [cross-input aggregation](https://bitcointalk.org/index.php?topic=1377298.0).
+A number of related ideas for improving Bitcoin's scripting capabilities have been previously proposed: Schnorr signatures (bip-schnorr), Merkle branches ("MAST", [BIP114](https://github.com/bitcoin/bips/blob/master/bip-0114.mediawiki), [BIP117](https://github.com/bitcoin/bips/blob/master/bip-0117.mediawiki)), new sighash modes ([BIP118](https://github.com/bitcoin/bips/blob/master/bip-0118.mediawiki)), new opcodes like CHECKSIGFROMSTACK, [Taproot](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-January/015614.html), [Graftroot](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-February/015700.html), [G'root](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-July/016249.html), and [cross-input aggregation](https://bitcointalk.org/index.php?topic=1377298.0).
 
 
 ### Taproot & Tapscript
