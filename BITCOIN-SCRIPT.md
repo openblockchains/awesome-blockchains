@@ -1,5 +1,11 @@
-`DUP HASH160 93ce48570b55c42c2af816aeaba06cfee1224fae EQUALVERIFY CHECKSIG`
-
+```
+IF
+    2 <Alice's pubkey> <Bob's pubkey> <Escrow's pubkey> 3 CHECKMULTISIG
+ELSE
+    "30d" CHECKSEQUENCEVERIFY DROP
+    <Alice's pubkey> CHECKSIG
+ENDIF
+```
 
 # Bitcoin Script
 
