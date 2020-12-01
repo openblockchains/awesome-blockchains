@@ -35,6 +35,38 @@ Contents:
 
 
 
+## What's News?
+
+The Open Blockchains Book of the Year 2020 Award Goes To...
+
+![](i/libra-shrugged.png)
+[**Libra Shrugged: How Facebook Tried to Take Over the Money**](https://davidgerard.co.uk/blockchain/libra/) 
+by David Gerard, November 2020, 182 Pages --
+_Introduction: Taking over the money  ++
+A user's guide to Libra   ++
+The genesis of Libra: Beller's blockchain ++
+To launch a Libra: Let’s start a crypto  ++
+Bitcoin: why Libra is like this  ++
+The Libra White Papers  ++
+Banking the unbanked  ++
+The Libra Reserve plan and economic stability ++
+Libra, privacy and your digital identity  ++
+The regulators recoil in horror  ++
+David Marcus before the US House and Senate ++
+July to September 2019: Libra runs the gauntlet  ++
+October 2019: Libra's bad month  ++
+Mark Zuckerberg before the US House  ++
+November 2019: The comedown  ++
+Central bank digital currencies  ++
+Epilogue: Libra 2.0: not dead yet  ++
+Appendix: 2010–2013: The rise and fall of Facebook Credits_
+
+
+For more about the Libra, see the [Awesome Libra (and Move) page »](https://github.com/openblockchains/awesome-libra)  
+
+
+
+
 ## Frequently Asked Questions (F.A.Q.s) & Answers
 
 
