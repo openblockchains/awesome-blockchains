@@ -62,7 +62,7 @@ Epilogue: Libra 2.0: not dead yet  ++
 Appendix: 2010–2013: The rise and fall of Facebook Credits_
 
 
-For more about Libra, see the [Awesome Libra (and Move) page »](https://github.com/openblockchains/awesome-libra)  
+For more about Diem (formerly Libra), see the [Awesome Diem (formerly Libra) and Move page »](https://github.com/openblockchains/awesome-diem)  
 
 
 
