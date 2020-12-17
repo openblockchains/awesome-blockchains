@@ -37,7 +37,7 @@ Contents:
 
 ## What's News?
 
-The Open Blockchains Book of the Year 2020 Award Goes To...
+### The Open Blockchains Book of the Year 2020 Award Goes To...
 
 ![](i/libra-shrugged.png)
 [**Libra Shrugged: How Facebook Tried to Take Over the Money**](https://davidgerard.co.uk/blockchain/libra/) 
@@ -64,6 +64,18 @@ Appendix: 2010–2013: The rise and fall of Facebook Credits_
 
 For more about Diem (formerly Libra), see the [Awesome Diem (formerly Libra) and Move page »](https://github.com/openblockchains/awesome-diem)  
 
+
+### The Best Crypto Quote "Oracle Saying" of the Year 2020 Award Goes To...
+
+> SEC Investor Education:
+> - Don't understand an investment?
+> - Don't invest in it.
+
+Yes, but what if there's only 21 million of it?
+
+  \- Trolly McTrollface
+
+For more crypto quotes, see the [100+ Crypto Quotes - On the New New "In Math We Trust" Ponzi Economics - On Get-Rich-Quick Blockchain Secrets - On Bitcon Maximalists, Scammers, Morons, Clowns, Shills & BagHODLers and More page »](https://github.com/openblockchains/crypto-quotes)
 
 
 
