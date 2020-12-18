@@ -75,7 +75,7 @@ Yes, but what if there's only 21 million of it?
 
   \- Trolly McTrollface
 
-For more crypto quotes, see the [100+ Crypto Quotes - On the New New "In Math We Trust" Ponzi Economics - On Get-Rich-Quick Blockchain Secrets - On Bitcon Maximalists, Scammers, Morons, Clowns, Shills & BagHODLers and More page »](https://github.com/openblockchains/crypto-quotes)
+For more crypto quotes, see the [100+ Best of Crypto Quotes - I HODL, you HODL, we HODL! - BREAKING: BITCOIN JUST BROKE $22 000! page »](https://github.com/openblockchains/crypto-quotes)
 
 
 
