@@ -37,6 +37,8 @@ Contents:
 
 ## What's News?
 
+For blockchain books, see the new [**Best of Crypto Books page »**](https://openblockchains.github.io/crypto-books/)
+
 ### The Open Blockchains Book of the Year 2020 Award Goes To...
 
 ![](i/libra-shrugged.png)
@@ -61,12 +63,11 @@ Central bank digital currencies  ++
 Epilogue: Libra 2.0: not dead yet  ++
 Appendix: 2010–2013: The rise and fall of Facebook Credits_
 
-
 For more about Diem (formerly Libra), see the [Awesome Diem (formerly Libra) and Move page »](https://github.com/openblockchains/awesome-diem)  
 
-For more blockchain books, see the [Best of Crypto Books page »](https://openblockchains.github.io/crypto-books/)
+---
 
-
+For crypto quotes, see the new [**100+ Best of Crypto Quotes - I HODL, you HODL, we HODL! - BREAKING: BITCOIN JUST BROKE $22 000! page »**](https://github.com/openblockchains/crypto-quotes)
 
 ### The Best Crypto Quote "Oracle Saying" of the Year 2020 Award Goes To...
 
@@ -77,8 +78,6 @@ For more blockchain books, see the [Best of Crypto Books page »](https://openbl
 Yes, but what if there's only 21 million of it?
 
   \- Trolly McTrollface
-
-For more crypto quotes, see the [100+ Best of Crypto Quotes - I HODL, you HODL, we HODL! - BREAKING: BITCOIN JUST BROKE $22 000! page »](https://github.com/openblockchains/crypto-quotes)
 
 
 
