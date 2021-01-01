@@ -64,6 +64,9 @@ Appendix: 2010–2013: The rise and fall of Facebook Credits_
 
 For more about Diem (formerly Libra), see the [Awesome Diem (formerly Libra) and Move page »](https://github.com/openblockchains/awesome-diem)  
 
+For more blockchain books, see the [Best of Crypto Books page »](https://openblockchains.github.io/crypto-books/)
+
+
 
 ### The Best Crypto Quote "Oracle Saying" of the Year 2020 Award Goes To...
 
