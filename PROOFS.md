@@ -6,7 +6,7 @@ Proofs for Finding Consensus • Proofs for Finding Truth • Consensus Protocol
 A curated list of proofs for finding consensus / for finding truth. 
 
 
-## Proof of Work (PoW)
+## Proof of Work / Proof of Waste (PoW)
 
 Using a lottery to pick the winner - to "play" you have to "work" - the more you "work" the bigger your chances to win.
 
@@ -14,6 +14,12 @@ Using a lottery to pick the winner - to "play" you have to "work" - the more you
 ## Proof of Stake (PoS)
 
 
+## Proof of Authority (PoA)
+
+## Proof of Person / Proof of Personhood (PoP)
+
+
+## Proof of Importance (PoI)
 
 ## Proof of Activity (PoA)
 
