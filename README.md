@@ -212,6 +212,8 @@ by Adil Moujahid, March 2018, [(Source)](https://github.com/adilmoujahid/blockch
 
 [**centralbank command line tool (and library) - Print Your Own Money / Cryptocurrency; Run Your Own Federated Central Bank Nodes on the Blockchain Peer-to-Peer over HTTP**](https://planetruby.github.io/calendar/advent2017/24-centralbank.html) by Gerald Bauer, Ruby Advent Calendar 2017 / Day 24, December 2017
 
+[**A guide to building a blockchain & cryptocurrency from scratch**](https://antoinefink.com/building-a-blockchain-and-cryptocurrency-in-ruby) [(Source)](https://github.com/antoinefink/melon) by Antoine Fink, April 2021
+
 
 ### Crystal
 
