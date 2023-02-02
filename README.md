@@ -1,5 +1,5 @@
 
-Mining Digital Gold one Block at a Time?! • Don't Expect to Get Insanely Rich (Quick) • Tulips :tulip::tulip::tulip: (like Blockchains) are Great and Gorgeous (and will Endure)  
+Mining Digital Gold one Block at a Time?! • Don't Expect to Get Insanely Rich (Quick) • Tulips :tulip::tulip::tulip: (like Blockchains) are Great and Gorgeous (and will Endure)
 
 ```ruby
 b0 = Block.first(
@@ -42,7 +42,7 @@ For blockchain books, see the new [**Best of Crypto Books page »**](https://ope
 ### The Open Blockchains Book of the Year 2020 Award Goes To...
 
 ![](i/libra-shrugged.png)
-[**Libra Shrugged: How Facebook Tried to Take Over the Money**](https://davidgerard.co.uk/blockchain/libra/) 
+[**Libra Shrugged: How Facebook Tried to Take Over the Money**](https://davidgerard.co.uk/blockchain/libra/)
 by David Gerard, November 2020, 182 Pages --
 _Introduction: Taking over the money  ++
 A user's guide to Libra   ++
@@ -63,7 +63,7 @@ Central bank digital currencies  ++
 Epilogue: Libra 2.0: not dead yet  ++
 Appendix: 2010–2013: The rise and fall of Facebook Credits_
 
-For more about Diem (formerly Libra), see the [Awesome Diem (formerly Libra) and Move page »](https://github.com/openblockchains/awesome-diem)  
+For more about Diem (formerly Libra), see the [Awesome Diem (formerly Libra) and Move page »](https://github.com/openblockchains/awesome-diem)
 
 ---
 
@@ -411,7 +411,7 @@ def compute_hash_with_proof_of_work( difficulty="00" )
   nonce = 0
   loop do
     hash = calc_hash_with_nonce( nonce )
-    if hash.start_with?( difficulty )  
+    if hash.start_with?( difficulty )
       return [nonce,hash]     ## bingo! proof of work if hash starts with leading zeros (00)
     else
       nonce += 1              ## keep trying (and trying and trying)
@@ -624,20 +624,20 @@ Blockchain Applications_
 ![](i/trolly-ponzi.png)
 
 **BEWARE: Bitcoin is a gigantic ponzi scheme¹.
-To the moon!? The new gold standard!? 
-Do NOT "invest" trying to get-rich-quick HODLing. 
+To the moon!? The new gold standard!?
+Do NOT "invest" trying to get-rich-quick HODLing.
 Why not? The bitcoin code is archaic and out-of-date.
 Burn, baby, burn! Proof-of-work / waste is a global
 energy environmental disaster
 using 300 kW/h per bitcoin transaction (!) that's about 179 kilograms of CO₂ emissions².
-Programmable money (or the internet of value) 
+Programmable money (or the internet of value)
 for all future generations with (bitcoin) script
 without loops and jumps (gotos) and all "stateless"!? LOL.**
 
 ¹: (Source: [Best of Bitcoin Maximalist - Scammers, Morons, Clowns, Shills & BagHODLers - Inside The New New Crypto Ponzi Economics](https://bitsblocks.github.io/bitcoin-maximalist))
 
-²: Assuming let's say 0.596 kilograms of CO₂ per kW/h 
-(that's the energy efficiency in Germany) that's 
+²: Assuming let's say 0.596 kilograms of CO₂ per kW/h
+(that's the energy efficiency in Germany) that's
 about 179 kilograms of CO₂ per bitcoin transaction (300 kW/h × 0.596 kg). For more insights see the [Bitcoin Energy Consumption Index](https://digiconomist.net/bitcoin-energy-consumption).
 
 ---
@@ -646,7 +646,7 @@ about 179 kilograms of CO₂ per bitcoin transaction (300 kW/h × 0.596 kg). For
 [**Programming Bitcoin from Scratch**](https://github.com/jimmysong/programmingbitcoin) by Jimmy Song, 2019 - FREE (Online Source Version) -- _[Chapter 6 - Script](https://github.com/jimmysong/programmingbitcoin/blob/master/ch06.asciidoc) - How Script Works • Example Operations • Parsing the Script Fields • Combining the Script Fields • Standard Scripts • p2pk • Problems with p2pk • Solving the Problems with p2pkh • Scripts Can Be Arbitrarily Constructed • Conclusion ++_
 _[Chapter 8 - Pay-to-Script Hash](https://github.com/jimmysong/programmingbitcoin/blob/master/ch08.asciidoc) - Bare Multisig • Coding OP_CHECKMULTISIG • Problems with Bare Multisig • Pay-to-Script-Hash (p2sh) • Coding p2sh • Conclusion ++_
 _[Chapter 13 - Segregated Witness](https://github.com/jimmysong/programmingbitcoin/blob/master/ch13.asciidoc) - Pay-to-Witness-Pubkey-Hash (p2wpkh) • p2wpkh Transactions • p2sh-p2wpkh • Coding p2wpkh and p2sh-p2wpkh • Pay-to-Witness-Script-Hash (p2wsh) • p2sh-p2wsh • Coding p2wsh and p2sh-p2wsh • Other Improvements • Conclusion_
-  
+
 
 [**Programming Bitcoin Script Transaction (Crypto) Contracts Step-by-Step ( Beta / Rough Draft )**](https://github.com/openblockchains/programming-bitcoin-script)
 by Gerald Bauer et al, 2019 - FREE (Online Version) --
@@ -678,8 +678,8 @@ Contract Services ++
 Tokens ++
 Oracles ++
 Accounting & Gas ++
-EVM (Ethereum Virtual Machine) ++ 	
-Consensus ++		
+EVM (Ethereum Virtual Machine) ++
+Consensus ++
 DevP2P (Peer-To-Peer) Protocol ++
 Dev Tools and Frameworks ++
 Decentralized Apps ++
@@ -749,14 +749,14 @@ Step 2: Pump up your tokens. How? ++
 Step 3: Revolutionize the World. How?_
 
 
-[**Best of Bitcoin Maximalist - Scammers, Morons, Clowns, Shills & BagHODLers - Inside The New New Crypto Ponzi Economics**](https://github.com/bitsblocks/bitcoin-maximalist) by Trolly McTrollface, et al, 2018 - FREE 
+[**Best of Bitcoin Maximalist - Scammers, Morons, Clowns, Shills & BagHODLers - Inside The New New Crypto Ponzi Economics**](https://github.com/bitsblocks/bitcoin-maximalist) by Trolly McTrollface, et al, 2018 - FREE
 
-[**Crypto Facts - Decentralize Payments - Efficient, Low Cost, Fair, Clean - True or False?**](https://github.com/bitsblocks/crypto-facts) by Nouriel Roubini, David Gerard, et al, 2018 - FREE 
+[**Crypto Facts - Decentralize Payments - Efficient, Low Cost, Fair, Clean - True or False?**](https://github.com/bitsblocks/crypto-facts) by Nouriel Roubini, David Gerard, et al, 2018 - FREE
 
-[**Crypto is the Mother of All Scams and (Now Busted) Bubbles - While Blockchain Is The Most Over-Hyped Technology Ever, No Better than a Spreadsheet/Database**](https://github.com/bitsblocks/crypto-bubbles) by Nouriel Roubini, 2018 - FREE 
+[**Crypto is the Mother of All Scams and (Now Busted) Bubbles - While Blockchain Is The Most Over-Hyped Technology Ever, No Better than a Spreadsheet/Database**](https://github.com/bitsblocks/crypto-bubbles) by Nouriel Roubini, 2018 - FREE
 
 [**IslandCoin White Paper - A Pen and Paper Cash System - How to Run a Blockchain on a Deserted Island**](https://github.com/bitsblocks/islandcoin-whitepaper)
-by Tal Kol -- 
+by Tal Kol --
 _Motivation ++
 Consensus ++
 Transaction and Block Specification -
@@ -791,7 +791,7 @@ b3 = Block.next( b2, "More Transaction Data..." )
 
 blockchain = [b0, b1, b2, b3]
 
-pp blockchain   
+pp blockchain
 ```
 
 will pretty print (pp) something like:
@@ -939,7 +939,7 @@ A3: Git Commands_
 
 [**Shilling (or Schilling)**](https://github.com/bitshilling/bitshilling) - Shilling on the Blockchain! - Rock-Solid Alpine Dollar from Austria
 
-[**Tulips**](https://github.com/openblockchains/tulips) - Tulips on the Blockchain! - Learn by Example from the Real World (Anno 1637) - Buy! Sell! Hold! Enjoy the Beauty of Admiral of Admirals, Semper Augustus, and More
+[**Tulips**](TULIPS.md) - Tulips on the Blockchain! - Learn by Example from the Real World (Anno 1637) - Buy! Sell! Hold! Enjoy the Beauty of Admiral of Admirals, Semper Augustus, and More
 
 
 
