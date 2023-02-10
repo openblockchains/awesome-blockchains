@@ -1077,7 +1077,7 @@ _A curated list of awesome lists._
 - [**Awesome CryptoKitties (and CryptoCopycats)**](https://github.com/openblockchains/awesome-cryptokitties) by Gerald Bauer et al -- a curated list about the awesome crypto kitties and copycats
 - [**Awesome Git**](https://github.com/dictcp/awesome-git) by Dick Tang et al -- a curated list of amazingly awesome Git tools, resources and shiny things
 - [**Awesome**](https://github.com/sindresorhus/awesome) by Sindre Sorhus et al -- a curated list of awesome lists
-
+- [**Blockchain Roadmap**](https://roadmap.sh/blockchain) -- Roadmap to become a Blockchain Developer
 
 
 
