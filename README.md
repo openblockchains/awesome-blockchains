@@ -1070,6 +1070,7 @@ _Revolutionize the world one country at a time. Blockchainers of the world, unit
 _A curated list of awesome lists._
 
 - [**Blockchain Stuff**](https://github.com/Xel/Blockchain-stuff) -- a curated list of blockchain and general cryptocurrency resources
+- [**Blockchain Roadmap**](https://roadmap.sh/blockchain) -- a step-by-step roadmap / guide to become a blockchain programmer
 - [**Awesome Blockchain**](https://github.com/igorbarinov/awesome-blockchain) by Igor Barinov et al -- a curated list of the bitcoin blockchain services
 - [**Awesome Blockchain**](https://github.com/imbaniac/awesome-blockchain) by Tim Reznich et al -- a curated list of blockchain services and exchanges
 - [**Awesome Blockchain**](https://github.com/istinspring/awesome-blockchain) by `istinspring` et al -- a curated list of awesome projects and services based on blockchain technology
@@ -1077,7 +1078,6 @@ _A curated list of awesome lists._
 - [**Awesome CryptoKitties (and CryptoCopycats)**](https://github.com/openblockchains/awesome-cryptokitties) by Gerald Bauer et al -- a curated list about the awesome crypto kitties and copycats
 - [**Awesome Git**](https://github.com/dictcp/awesome-git) by Dick Tang et al -- a curated list of amazingly awesome Git tools, resources and shiny things
 - [**Awesome**](https://github.com/sindresorhus/awesome) by Sindre Sorhus et al -- a curated list of awesome lists
-- [**Blockchain Roadmap**](https://roadmap.sh/blockchain) -- Roadmap to become a Blockchain Developer
 
 
 
