@@ -270,6 +270,12 @@ by Xavier Decuyper, July 2017
 - [**Part 6: Transactions 2**](https://jeiwan.cc/posts/building-blockchain-in-go-part-6/), September 2017
 - [**Part 7: Network**](https://jeiwan.cc/posts/building-blockchain-in-go-part-7/), October 2017
 
+### C#
+
+**Building Blockchain in C# Series** by Ivan Kuznetsov
+
+- [SeguraChain](https://github.com/SeguraChain/SeguraChain) – A decentralized blockchain framework focused on [insert core features like privacy, speed, etc.].
+
 <!-- break -->
 
 Blockchain Series in Go by by Coral Health [(Source)](https://github.com/mycoralhealth/blockchain-tutorial)
