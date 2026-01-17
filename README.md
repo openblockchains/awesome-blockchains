@@ -860,6 +860,24 @@ will log something like:
 ```
 
 
+**@hashgraphonline/standards-sdk** (github: [hashgraph-online/standards-sdk](https://github.com/hashgraph-online/standards-sdk),
+npm: [@hashgraphonline/standards-sdk](https://www.npmjs.com/package/@hashgraphonline/standards-sdk)) -
+TypeScript SDK for building and interacting with decentralized AI agents on the Hedera network.
+
+```js
+import { RegistryBrokerClient } from '@hashgraphonline/standards-sdk';
+
+const client = new RegistryBrokerClient();
+
+// Search for AI agents
+const results = await client.search({ q: 'weather', limit: 10 });
+
+// Start a chat conversation
+const conversation = await client.chat.start({ uaid, auth });
+const response = await conversation.send({ plaintext: 'Hello' });
+```
+
+
 ## Git, Git, Git - The Stupid Content Tracker with Crypto Hashes
 
 _Everything is local. Distributed is the new centralized._
