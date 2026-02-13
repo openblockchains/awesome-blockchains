@@ -201,6 +201,10 @@ by Daniel van Flymen, September 2017, [(Source)](https://github.com/dvf/blockcha
 [**A Practical Introduction to Blockchain with Python**](http://adilmoujahid.com/posts/2018/03/intro-blockchain-bitcoin-python/)
 by Adil Moujahid, March 2018, [(Source)](https://github.com/adilmoujahid/blockchain-python-tutorial)
 
+<!-- break -->
+
+[**RustChain - Proof of Antiquity Blockchain (in Python)**](https://github.com/Scottcjn/Rustchain) -- A blockchain that rewards mining on vintage/retro hardware (PowerPC G4, G5, IBM POWER8) with hardware fingerprinting to prevent emulation fraud. Install the miner with `pip install clawrtc`.
+
 
 ### Ruby
 
