@@ -201,6 +201,8 @@ by Daniel van Flymen, September 2017, [(Source)](https://github.com/dvf/blockcha
 [**A Practical Introduction to Blockchain with Python**](http://adilmoujahid.com/posts/2018/03/intro-blockchain-bitcoin-python/)
 by Adil Moujahid, March 2018, [(Source)](https://github.com/adilmoujahid/blockchain-python-tutorial)
 
+[**py-ethclient - A Complete Ethereum Execution Client in Pure Python**](https://github.com/tokamak-network/py-ethclient) - A from-scratch Python implementation of a full Ethereum L1 node with EVM (140+ opcodes), RLPx encrypted transport, eth/68 and snap/1 wire protocols, full sync, snap sync, Engine API, and JSON-RPC. Great reference for understanding how Ethereum works at the protocol level.
+
 
 ### Ruby
 
