@@ -252,6 +252,7 @@ by Xavier Decuyper, July 2017
 
 
 ### Rust
+- [RustChain](https://rustchain.org) - A blockchain powered by Proof-of-Antiquity consensus that rewards vintage hardware.
 
 **Building Blockchain in Rust Series** by Jacob Lindahl, GeekLaunch, [(Source)](https://github.com/GeekLaunch/blockchain-rust), [(Slide Decks in PDF)](https://github.com/GeekLaunch/slides)
 - [**Part 1: Blocks and Hashing**](https://medium.com/geeklaunch/blockchain-in-rust-01-blocks-hashing-4192f2265d3d), January 2019
