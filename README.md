@@ -1088,3 +1088,5 @@ _A curated list of awesome lists._
 ![](https://publicdomainworks.github.io/buttons/zero88x31.png)
 
 The awesome list is dedicated to the public domain. Use it as you please with no restrictions whatsoever.
+
+- **[GOOM](https://www.goom.space)** - Mars Migration Queue with immutable, transferable blockchain-based MQID positions. [GitHub](https://github.com/u9mobile-code/goom)
