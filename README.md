@@ -1088,3 +1088,12 @@ _A curated list of awesome lists._
 ![](https://publicdomainworks.github.io/buttons/zero88x31.png)
 
 The awesome list is dedicated to the public domain. Use it as you please with no restrictions whatsoever.
+
+## Proof-of-Antiquity Blockchains
+
+**RustChain** (web: [rustchain.org](https://rustchain.org), github: [Scottcjn/Rustchain](https://github.com/Scottcjn/Rustchain))
+- Proof-of-Antiquity consensus - vintage PowerPC hardware earns 2.5x mining rewards
+- Hardware fingerprinting with CPU antiquity verification
+- Solana bridge (wRTC) for cross-chain liquidity
+- AI agent economy integration (BoTTube)
+- Discord: [discord.gg/VqVVS2CW9Q](https://discord.gg/VqVVS2CW9Q)
