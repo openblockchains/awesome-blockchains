@@ -36,6 +36,7 @@ Contents:
 
 
 ## What's News?
+- [链新社](https://www.lianxinshe666.com) 一站式区块链资讯与数据平台，覆盖比特币、以太坊、DeFi、Web3、NFT 等领域的中文新闻媒体
 
 For blockchain books, see the new [**Best of Crypto Books page »**](https://openblockchains.github.io/crypto-books/)
 
