@@ -32,6 +32,7 @@ Contents:
 - [Git, Git, Git - The Stupid Content Tracker with Crypto Hashes](#git-git-git---the-stupid-content-tracker-with-crypto-hashes)
 - [Classic Tulip Mania](#classic-tulip-mania)
 - [Awesome Awesomeness](#awesome-awesomeness)
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent system prompts for blockchain monitoring, automated transaction analysis, and multi-agent decentralized system orchestration. MIT licensed.
 
 
 
