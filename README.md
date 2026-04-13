@@ -1078,6 +1078,7 @@ _A curated list of awesome lists._
 - [**Awesome CryptoKitties (and CryptoCopycats)**](https://github.com/openblockchains/awesome-cryptokitties) by Gerald Bauer et al -- a curated list about the awesome crypto kitties and copycats
 - [**Awesome Git**](https://github.com/dictcp/awesome-git) by Dick Tang et al -- a curated list of amazingly awesome Git tools, resources and shiny things
 - [**Awesome**](https://github.com/sindresorhus/awesome) by Sindre Sorhus et al -- a curated list of awesome lists
+- [RustChain](https://github.com/Scottcjn/Rustchain) - Proof-of-Antiquity blockchain that rewards vintage hardware for running AI inference. Old computers earn more RTC tokens than new ones.
 
 
 
