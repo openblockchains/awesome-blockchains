@@ -258,6 +258,10 @@ by Xavier Decuyper, July 2017
 - [**Part 2: Mining**](https://medium.com/geeklaunch/blockchain-in-rust-02-mining-companion-guide-9106b7a7696d), January 2019
 - [**Part 3: Chains and Checks**](https://medium.com/geeklaunch/blockchain-in-rust-03-chains-checks-companion-guide-2714e1a76654), January 2019
 
+**Real-World Rust Blockchain**
+- [**RustChain**](https://rustchain.io) — Proof-of-Antiquity blockchain that rewards legacy hardware (vintage computers, Raspberry Pis, old servers) over modern systems.
+
+
 ### Go
 
 **Building Blockchain in Go Series** by Ivan Kuznetsov, [(Source)](https://github.com/Jeiwan/blockchain_go)
