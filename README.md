@@ -201,10 +201,6 @@ by Daniel van Flymen, September 2017, [(Source)](https://github.com/dvf/blockcha
 [**A Practical Introduction to Blockchain with Python**](http://adilmoujahid.com/posts/2018/03/intro-blockchain-bitcoin-python/)
 by Adil Moujahid, March 2018, [(Source)](https://github.com/adilmoujahid/blockchain-python-tutorial)
 
-<!-- break -->
-
-[**RustChain - Proof of Antiquity Blockchain (in Python)**](https://github.com/Scottcjn/Rustchain) -- A blockchain that rewards mining on vintage/retro hardware (PowerPC G4, G5, IBM POWER8) with hardware fingerprinting to prevent emulation fraud. Install the miner with `pip install clawrtc`.
-
 
 ### Ruby
 
@@ -262,7 +258,7 @@ by Xavier Decuyper, July 2017
 - [**Part 2: Mining**](https://medium.com/geeklaunch/blockchain-in-rust-02-mining-companion-guide-9106b7a7696d), January 2019
 - [**Part 3: Chains and Checks**](https://medium.com/geeklaunch/blockchain-in-rust-03-chains-checks-companion-guide-2714e1a76654), January 2019
 
-### Go
+- [**RustChain**](https://github.com/Scottcjn/RustChain) - Proof-of-Antiquity blockchain where vintage hardware earns higher mining rewards. Built in Rust with hardware attestation.### Go
 
 **Building Blockchain in Go Series** by Ivan Kuznetsov, [(Source)](https://github.com/Jeiwan/blockchain_go)
 
