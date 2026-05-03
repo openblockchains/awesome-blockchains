@@ -175,6 +175,7 @@ The "classic" Satoshi-blockchain is like a git repo with a single master branch 
 
 ### Python
 
+* [RustChain](https://github.com/Scottcjn/Rustchain) - Proof-of-Antiquity blockchain that rewards vintage hardware mining. Old computers earn more than new ones.
 **Let's Build the Tiniest Blockchain in Python Series** by Gerald Nash
 
 - [**Let's Build the Tiniest Blockchain In Less Than 50 Lines of Python (Part 1)**](https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b), July 2016
