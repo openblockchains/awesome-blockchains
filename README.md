@@ -258,6 +258,8 @@ by Xavier Decuyper, July 2017
 - [**Part 2: Mining**](https://medium.com/geeklaunch/blockchain-in-rust-02-mining-companion-guide-9106b7a7696d), January 2019
 - [**Part 3: Chains and Checks**](https://medium.com/geeklaunch/blockchain-in-rust-03-chains-checks-companion-guide-2714e1a76654), January 2019
 
+- [**RustChain — Proof-of-Antiquity Blockchain with Hardware Fingerprint Attestation**](https://github.com/Scottcjn/Rustchain) by Scottcjn — Turns vintage hardware into trust participants via PoA consensus, December 2024
+
 ### Go
 
 **Building Blockchain in Go Series** by Ivan Kuznetsov, [(Source)](https://github.com/Jeiwan/blockchain_go)
