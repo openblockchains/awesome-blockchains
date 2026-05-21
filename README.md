@@ -202,6 +202,10 @@ by Daniel van Flymen, September 2017, [(Source)](https://github.com/dvf/blockcha
 by Adil Moujahid, March 2018, [(Source)](https://github.com/adilmoujahid/blockchain-python-tutorial)
 
 
+**[ZGC — Working Proof-of-Stake Chain in a Single Python File (stdlib only)](https://github.com/0riginal-claw/zgc)**
+by Zach Gladstone, 2026, [(Source)](https://github.com/0riginal-claw/zgc/blob/main/scripts/zg_chain_node.py) — A working PoS chain with HMAC-signed blocks, round-robin proposer election, and HTTP gossip. Python 3.8+ stdlib only, MIT licensed.
+
+
 ### Ruby
 
 [**How Does Bitcoin Force Consensus Among Byzantine Generals?**](http://www.akitaonrails.com/2017/11/01/how-does-bitcoin-force-consensus-among-byzantine-generals) by Fabio Akita, November 2017
