@@ -1088,3 +1088,5 @@ _A curated list of awesome lists._
 ![](https://publicdomainworks.github.io/buttons/zero88x31.png)
 
 The awesome list is dedicated to the public domain. Use it as you please with no restrictions whatsoever.
+
+- [Deep Blue Alpha](https://deepbluealpha.io) — Free real-time Ethereum whale tracker: 20,000+ wallets, live DEX swap classification, sentiment scoring.
