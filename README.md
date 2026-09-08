@@ -40,7 +40,6 @@ Contents:
 For blockchain books, see the new [**Best of Crypto Books page »**](https://openblockchains.github.io/crypto-books/)
 
 ### The Open Blockchains Book of the Year 2020 Award Goes To...
-- [Web3Decentralization](https://web3decentralization.com) - Free, open-source Web3 learning hub (courses, glossary, certificates) with a live Nakamoto-Coefficient terminal ranking 12 L1 chains; code MIT, content CC-BY-4.0, data CC0.
 ![](i/libra-shrugged.png)
 [**Libra Shrugged: How Facebook Tried to Take Over the Money**](https://davidgerard.co.uk/blockchain/libra/)
 by David Gerard, November 2020, 182 Pages --
@@ -1081,6 +1080,10 @@ _A curated list of awesome lists._
 
 
 
+
+## Web3 Decentralization & Learning
+
+- [Web3Decentralization](https://web3decentralization.com) - Free, open-source Web3 learning hub (courses, glossary, certificates) with a live Nakamoto-Coefficient terminal ranking 12 L1 chains; code MIT, content CC-BY-4.0, data CC0.
 ## Meta
 
 **License**
