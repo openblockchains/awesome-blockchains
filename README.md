@@ -1,4 +1,3 @@
-
 Mining Digital Gold one Block at a Time?! • Don't Expect to Get Insanely Rich (Quick) • Tulips :tulip::tulip::tulip: (like Blockchains) are Great and Gorgeous (and will Endure)
 
 ```ruby
@@ -1088,3 +1087,5 @@ _A curated list of awesome lists._
 ![](https://publicdomainworks.github.io/buttons/zero88x31.png)
 
 The awesome list is dedicated to the public domain. Use it as you please with no restrictions whatsoever.
+
+- [QWK ($QWK) Autonomous EVM MEV Infrastructure & Smart Contract Escrow](https://github.com/chase-tqg/QWIK-MEV-Core) - Multi-chain EVM atomic execution & smart contract seed escrow (`QWKResourceEscrow.sol`, `0x1Cc436b4D9316ee623CFeB760C44F84c9bD9C20A`) backed by $400,000+ in verified enterprise infrastructure commitments (Google Cloud, NVIDIA, Cloudflare) with A2A v1.0, x402, and MCP interfaces.
