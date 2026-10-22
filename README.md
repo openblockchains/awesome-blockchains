@@ -201,6 +201,9 @@ by Daniel van Flymen, September 2017, [(Source)](https://github.com/dvf/blockcha
 [**A Practical Introduction to Blockchain with Python**](http://adilmoujahid.com/posts/2018/03/intro-blockchain-bitcoin-python/)
 by Adil Moujahid, March 2018, [(Source)](https://github.com/adilmoujahid/blockchain-python-tutorial)
 
+[**Doomsday Network: Full Layer-1 Proof-of-Work Blockchain & P2P Node in Python 3**](https://doomsday.network)
+Open-source UTXO blockchain from scratch in Python 3 featuring ASERT per-block exponential difficulty retargeting, secp256k1 ECDSA transactions, SQLite persistence, zero-fee PPLNS mining pool, and a 64-bit golden-ratio matrix PoW (`DoomHash`) with bare-metal CUDA PTX acceleration, [(Source)](https://github.com/doomsday-network/doomsday)
+
 
 ### Ruby
 
