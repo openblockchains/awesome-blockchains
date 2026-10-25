@@ -201,6 +201,9 @@ by Daniel van Flymen, September 2017, [(Source)](https://github.com/dvf/blockcha
 [**A Practical Introduction to Blockchain with Python**](http://adilmoujahid.com/posts/2018/03/intro-blockchain-bitcoin-python/)
 by Adil Moujahid, March 2018, [(Source)](https://github.com/adilmoujahid/blockchain-python-tutorial)
 
+[**Doomsday Network: Full Layer-1 Proof-of-Work Blockchain & P2P Node in Python 3**](https://doomsday.network)
+- [DoomPay](https://github.com/doomsday-network/doom-pay) - 2-line Stripe-style non-custodial Web3 checkout widget (`pay.js`) and MCP server for verifying L1 `DOOM` and Base Mainnet `wDOOM` payments.
+
 
 ### Ruby
 
